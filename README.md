@@ -111,9 +111,9 @@ India's cashless health insurance system faces a critical challenge:
 ## 📊 Supported Coverage
 
 ### Insurers & Policies
-1. **Star Health** - Comprehensive, Senior Citizen Red Carpet
+1. **Star Health** - Comprehensive, Family Optima
 2. **HDFC ERGO** - MyOptima
-3. **Bajaj Allianz** - Health Guard, Silver Health
+3. **Bajaj Allianz** - Healthcare Plan
 
 ### Procedures (10 MVP)
 1. Cataract Surgery
