@@ -1,0 +1,241 @@
+{
+    "metadata": {
+      "procedure_id": "tkr_001",
+      "name": "Total Knee Replacement (Total Knee Arthroplasty)",
+      "category": "Orthopedics",
+      "subcategory": "Joint Replacement Surgery",
+      "common_synonyms": ["TKR", "TKA", "Knee Arthroplasty"],
+      "icd_10_codes": ["M17", "M17.0", "M17.1", "M17.11", "M17.9", "Z96.651"],
+      "typical_age_group": "50-75 years, but age alone not determining factor"
+    },
+
+    "hospitalization": {
+      "standard_type": "in_patient",
+      "typical_duration": {
+        "unit": "days",
+        "minimum": 3,
+        "maximum": 7,
+        "most_common": 5
+      },
+      "justifications_longer_stay": [
+        {
+          "reason": "Bilateral TKR",
+          "clinical_rationale": "Doubled surgical trauma, longer recovery",
+          "expected_additional_duration": "7-10 days"
+        },
+        {
+          "reason": "Post-operative complications",
+          "examples": ["Infection (0.5-2% incidence)", "Deep vein thrombosis", "Delayed mobilization"],
+          "expected_additional_duration": "Variable based on complication"
+        }
+      ],
+      "red_flags": [
+        {
+          "pattern": "Admission >10 days without documented complication",
+          "severity": "high",
+          "explanation": "Standard recovery allows discharge by day 5-7",
+          "action": "Request documentation of specific complication requiring extended stay"
+        }
+      ]
+    },
+
+    "cost_analysis": {
+      "india_tier1_cities": {
+        "currency": "INR",
+        "overall_range": {
+          "minimum": 140000,
+          "maximum": 370000,
+          "median": 250000
+        },
+        "city_breakdown": {
+          "mumbai": [215000, 475000],
+          "delhi": [202000, 442000],
+          "bangalore": [225000, 495000],
+          "chennai": [192000, 427000]
+        },
+        "detailed_breakdown": {
+          "surgeon_fee": {
+            "range": [50000, 200000],
+            "factors": ["Surgeon experience", "Hospital brand", "City tier"]
+          },
+          "anesthesia": {
+            "range": [12000, 25000]
+          },
+          "ot_hospital_charges": {
+            "range": [40000, 110000],
+            "duration": "5 days typical stay",
+            "includes": ["OT setup", "Room charges", "Nursing"]
+          },
+          "standard_knee_implant": {
+            "range": [60000, 120000],
+            "note": "Price regulated but hospital markups vary"
+          },
+          "pre_post_diagnostics": {
+            "range": [15000, 30000],
+            "includes": ["X-rays", "Blood work", "Physiotherapy"]
+          }
+        }
+      },
+      "government_cghs_rate": {
+        "package_rate": 150000,
+        "note": "Benchmark for NABH-accredited hospitals"
+      }
+    },
+
+    "medical_necessity": {
+      "primary_indications": [
+        {
+          "indication": "Severe osteoarthritis with failed conservative management",
+          "clinical_criteria": [
+            "Kellgren-Lawrence Grade 3-4 on weight-bearing X-ray",
+            "Documented trial of conservative therapy for ≥3-6 months",
+            "Severe pain limiting ADLs (walking, stairs, sleep)",
+            "Chronic knee inflammation or significant deformity"
+          ],
+          "documentation_must_include": [
+            "X-ray report showing Grade 3-4 degeneration with joint space narrowing",
+            "Record of conservative therapy: NSAIDs, physiotherapy, lifestyle modifications for 3-6 months",
+            "Functional assessment: walking distance limitation, stair climbing difficulty",
+            "Pain score and impact on quality of life"
+          ],
+          "strength": "strong"
+        },
+        {
+          "indication": "Rheumatoid arthritis with joint destruction",
+          "clinical_criteria": [
+            "Confirmed RA diagnosis",
+            "Radiographic evidence of joint destruction",
+            "Failed medical management including DMARDs"
+          ],
+          "documentation_must_include": [
+            "Rheumatologist diagnosis and treatment history",
+            "X-ray showing joint destruction",
+            "Failed DMARD therapy documentation"
+          ],
+          "strength": "strong"
+        }
+      ],
+
+      "insufficient_justifications": [
+        {
+          "scenario": "Mild to moderate OA without conservative trial",
+          "typical_presentation": "Kellgren-Lawrence Grade 2, some pain, no documented conservative therapy",
+          "why_inadequate": "Surgery premature; conservative management should be attempted for 3-6 months minimum",
+          "insurer_likely_response": "Reject; require documented trial of non-surgical treatment"
+        },
+        {
+          "scenario": "Radiographic evidence insufficient",
+          "typical_presentation": "Severe pain complaints but X-ray shows only Grade 2 changes",
+          "why_inadequate": "Grade 3-4 radiographic changes required for medical necessity",
+          "insurer_likely_response": "Reject; X-ray evidence doesn't support surgical intervention"
+        }
+      ],
+
+      "documentation_checklist": {
+        "essential_elements": [
+          {
+            "element": "Kellgren-Lawrence radiographic grading",
+            "format": "Grade 0-4 from weight-bearing X-ray",
+            "example": "Kellgren-Lawrence Grade 4: Severe joint space narrowing, large osteophytes, marked sclerosis",
+            "weak_if": "X-ray report without specific KL grading or shows only Grade 1-2"
+          },
+          {
+            "element": "Conservative management documentation",
+            "format": "Detailed record of 3-6 month trial with specific treatments",
+            "example": "Failed 6-month trial: NSAIDs (Ibuprofen 400mg TDS x 3mo), physiotherapy (12 sessions), weight loss attempted (5kg lost), intra-articular steroid injection x2 - persistent Grade 8/10 pain",
+            "weak_if": "No documentation of conservative therapy or duration <3 months"
+          }
+        ]
+      }
+    },
+
+    "required_diagnostics": {
+      "mandatory_preoperative": [
+        {
+          "test": "Weight-bearing X-ray knee (AP, Lateral, Skyline)",
+          "threshold": "Kellgren-Lawrence Grade 3-4",
+          "documentation": "Radiologist report with KL grading, joint space measurement",
+          "cost": 2000,
+          "red_flag_if_missing": "Cannot confirm radiographic severity for surgical indication"
+        },
+        {
+          "test": "Complete Blood Count (CBC)",
+          "threshold": "Hb >10 g/dL preferred for surgery",
+          "documentation": "Hemoglobin, platelet count, WBC",
+          "cost": 500
+        },
+        {
+          "test": "ECG",
+          "when_required": "All patients >40 years or cardiac history",
+          "cost": 300
+        }
+      ],
+
+      "unnecessary_tests": [
+        {
+          "test": "MRI knee",
+          "why_unnecessary": "X-ray sufficient for OA diagnosis; MRI only for suspected ligament/meniscus injury",
+          "exception": "Complex cases, suspected tumor, revision planning",
+          "fwa_severity": "moderate",
+          "cost": 8000
+        }
+      ]
+    },
+
+    "fraud_waste_abuse_patterns": {
+      "cost_inflation_schemes": [
+        {
+          "pattern": "Lack of medical necessity - premature surgery",
+          "how_detected": "Check for documented 3-6 month conservative trial and KL Grade",
+          "red_flag_indicators": [
+            "No evidence of conservative therapy trial",
+            "X-ray shows only Grade 1-2 OA",
+            "Surgery performed without failed non-surgical management"
+          ],
+          "typical_cost": "₹2,00,000-4,00,000 (entire procedure)",
+          "action": "Reject claim; require evidence of medical necessity per guidelines"
+        },
+        {
+          "pattern": "Implant upcoding",
+          "how_detected": "Verify implant invoice and barcoded sticker against operative note",
+          "red_flag_indicators": [
+            "Billing for high-flex/gender-specific/custom implant but using standard",
+            "Implant cost significantly above market rate",
+            "Sticker/invoice doesn't match billed implant model"
+          ],
+          "typical_overbilling": "₹50,000-1,50,000",
+          "action": "Cross-verify implant documentation; approve only documented implant cost"
+        },
+        {
+          "pattern": "Wrong-site surgery (severe negligence)",
+          "how_detected": "Check laterality consistency across all documents",
+          "red_flag_indicators": [
+            "Diagnosis says right knee, consent says left knee",
+            "X-ray laterality doesn't match operative site",
+            "Discharge summary shows different knee than consent"
+          ],
+          "fwa_severity": "critical",
+          "action": "Reject claim entirely; report to medical board for negligence"
+        }
+      ]
+    },
+
+    "insurer_specific_considerations": {
+      "waiting_periods": {
+        "typical_range_months": [6, 24],
+        "note": "TKR subject to long waiting period as planned procedure for chronic condition"
+      },
+      "common_rejection_reasons": [
+        "Claiming within waiting period",
+        "Insufficient conservative management documentation",
+        "Radiographic evidence doesn't meet Grade 3-4 severity",
+        "Lack of pre-authorization"
+      ]
+    },
+
+    "contextual_notes_for_llm": {
+      "medical_reasoning_guidance": "TKR medical necessity has TWO mandatory components: (1) Radiographic Grade 3-4 OA on weight-bearing X-ray, AND (2) Failed 3-6 month conservative trial. Missing either component = reject claim. Don't approve based on patient pain alone.",
+      
+      "regulatory_context": "Johnson & Johnson faulty hip implant case revealed device regulation gaps in India. Validation system must verify implant model against approved database and price benchmarks. Substandard implants billed as premium is significant fraud risk."
+    }
+}

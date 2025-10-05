@@ -1,0 +1,79 @@
+{
+  "test_name": "Test Case 2: Cataract Surgery - Excellent Score",
+  "expected_score": "90-95",
+  "expected_status": "Ready (Green)",
+  "main_issue": "None - Perfect documentation",
+  "policy_details": {
+    "insurance_company": "Star Health and Allied Insurance",
+    "policy_type": "Star Comprehensive Insurance Policy",
+    "policy_number": "STAR/COMP/2021/456789",
+    "sum_insured": 1000000,
+    "policy_start_date": "01/06/2021",
+    "planned_admission_date": "10/10/2025",
+    "procedure": "Cataract Surgery"
+  },
+  "patient_details": {
+    "patient_name": "Lakshmi Devi",
+    "gender": "Female",
+    "age": "68 Years",
+    "date_of_birth": "12/02/1957",
+    "contact_number": "9876512345",
+    "address": "23, Residency Road, Bangalore - 560025",
+    "tpa_card_id": "STAR/KA/654321"
+  },
+  "treating_doctor": {
+    "doctor_name": "Dr. Anil Kumar",
+    "contact_number": "9845612345",
+    "qualification": "MBBS, MS (Ophthalmology), DNB",
+    "registration_number": "KMC/67890/2005"
+  },
+  "illness_details": {
+    "presenting_complaint": "Patient presents with progressive bilateral vision loss over the past 2 years, more pronounced in the right eye. She reports difficulty reading newspapers even with spectacles, cannot recognize faces clearly at a distance of 2-3 meters, experiences unsafe night driving due to glare from oncoming vehicles, and has trouble managing daily medications independently due to poor vision. She reports significant impact on quality of life and independence in daily activities.",
+    "duration": "2 Years (Progressive)",
+    "first_consultation_date": "15/09/2025",
+    "provisional_diagnosis": "Bilateral Senile Cataract (Immature), Right Eye > Left Eye",
+    "icd_10_code": "H25.9"
+  },
+  "clinical_findings": {
+    "relevant_findings": "Visual Acuity Assessment: Right Eye: 6/36 (cannot improve with pinhole), Left Eye: 6/60 (cannot improve with pinhole). Slit Lamp Examination: Right eye shows Grade III nuclear sclerosis with cortical spoke opacities. Left eye shows Grade II nuclear sclerosis. A-scan Biometry: Axial length 23.45mm (Right), IOL Power Calculation: +21.5D for emmetropia. Dilated Fundus Examination: Optic disc and macula appear normal in both eyes, no diabetic or hypertensive retinopathy. Intraocular Pressure: 14 mmHg (Right), 15 mmHg (Left) - within normal limits. Blood Investigations: HbA1c 5.8% (non-diabetic), Blood Sugar Fasting 98 mg/dL, ECG: Normal sinus rhythm.",
+    "past_history": "Patient noticed gradual dimming of vision over 2 years. Initially managed with stronger reading glasses but vision continued to deteriorate. Conservative management no longer effective."
+  },
+  "past_medical_history": "Controlled hypertension on Tab. Amlodipine 5mg OD for 5 years. No diabetes. No previous eye surgeries.",
+  "investigations": {
+    "diagnostic_tests": "1. Visual Acuity Testing (15/09/2025): Right 6/36, Left 6/60\n2. Slit Lamp Biomicroscopy (15/09/2025): Grade III nuclear sclerosis with cortical opacities (Right), Grade II nuclear sclerosis (Left)\n3. A-scan Biometry (18/09/2025): Axial length 23.45mm, IOL power +21.5D calculated\n4. Dilated Fundus Examination (15/09/2025): Normal posterior segment, no retinopathy\n5. IOP Measurement (15/09/2025): 14 mmHg Right, 15 mmHg Left\n6. Blood Sugar Fasting (20/09/2025): 98 mg/dL\n7. HbA1c (20/09/2025): 5.8%\n8. ECG (20/09/2025): Normal sinus rhythm",
+    "medical_management": "Conservative management attempted with updated spectacle prescription but vision cannot be improved beyond 6/36. Surgical intervention is medically necessary as cataract density precludes optical correction.",
+    "proposed_treatment": "Surgical Management - Right Eye Phacoemulsification with IOL Implantation"
+  },
+  "surgical_details": {
+    "surgery_name": "Right Eye Phacoemulsification with Posterior Chamber IOL Implantation",
+    "icd_10_pcs_code": "08DJ3ZZ",
+    "route_of_drug": "Topical + Oral",
+    "other_details": "Standard phacoemulsification technique under peribulbar anesthesia. Foldable hydrophobic acrylic IOL (+21.5D) implantation. Day care procedure. Post-operative topical antibiotics and steroids for 4 weeks."
+  },
+  "accident_details": "Not Applicable",
+  "maternity_details": "Not Applicable",
+  "hospitalization_details": {
+    "emergency_or_planned": "Planned",
+    "admission_date": "10/10/2025",
+    "admission_time": "08:00 AM",
+    "expected_days": "1 Day (Day Care)",
+    "icu_days": "0 Days",
+    "room_type": "Day Care Bed"
+  },
+  "cost_breakdown": {
+    "room_nursing_diet": 3500,
+    "investigation_diagnostic": 4500,
+    "icu_charges": 0,
+    "ot_charges": 15000,
+    "professional_fees": 20000,
+    "medicines_consumables_implants": 7000,
+    "other_expenses": 2000,
+    "package_charges": 0,
+    "total_cost": 52000
+  },
+  "declaration": {
+    "doctor_name": "Dr. Anil Kumar",
+    "date": "20/09/2025"
+  },
+  "notes": "Excellent documentation with specific VA measurements, detailed functional impact, all required diagnostics completed, and clear medical justification. Should score 90-95 and pass all agents."
+}

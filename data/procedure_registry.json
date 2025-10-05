@@ -1,0 +1,76 @@
+{
+  "procedures": [
+    {
+      "procedure_id": "cataract_surgery",
+      "user_display_name": "Cataract Surgery",
+      "common_synonyms": ["Phaco", "Lens replacement", "IOL implantation", "MICS", "FLACS", "Robotic Cataract Surgery"],
+      "icd_10_codes": ["H25", "H25.0", "H25.1", "H25.2", "H25.9", "H26", "H26.0", "H26.1", "H26.9", "Z98.4", "Z96.1"],
+      "medical_data_file": "cataract.json",
+      "policy_waiting_period_key": "cataract_surgery",
+      "policy_exclusion_keywords": ["refractive error", "cosmetic"],
+      "notes": "24-month waiting period applies; check visual acuity documentation"
+    },
+    {
+      "procedure_id": "gallbladder_removal",
+      "user_display_name": "Gallbladder Removal (Cholecystectomy)",
+      "common_synonyms": ["Gallbladder removal surgery", "Keyhole surgery for gallstones", "Lap chole"],
+      "icd_10_codes": ["K80", "K81", "K82", "K83"],
+      "medical_data_file": "gall_bladder_removal.json",
+      "policy_waiting_period_key": "gall_bladder_diseases",
+      "policy_exclusion_keywords": ["hepato_pancreato_biliary"],
+      "alternative_keys": ["hepato_pancreato_biliary_diseases"],
+      "notes": "24-month waiting period under gall_bladder_diseases or hepato_pancreato_biliary_diseases"
+    },
+    {
+      "procedure_id": "hysterectomy",
+      "user_display_name": "Hysterectomy (Uterus Removal)",
+      "common_synonyms": ["Uterus removal", "Uterine excision", "Uterine surgery", "Womb removal"],
+      "icd_10_codes": ["0UT90ZZ", "0UT94ZZ", "Z90.710"],
+      "medical_data_file": "hysterectomy.json",
+      "policy_waiting_period_key": "hysterectomy",
+      "policy_exclusion_keywords": ["cervix_uterus", "cosmetic", "maternity"],
+      "alternative_keys": ["cervix_uterus_diseases"],
+      "notes": "24-month waiting period; emergency obstetric cases may have different rules"
+    },
+    {
+      "procedure_id": "appendectomy",
+      "user_display_name": "Appendectomy (Appendix Removal)",
+      "common_synonyms": ["Appendix removal surgery", "Keyhole appendix surgery", "Lap appy"],
+      "icd_10_codes": ["K35", "K36", "K37"],
+      "medical_data_file": "appendectomy.json",
+      "policy_waiting_period_key": null,
+      "policy_exclusion_keywords": [],
+      "notes": "Emergency procedure - only initial 30-day policy waiting period applies, no specific condition waiting period"
+    },
+    {
+      "procedure_id": "coronary_angioplasty",
+      "user_display_name": "Coronary Angioplasty (PCI with Stenting)",
+      "common_synonyms": ["PCI", "Percutaneous Coronary Intervention", "Angioplasty with stent", "Balloon angioplasty"],
+      "icd_10_codes": ["I20", "I21", "I25.10", "Z95.5"],
+      "medical_data_file": "coronary_angioplasty.json",
+      "policy_waiting_period_key": null,
+      "policy_exclusion_keywords": [],
+      "notes": "Emergency STEMI: covered after initial 30 days; Elective for stable CAD: may fall under pre_existing_disease_months (36 months); check emergency vs elective status"
+    },
+    {
+      "procedure_id": "coronary_artery_bypass",
+      "user_display_name": "Coronary Artery Bypass Surgery (CABG)",
+      "common_synonyms": ["Heart Bypass Surgery", "CABS", "Coronary Artery Bypass Surgery"],
+      "icd_10_codes": ["0210", "0211", "0212", "I25.10", "I25 series"],
+      "medical_data_file": "coronary_artery_bypass.json",
+      "policy_waiting_period_key": null,
+      "policy_exclusion_keywords": [],
+      "notes": "Typically emergency/urgent procedure - covered after initial 30 days; elective cases rare and may fall under pre_existing_disease_months"
+    },
+    {
+      "procedure_id": "total_knee_replacement",
+      "user_display_name": "Total Knee Replacement (TKR)",
+      "common_synonyms": ["TKR", "TKA", "Knee Arthroplasty"],
+      "icd_10_codes": ["M17", "M17.0", "M17.1", "M17.11", "M17.9", "Z96.651"],
+      "medical_data_file": "total_knee_replacement.json",
+      "policy_waiting_period_key": "joint_replacement",
+      "policy_exclusion_keywords": [],
+      "notes": "24-month waiting period applies; check for documented conservative management trial"
+    }
+  ]
+}

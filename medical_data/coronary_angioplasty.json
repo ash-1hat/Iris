@@ -1,0 +1,314 @@
+{
+    "metadata": {
+      "procedure_id": "pci_stent_001",
+      "name": "Coronary Angioplasty (PCI with Stenting)",
+      "category": "Cardiology",
+      "subcategory": "Interventional Cardiology",
+      "common_synonyms": ["PCI", "Percutaneous Coronary Intervention", "Angioplasty with stent", "Balloon angioplasty"],
+      "icd_10_codes": ["I20", "I21", "I25.10", "Z95.5"],
+      "typical_age_group": "45+ years, but age not limiting factor"
+    },
+
+    "hospitalization": {
+      "standard_type": "in_patient",
+      "typical_duration": {
+        "unit": "days",
+        "minimum": 1,
+        "maximum": 3,
+        "most_common": 2
+      },
+      "emergency_vs_elective": {
+        "emergency_stemi": {
+          "typical_stay": "3-5 days",
+          "justification": "Life-threatening; primary PCI is standard of care"
+        },
+        "elective_stable_cad": {
+          "typical_stay": "1-2 days",
+          "requires": "Failed optimal medical therapy documentation"
+        }
+      }
+    },
+
+    "cost_analysis": {
+      "india_tier1_cities": {
+        "currency": "INR",
+        "overall_range": {
+          "minimum": 100000,
+          "maximum": 320000,
+          "median": 180000,
+          "note": "Cost for single-stent PCI; increases with additional stents"
+        },
+        "detailed_breakdown": {
+          "cardiologist_team_fees": {
+            "range": [30000, 75000],
+            "factors": ["Surgeon experience", "Hospital tier", "Complexity"]
+          },
+          "cath_lab_ot_charges": {
+            "range": [30000, 60000],
+            "note": "Can be inflated to offset stent price caps"
+          },
+          "drug_eluting_stent": {
+            "nppa_capped_price": 38933,
+            "note": "Price regulated by NPPA; hospitals cannot exceed this"
+          },
+          "bare_metal_stent": {
+            "nppa_capped_price": 10693,
+            "note": "Older technology, rarely used now"
+          },
+          "consumables": {
+            "range": [15000, 30000],
+            "includes": ["Balloons", "Guide wires", "Catheters"],
+            "note": "Another area for potential cost inflation to offset stent caps"
+          },
+          "hospital_stay_2days": {
+            "range": [10000, 30000],
+            "varies_by": "Room type"
+          },
+          "pre_op_diagnostics": {
+            "range": [15000, 25000],
+            "includes": ["ECG", "Cardiac enzymes", "2D Echo", "Angiography if separate"]
+          }
+        },
+        "cost_outlier_thresholds": {
+          "concerning_if_above": 400000,
+          "note": "For single-stent PCI; multi-stent proportionally higher"
+        }
+      },
+      "government_cghs_rate": {
+        "pci_package": 92000,
+        "note": "For NABH hospitals; excludes stent cost which is billed separately at NPPA rate"
+      }
+    },
+
+    "medical_necessity": {
+      "primary_indications": [
+        {
+          "indication": "STEMI (ST-Elevation Myocardial Infarction) - Emergency",
+          "clinical_criteria": [
+            "ECG showing ST elevation",
+            "Elevated cardiac enzymes (Troponin)",
+            "Primary PCI is gold standard treatment"
+          ],
+          "documentation_must_include": [
+            "ECG with ST elevation",
+            "Troponin T/I, CPK-MB values",
+            "Time from symptom onset to PCI (door-to-balloon time)"
+          ],
+          "strength": "absolute",
+          "note": "Medical necessity rarely questioned for STEMI"
+        },
+        {
+          "indication": "NSTE-ACS (Non-ST Elevation Acute Coronary Syndrome) - High Risk",
+          "clinical_criteria": [
+            "Elevated troponin indicating myocardial injury",
+            "High-risk features on risk stratification",
+            "Early invasive strategy recommended"
+          ],
+          "documentation_must_include": [
+            "Troponin levels",
+            "Risk stratification score",
+            "Angiography showing significant stenosis"
+          ],
+          "strength": "strong"
+        },
+        {
+          "indication": "Stable CAD - Elective PCI (CRITICAL AREA FOR FWA)",
+          "clinical_criteria": [
+            "Symptoms persist despite optimal medical therapy trial",
+            "Objective evidence of significant ischemia on stress testing OR high-grade stenosis (≥70%) on angiography",
+            "Failed conservative management documented"
+          ],
+          "documentation_must_include": [
+            "Record of optimal medical therapy trial (anti-anginals, statins, antiplatelet)",
+            "Stress test results showing ischemia OR angiography showing ≥70% stenosis",
+            "Duration and severity of symptoms despite medical therapy"
+          ],
+          "strength": "conditional",
+          "note": "MAJOR FWA RISK: Elective PCI without documented medical therapy trial is guideline violation"
+        }
+      ],
+
+      "insufficient_justifications": [
+        {
+          "scenario": "Elective PCI without medical therapy trial",
+          "typical_presentation": "Stable angina, direct angiography showing 60% stenosis, immediate stenting",
+          "why_inadequate": "Guidelines require optimal medical therapy trial first for stable CAD; <70% stenosis without ischemia evidence not surgical indication",
+          "insurer_likely_response": "Reject; require evidence of failed medical management or objective ischemia"
+        },
+        {
+          "scenario": "Moderate stenosis without ischemia evidence",
+          "typical_presentation": "50-60% blockage on angiography, no stress test performed, stenting done",
+          "why_inadequate": "Moderate stenosis (<70%) requires functional ischemia evidence (stress test/FFR) to justify PCI",
+          "insurer_likely_response": "Reject; blockage percentage alone insufficient without ischemia proof"
+        }
+      ],
+
+      "documentation_checklist": {
+        "essential_elements": [
+          {
+            "element": "Coronary angiography report",
+            "format": "Vessel-specific stenosis percentages, lesion characteristics",
+            "example": "LAD: 85% stenosis at mid-segment, TIMI flow Grade 2; LCx: 40% stenosis; RCA: 30% stenosis",
+            "weak_if": "Missing or vague ('significant blockage' without percentage)"
+          },
+          {
+            "element": "Medical therapy trial documentation (for elective cases)",
+            "format": "Specific medications, duration, response",
+            "example": "Failed 3-month optimal medical therapy: Aspirin 75mg OD, Atorvastatin 40mg, Metoprolol 50mg BD, Isosorbide mononitrate - persistent Class III angina",
+            "weak_if": "No documentation of medical therapy attempt for stable patients"
+          },
+          {
+            "element": "Stent details with barcoded sticker",
+            "format": "Model number, batch number, size, original packaging sticker",
+            "example": "Drug-eluting stent: Xience Alpine 3.0x28mm, Batch: ABC123, Sticker attached",
+            "weak_if": "Missing sticker or batch number - cannot verify stent used"
+          }
+        ]
+      }
+    },
+
+    "required_diagnostics": {
+      "mandatory_preoperative": [
+        {
+          "test": "ECG (Electrocardiogram)",
+          "threshold": "Identify STEMI, NSTEMI, ischemic changes",
+          "documentation": "12-lead ECG with interpretation",
+          "cost": 300
+        },
+        {
+          "test": "Cardiac Enzymes (Troponin T/I, CPK-MB)",
+          "threshold": "Elevated in MI; helps risk stratification",
+          "documentation": "Serial troponin values with timing",
+          "cost": 1500
+        },
+        {
+          "test": "2D Echocardiography",
+          "threshold": "Assess LV function, ejection fraction",
+          "documentation": "Ejection fraction %, wall motion abnormalities",
+          "cost": 3000
+        },
+        {
+          "test": "Coronary Angiography",
+          "threshold": "Gold standard; visualizes coronary anatomy",
+          "documentation": "Vessel-wise stenosis %, TIMI flow grade",
+          "cost": 13225,
+          "note": "CGHS rate; often performed same session as PCI"
+        }
+      ],
+
+      "optional_situational": [
+        {
+          "test": "Stress Test (TMT/Stress Echo)",
+          "when_indicated": ["Stable CAD to prove ischemia before elective PCI", "Moderate stenosis (50-70%) needs functional assessment"],
+          "cost": 3000,
+          "note": "CRITICAL for elective PCI justification"
+        },
+        {
+          "test": "Fractional Flow Reserve (FFR)",
+          "when_indicated": ["Borderline stenosis (50-70%)", "Multi-vessel disease planning"],
+          "cost": 25000,
+          "note": "Measures hemodynamic significance of stenosis"
+        }
+      ]
+    },
+
+    "fraud_waste_abuse_patterns": {
+      "cost_inflation_schemes": [
+        {
+          "pattern": "Unnecessary stenting in stable patients",
+          "how_detected": "Check for: (1) Emergency vs elective, (2) Medical therapy trial, (3) Ischemia evidence",
+          "red_flag_indicators": [
+            "Elective PCI without documented medical therapy trial",
+            "Moderate stenosis (<70%) without stress test showing ischemia",
+            "Patient referred from same physician's diagnostic camp (conflict of interest)"
+          ],
+          "typical_cost": "₹1,00,000-3,00,000 (entire procedure)",
+          "action": "Reject if no medical necessity evidence; report pattern to regulatory authority"
+        },
+        {
+          "pattern": "Angiography-to-PCI pipeline abuse",
+          "how_detected": "Monitor provider-specific conversion rates (diagnostic angio → therapeutic PCI)",
+          "red_flag_indicators": [
+            "Unusually high % of diagnostic angiographies immediately convert to PCI",
+            "No time gap for second opinion or medical therapy trial",
+            "Conversion rate >80% for stable patients (normal: 30-50%)"
+          ],
+          "clinical_context": "Patient agrees to diagnostic test, then pressured into immediate stenting while catheter in place",
+          "action": "Flag provider for audit if conversion rate abnormal; require stress test for elective cases"
+        },
+        {
+          "pattern": "Circumventing NPPA stent price caps",
+          "how_detected": "Check if other line items inflated to compensate for regulated stent price",
+          "red_flag_indicators": [
+            "Cath lab charges >₹80,000 (should be ₹30-60k)",
+            "Consumables >₹40,000 for single stent",
+            "Procedure fees disproportionately high"
+          ],
+          "typical_overbilling": "₹30,000-60,000",
+          "action": "Compare line items to benchmarks; approve only reasonable amounts"
+        },
+        {
+          "pattern": "Stent fraud - billing vs implantation mismatch",
+          "how_detected": "Cross-verify: (1) Angiography report, (2) Operative note, (3) Stent stickers",
+          "red_flag_indicators": [
+            "Billing for DES but operative note suggests BMS used",
+            "Number of stent stickers doesn't match claimed stent count",
+            "Sticker batch number doesn't match invoice"
+          ],
+          "typical_overbilling": "₹28,000 per stent (DES vs BMS price difference)",
+          "action": "Reject claim; require video proof of stent deployment if suspicious"
+        }
+      ]
+    },
+
+    "common_complications": {
+      "procedural": [
+        {
+          "complication": "Contrast-induced nephropathy",
+          "incidence": "2-5% of procedures",
+          "management": "Hydration, acetylcysteine",
+          "cost_impact": "₹10,000-30,000",
+          "legitimate": true
+        },
+        {
+          "complication": "Access site complications",
+          "incidence": "2-6%",
+          "examples": ["Hematoma", "Pseudoaneurysm", "Bleeding"],
+          "cost_impact": "₹5,000-50,000 depending on severity",
+          "legitimate": true
+        }
+      ],
+      "in_hospital": [
+        {
+          "complication": "In-hospital mortality",
+          "incidence": "4.2% for primary PCI; 61.3% if cardiogenic shock",
+          "note": "High mortality in shock patients is expected, not negligence"
+        }
+      ]
+    },
+
+    "insurer_specific_considerations": {
+      "waiting_periods": {
+        "emergency_pci": "Covered after initial 30-day policy waiting period",
+        "elective_pci_for_ped": "2-4 years waiting period",
+        "note": "Emergency life-saving PCI covered quickly; elective for chronic CAD has long wait"
+      },
+      "common_rejection_reasons": [
+        "Incomplete documentation - missing stent stickers with batch numbers",
+        "Elective PCI without evidence of failed medical therapy",
+        "Moderate stenosis (<70%) without stress test proving ischemia",
+        "Claiming within PED waiting period for elective case"
+      ],
+      "dual_antiplatelet_therapy_requirement": {
+        "csi_guideline": "Minimum 12 months post-ACS (can shorten to 6 months if high bleeding risk)",
+        "medications": "Aspirin (lifelong) + P2Y12 inhibitor (clopidogrel/ticagrelor)",
+        "note": "Medication compliance affects outcomes; verify prescription in discharge summary"
+      }
+    },
+
+    "contextual_notes_for_llm": {
+      "medical_reasoning_guidance": "PCI medical necessity is CONTEXT-DEPENDENT. Emergency STEMI = absolute indication, rarely question. Stable CAD = conditional indication requiring (1) failed medical therapy AND (2) objective ischemia evidence. The 'angiography pipeline' is a major FWA vector in India - patient agrees to diagnostic test, gets pressured into immediate stenting.",
+      
+      "regulatory_context": "NPPA caps stent prices (DES: ₹38,933, BMS: ₹10,693) but hospitals inflate other charges to compensate. Watch for abnormally high cath lab/consumable charges. Documented cases exist of mass unnecessary angioplasties in medical camps to defraud government insurance schemes."
+    }
+}

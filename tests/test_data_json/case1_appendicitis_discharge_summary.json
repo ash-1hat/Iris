@@ -1,0 +1,148 @@
+{
+  "hospital_info": {
+    "name": "City General Hospital",
+    "address": "154/11, Bannerghatta Road, Bengaluru - 560076",
+    "phone": "080-26304050",
+    "email": "medical.records@citygeneralhospital.com",
+    "registration_no": "KA/BLR/2005/12345"
+  },
+  "summary_info": {
+    "summary_no": "DS/2025/010456",
+    "date": "14/10/2025"
+  },
+  "patient_info": {
+    "name": "Ramesh Kumar",
+    "age_gender": "28 Years / Male",
+    "patient_id": "CGH2025010456",
+    "address": "45, MG Road, Bangalore - 560001",
+    "contact": "+91-9876543210"
+  },
+  "insurance_details": {
+    "tpa_name": "Star Health Insurance TPA Ltd.",
+    "policy_number": "STAR/COMP/2024/789012",
+    "authorization_number": "AUTH-2025-67890"
+  },
+  "admission_discharge_details": {
+    "admission_datetime": "10/10/2025 at 02:30 hrs",
+    "discharge_datetime": "14/10/2025 at 11:00 hrs",
+    "total_duration": "4 Days",
+    "admission_type": "Emergency",
+    "room_category": "Single Private AC Room",
+    "treating_consultant": "Dr. Suresh Patel",
+    "qualification": "MBBS, MS (General Surgery)",
+    "registration_number": "KMC/12345/2010",
+    "specialty": "General Surgery",
+    "contact": "9845678901"
+  },
+  "clinical_summary": {
+    "presenting_complaints": "Patient presented to emergency department with acute onset severe abdominal pain in right lower quadrant for past 12 hours. Pain started periumbilically and migrated to right iliac fossa. Associated with nausea, vomiting (3 episodes), and fever (101°F). Pain aggravated by movement and coughing.",
+    "medical_history": "No significant past medical history. No chronic illnesses. No known drug allergies. No previous surgeries.",
+    "preop_examination": "Physical Examination: Temperature 101.2°F, Pulse 110/min, BP 120/80 mmHg. Abdomen: Tenderness and guarding in right iliac fossa, positive McBurney's point tenderness, positive Rovsing's sign. Rebound tenderness present.\n\nUSG Abdomen (09/10/2025): Dilated appendix (9mm diameter) with surrounding fluid collection suggestive of perforation and localized peritonitis.\n\nBlood Investigations: TLC 18,500/cumm (elevated), Neutrophils 85%, CRP 45 mg/L (elevated). Serum Electrolytes and Renal Function: Within normal limits.",
+    "preop_investigations": [
+      "USG Abdomen: Perforated appendicitis with localized peritonitis",
+      "Complete Blood Count: TLC 18,500/cumm, Neutrophils 85%",
+      "CRP: 45 mg/L (elevated)",
+      "Serum Electrolytes: Normal",
+      "Renal Function Tests: Normal",
+      "Blood Sugar Random: 110 mg/dL"
+    ]
+  },
+  "diagnosis": {
+    "provisional_diagnosis": "Acute Appendicitis with Perforation",
+    "provisional_icd10": "K35.32",
+    "final_diagnosis": "Post-operative status following emergency laparoscopic appendectomy for perforated appendicitis with localized peritonitis",
+    "final_icd10": "K35.32"
+  },
+  "procedure": {
+    "name": "Emergency Laparoscopic Appendectomy with Peritoneal Lavage and Drain Placement",
+    "icd_10_pcs": "0DTJ4ZZ",
+    "date_time": "10/10/2025 at 08:00 hrs",
+    "duration": "75 minutes",
+    "anesthesia": "General Anesthesia",
+    "technique": "Standard 3-port laparoscopic technique. Intraoperative findings revealed perforated appendix with localized abscess formation (approximately 30ml purulent collection in right iliac fossa). Complete appendectomy performed. Thorough peritoneal lavage with 2 liters warm normal saline. 14Fr surgical drain placed in right iliac fossa for drainage. Hemostasis achieved. Ports closed in layers.",
+    "intraop_findings": "Perforated appendix with gangrenous changes. Localized abscess containing 30ml pus in right iliac fossa. No generalized peritonitis. Appendix adherent to cecum and ileum - adhesiolysis performed.",
+    "implant_details": null
+  },
+  "postop_course": {
+    "day0": "Patient shifted to recovery room post-surgery. Vitals stable. Started on IV antibiotics (Inj. Ceftriaxone 1g BD + Inj. Metronidazole 500mg TDS). IV fluid resuscitation continued. Pain management with IV analgesics. NPO status maintained initially. Drain output: 50ml serosanguinous fluid. Patient monitored in ward.",
+    "day1": "Post-op day 1 (11/10): Patient afebrile, vitals stable. Drain output: 40ml serous fluid. Started on oral sips of water. Mobilized to chair. Pain score 4/10, managed with oral analgesics. No signs of peritonitis or wound infection.",
+    "day2": "Post-op day 2 (12/10): Drain output minimal (20ml). Started on soft diet, tolerating well. Walking independently. Drain removed as output <30ml and serous. Wound sites clean and dry. IV antibiotics continued.",
+    "day3": "Post-op day 3 (13/10): Patient comfortable. Tolerating regular diet. Afebrile. Surgical wounds healing well. IV antibiotics completed 72 hours. Switched to oral antibiotics (Tab. Amoxicillin-Clavulanate 625mg TDS). Bowel sounds present.",
+    "day4": "Post-op day 4 (14/10): Patient completely comfortable. All wounds clean and dry. Tolerating diet well. Ambulatory. Declared medically fit for discharge with oral antibiotics."
+  },
+  "complications": "Intraoperative finding of perforated appendix with localized abscess - not a post-operative complication but unanticipated pathology requiring modified surgical approach (peritoneal lavage and drain placement). This necessitated extended IV antibiotic therapy (72 hours) and extended hospital stay (4 days instead of planned 3 days).",
+  "condition_at_discharge": "Stable, afebrile (temperature 98.2°F), pain well controlled (VAS 2/10), tolerating oral diet, all surgical wounds clean and dry, drain site healing well, ambulatory without assistance.",
+  "discharge_medications": [
+    {
+      "name": "Tab. Amoxicillin-Clavulanate 625mg",
+      "dosage": "1 tablet three times daily after food",
+      "duration": "5 days",
+      "purpose": "Complete antibiotic course for infection control"
+    },
+    {
+      "name": "Tab. Metronidazole 400mg",
+      "dosage": "1 tablet three times daily after food",
+      "duration": "5 days",
+      "purpose": "Anaerobic bacterial coverage"
+    },
+    {
+      "name": "Tab. Paracetamol 500mg",
+      "dosage": "1-2 tablets as needed for pain",
+      "duration": "7 days (SOS)",
+      "purpose": "Pain relief"
+    },
+    {
+      "name": "Tab. Pantoprazole 40mg",
+      "dosage": "1 tablet once daily before breakfast",
+      "duration": "7 days",
+      "purpose": "Gastric protection while on antibiotics"
+    }
+  ],
+  "follow_up_instructions": {
+    "schedule": [
+      "Day 7 post-surgery (17/10/2025): Wound check and suture removal",
+      "Day 14 post-surgery (24/10/2025): Final post-operative assessment"
+    ],
+    "contact": "Surgery OPD: 080-26304050 (Ext: 456)",
+    "activity_dos": [
+      "Resume normal diet gradually",
+      "Take all medications as prescribed",
+      "Keep surgical wounds clean and dry",
+      "Gentle walking encouraged from day 2",
+      "Maintain good hygiene"
+    ],
+    "activity_donts": [
+      "Avoid heavy lifting (>5kg) for 2 weeks",
+      "Avoid strenuous exercise or gym for 3 weeks",
+      "Do not wet surgical wounds for 48 hours",
+      "Avoid swimming for 3 weeks",
+      "Do not miss antibiotic doses"
+    ],
+    "warning_signs": [
+      "Fever >100°F (37.8°C)",
+      "Severe abdominal pain not relieved by medications",
+      "Redness, swelling, or discharge from surgical wounds",
+      "Persistent vomiting",
+      "Unable to pass stools for >3 days",
+      "Increasing abdominal distension"
+    ],
+    "emergency_contact": "080-26304050 (24x7 Emergency)"
+  },
+  "future_treatment_plan": "No further surgical intervention required. Complete course of antibiotics. Follow-up for wound healing assessment. Gradual return to normal activities over 3 weeks. No dietary restrictions after discharge.",
+  "doctor_declaration": {
+    "certifications": [
+      "The patient was under my care during the hospitalization period mentioned above.",
+      "The medical information provided in this discharge summary is true and correct to the best of my knowledge.",
+      "The treatment provided was medically necessary and appropriate for the patient's condition.",
+      "The extended hospital stay was medically warranted due to intraoperative finding of perforation requiring drain placement and extended antibiotic therapy.",
+      "All original documents including bills and investigation reports have been provided to the patient."
+    ],
+    "doctor_name": "Dr. Suresh Patel",
+    "qualification": "MBBS, MS (General Surgery)",
+    "registration": "KMC/12345/2010",
+    "designation": "Consultant General Surgeon",
+    "contact": "9845678901",
+    "email": "dr.suresh.patel@citygeneralhospital.com",
+    "date": "14/10/2025"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "claim_id": "CR-20251005-12228",
+  "timestamp": "2025-10-05T16:02:45.436972",
+  "validation_score": 70,
+  "readiness_status": "warning",
+  "patient_info": {
+    "name": "Ramesh Kumar",
+    "age": 28,
+    "gender": "Male",
+    "contact": "9876543210"
+  },
+  "policy_info": {
+    "insurer": "Star Health and Allied Insurance",
+    "policy_type": "Star Comprehensive Insurance Policy",
+    "policy_number": "SH12345678",
+    "sum_insured": 500000,
+    "policy_start_date": "2023-01-01"
+  },
+  "procedure_info": {
+    "procedure_id": "appendectomy",
+    "diagnosis": "Acute Appendici tis with Perfora tion",
+    "icd_code": "K35.32",
+    "planned_admission_date": "2025-10-06",
+    "expected_stay_days": 3,
+    "room_type": null
+  },
+  "hospital_info": {
+    "name": "Hospital name not specified in document",
+    "address": null
+  },
+  "doctor_info": {
+    "name": "Dr. Suresh Patel",
+    "qualification": "MBBS, MS (General Surgery)",
+    "registration_number": "KMC/12345/2010"
+  },
+  "expected_costs": {
+    "room_charges": 16000.0,
+    "surgeon_fees": 21000.0,
+    "anesthetist_fees": 9000.0,
+    "ot_charges": 18000.0,
+    "icu_charges": 0.0,
+    "investigations": 8000.0,
+    "medicines_consumables": 10000.0,
+    "implants": 0.0,
+    "other_charges": 3000.0,
+    "total_estimated_cost": 85000.0
+  },
+  "validation_summary": {
+    "completeness_status": "pass",
+    "policy_status": "warning",
+    "medical_review_status": "warning",
+    "fwa_status": "pass"
+  }
+}

@@ -1,0 +1,365 @@
+{
+  "hospital_info": {
+    "name": "City General Hospital",
+    "address": "154/11, Bannerghatta Road, Bengaluru - 560076, Karnataka, India",
+    "phone": "080-26304050",
+    "fax": "080-26771936",
+    "email": "billing@citygeneralhospital.com",
+    "gstin": "29AACCH1234F1Z5",
+    "registration_no": "KA/BLR/2005/12345"
+  },
+  "bill_info": {
+    "bill_no": "CGH/BLR/2025/010456",
+    "date": "14/10/2025",
+    "time": "11:00 hrs",
+    "patient_id": "CGH2025010456"
+  },
+  "patient_info": {
+    "name": "Ramesh Kumar",
+    "age_gender": "28 Years / Male",
+    "address": "45, MG Road, Bangalore - 560001",
+    "contact": "+91-9876543210",
+    "email": "ramesh.kumar@email.com"
+  },
+  "insurance_info": {
+    "tpa_name": "Star Health Insurance TPA Ltd.",
+    "policy_number": "STAR/COMP/2024/789012",
+    "authorization_number": "AUTH-2025-67890",
+    "authorized_amount": "85000.00"
+  },
+  "admission_details": {
+    "date_of_admission": "10/10/2025",
+    "date_of_discharge": "14/10/2025",
+    "total_days": "4 Days",
+    "room_type": "Single Private AC Room",
+    "treating_consultant": "Dr. Suresh Patel (MS General Surgery)",
+    "department": "General Surgery",
+    "admission_type": "Emergency"
+  },
+  "diagnosis_procedure": {
+    "primary_diagnosis": "Acute Appendicitis with Perforation and Localized Peritonitis",
+    "icd_10_code": "K35.32",
+    "procedure_performed": "Emergency Laparoscopic Appendectomy with Peritoneal Lavage and Drain Placement",
+    "icd_10_pcs_code": "0DTJ4ZZ",
+    "complication": "Intraoperative finding: Perforated appendix with localized abscess (30ml purulent collection)"
+  },
+  "itemized_charges": [
+    {
+      "section": "A",
+      "section_name": "ROOM & BOARDING CHARGES",
+      "items": [
+        {
+          "sr": "1",
+          "description": "Room Rent - Single AC (10-14 Oct)",
+          "qty": "4",
+          "rate": "4000.00",
+          "amount": "16000.00"
+        },
+        {
+          "sr": "2",
+          "description": "Nursing Charges",
+          "qty": "4",
+          "rate": "600.00",
+          "amount": "2400.00"
+        },
+        {
+          "sr": "3",
+          "description": "Patient Diet",
+          "qty": "8",
+          "rate": "150.00",
+          "amount": "1200.00"
+        },
+        {
+          "sr": "4",
+          "description": "Service Charges",
+          "qty": "4",
+          "rate": "350.00",
+          "amount": "1400.00"
+        }
+      ],
+      "subtotal": "21000.00"
+    },
+    {
+      "section": "B",
+      "section_name": "CONSULTATION & PROFESSIONAL FEES",
+      "items": [
+        {
+          "sr": "5",
+          "description": "Surgeon's Fee (Dr. Suresh Patel)",
+          "qty": "1",
+          "rate": "20000.00",
+          "amount": "20000.00"
+        },
+        {
+          "sr": "6",
+          "description": "Anesthetist's Fee (Dr. Priya Sharma)",
+          "qty": "1",
+          "rate": "8000.00",
+          "amount": "8000.00"
+        },
+        {
+          "sr": "7",
+          "description": "Post-op Consultation Charges",
+          "qty": "3",
+          "rate": "600.00",
+          "amount": "1800.00"
+        },
+        {
+          "sr": "8",
+          "description": "Emergency Consultation Fee",
+          "qty": "1",
+          "rate": "1500.00",
+          "amount": "1500.00"
+        }
+      ],
+      "subtotal": "31300.00"
+    },
+    {
+      "section": "C",
+      "section_name": "OPERATION THEATRE CHARGES",
+      "items": [
+        {
+          "sr": "9",
+          "description": "OT Charges (Emergency Major Procedure)",
+          "qty": "1",
+          "rate": "18000.00",
+          "amount": "18000.00"
+        },
+        {
+          "sr": "10",
+          "description": "OT Consumables & Supplies",
+          "qty": "1",
+          "rate": "2500.00",
+          "amount": "2500.00"
+        },
+        {
+          "sr": "11",
+          "description": "Surgical Instruments Usage",
+          "qty": "1",
+          "rate": "1200.00",
+          "amount": "1200.00"
+        }
+      ],
+      "subtotal": "21700.00"
+    },
+    {
+      "section": "D",
+      "section_name": "PHARMACY & CONSUMABLES",
+      "items": [
+        {
+          "sr": "12",
+          "description": "Inj. Ceftriaxone 1g (IV)",
+          "qty": "8",
+          "rate": "180.00",
+          "amount": "1440.00"
+        },
+        {
+          "sr": "13",
+          "description": "Inj. Metronidazole 500mg (IV)",
+          "qty": "12",
+          "rate": "120.00",
+          "amount": "1440.00"
+        },
+        {
+          "sr": "14",
+          "description": "Inj. Pantoprazole 40mg (IV)",
+          "qty": "8",
+          "rate": "80.00",
+          "amount": "640.00"
+        },
+        {
+          "sr": "15",
+          "description": "Inj. Analgesics (IV)",
+          "qty": "10",
+          "rate": "150.00",
+          "amount": "1500.00"
+        },
+        {
+          "sr": "16",
+          "description": "IV Fluids (RL, DNS)",
+          "qty": "12",
+          "rate": "120.00",
+          "amount": "1440.00"
+        },
+        {
+          "sr": "17",
+          "description": "Oral Antibiotics (Discharge)",
+          "qty": "1",
+          "rate": "850.00",
+          "amount": "850.00"
+        },
+        {
+          "sr": "18",
+          "description": "Surgical Consumables (drapes, gloves, etc)",
+          "qty": "1",
+          "rate": "2800.00",
+          "amount": "2800.00"
+        },
+        {
+          "sr": "19",
+          "description": "Syringes, Cannula, IV Sets",
+          "qty": "1",
+          "rate": "1200.00",
+          "amount": "1200.00"
+        },
+        {
+          "sr": "20",
+          "description": "Surgical Drain & Dressing Material",
+          "qty": "1",
+          "rate": "1800.00",
+          "amount": "1800.00"
+        },
+        {
+          "sr": "21",
+          "description": "Wound Care Supplies",
+          "qty": "1",
+          "rate": "890.00",
+          "amount": "890.00"
+        }
+      ],
+      "subtotal": "14000.00"
+    },
+    {
+      "section": "E",
+      "section_name": "IMPLANTS",
+      "items": [],
+      "subtotal": "0.00"
+    },
+    {
+      "section": "F",
+      "section_name": "INVESTIGATIONS & DIAGNOSTICS",
+      "items": [
+        {
+          "sr": "22",
+          "description": "Complete Blood Count (CBC)",
+          "qty": "2",
+          "rate": "400.00",
+          "amount": "800.00"
+        },
+        {
+          "sr": "23",
+          "description": "USG Abdomen (Emergency)",
+          "qty": "1",
+          "rate": "1500.00",
+          "amount": "1500.00"
+        },
+        {
+          "sr": "24",
+          "description": "Blood Sugar Random",
+          "qty": "1",
+          "rate": "150.00",
+          "amount": "150.00"
+        },
+        {
+          "sr": "25",
+          "description": "Serum Electrolytes",
+          "qty": "1",
+          "rate": "600.00",
+          "amount": "600.00"
+        },
+        {
+          "sr": "26",
+          "description": "Renal Function Tests",
+          "qty": "1",
+          "rate": "700.00",
+          "amount": "700.00"
+        },
+        {
+          "sr": "27",
+          "description": "Follow-up X-ray Abdomen",
+          "qty": "1",
+          "rate": "500.00",
+          "amount": "500.00"
+        },
+        {
+          "sr": "28",
+          "description": "CRP",
+          "qty": "1",
+          "rate": "800.00",
+          "amount": "800.00"
+        },
+        {
+          "sr": "29",
+          "description": "Other Lab Tests",
+          "qty": "1",
+          "rate": "950.00",
+          "amount": "950.00"
+        }
+      ],
+      "subtotal": "6000.00"
+    },
+    {
+      "section": "G",
+      "section_name": "OTHER CHARGES",
+      "items": [
+        {
+          "sr": "30",
+          "description": "Hospital Registration Charges",
+          "qty": "1",
+          "rate": "300.00",
+          "amount": "300.00"
+        },
+        {
+          "sr": "31",
+          "description": "Medical Records Fee",
+          "qty": "1",
+          "rate": "200.00",
+          "amount": "200.00"
+        },
+        {
+          "sr": "32",
+          "description": "Bio-medical Waste Disposal",
+          "qty": "1",
+          "rate": "400.00",
+          "amount": "400.00"
+        },
+        {
+          "sr": "33",
+          "description": "Emergency Room Charges",
+          "qty": "1",
+          "rate": "1500.00",
+          "amount": "1500.00"
+        },
+        {
+          "sr": "34",
+          "description": "Administrative Charges",
+          "qty": "1",
+          "rate": "1100.00",
+          "amount": "1100.00"
+        }
+      ],
+      "subtotal": "3500.00"
+    }
+  ],
+  "billing_summary": {
+    "total_bill_amount": "97500.00",
+    "discount": "1000.00",
+    "gross_bill_amount": "96500.00",
+    "gst_5_percent": "0.00",
+    "net_payable_amount": "96500.00"
+  },
+  "payment_details": {
+    "mode": "Insurance",
+    "amount_paid_by_patient": "11500.00",
+    "amount_claimed_from_tpa": "85000.00",
+    "balance_due": "0.00",
+    "receipt_no": "RC/67890/2025"
+  },
+  "payment_breakdown": {
+    "total_net_bill": "96500.00",
+    "tpa_authorized": "85000.00",
+    "patient_responsibility": "11500.00",
+    "reasons": [
+      "Extended stay (1 additional day due to perforation management): Rs.5,250",
+      "Additional IV antibiotics for perforation: Rs.2,880",
+      "Surgical drain and wound care: Rs.2,690",
+      "Additional investigations (Follow-up USG, CRP): Rs.680"
+    ]
+  },
+  "notes": [
+    "This is a computer-generated bill and requires hospital seal and signature for insurance claims.",
+    "Original bill must be submitted to TPA/Insurance company.",
+    "All amounts are in Indian Rupees (Rs).",
+    "For billing queries, contact within 7 days of discharge."
+  ]
+}

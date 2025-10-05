@@ -1,0 +1,590 @@
+{
+    "metadata": {
+        "procedure_id": "hysterectomy_001",
+        "name": "Hysterectomy",
+        "category": "Gynaecology",
+        "subcategory": "Surgical Gynaecology",
+        "common_synonyms": ["Uterus removal", "Uterine excision", "Uterine surgery", "Womb removal"],
+        "icd_10_codes": ["0UT90ZZ", "0UT94ZZ", "Z90.710"],
+        "typical_age_group": "30-60 years most common, but can occur at any age"
+    },
+
+    "hospitalization": {
+        "standard_type": "varies_by_approach",
+        "typical_duration": {
+            "unit": "days",
+            "by_approach": {
+                "vaginal_laparoscopic_robotic": {
+                    "minimum": 1,
+                    "maximum": 2,
+                    "most_common": 1,
+                    "note": "Often performed as day-care surgery with discharge within 24 hours"
+                },
+                "abdominal": {
+                    "minimum": 2,
+                    "maximum": 5,
+                    "most_common": 3
+                }
+            }
+        },
+        "red_flags": [
+            {
+                "pattern": "Laparoscopic hysterectomy with hospital stay >3 days without complications",
+                "severity": "high",
+                "explanation": "Minimally invasive procedures typically 1-2 day stay",
+                "action": "Query for documented complications or medical justification"
+            },
+            {
+                "pattern": "Extended stay >5 days for any hysterectomy without documented complications",
+                "severity": "critical",
+                "explanation": "Even complex cases typically discharge within 5 days",
+                "action": "Investigate potential billing fraud or quality of care issues"
+            }
+        ]
+    },
+
+    "cost_analysis": {
+        "india_tier1_cities": {
+            "currency": "INR",
+            "overall_range": {
+                "minimum": 25000,
+                "maximum": 250000,
+                "median": 70000
+            },
+            "city_breakdown": {
+                "delhi": {
+                    "vaginal": [30000, 68000],
+                    "abdominal": [41000, 100000],
+                    "laparoscopic": [85000, 175000],
+                    "robotic": [200000, 450000]
+                },
+                "mumbai": {
+                    "vaginal": [39000, 65000],
+                    "abdominal": [41000, 100000],
+                    "laparoscopic": [85000, 175000],
+                    "robotic": [250000, 450000]
+                },
+                "bangalore": {
+                    "vaginal": [25000, 62000],
+                    "abdominal": [35000, 100000],
+                    "laparoscopic": [75000, 250000],
+                    "robotic": [200000, 450000]
+                },
+                "chennai": {
+                    "vaginal": [33000, 60000],
+                    "abdominal": [42000, 100000],
+                    "laparoscopic": [55000, 122000],
+                    "robotic": "not_specified"
+                }
+            },
+            "detailed_breakdown": {
+                "surgeon_fee": [15000, 40000],
+                "anesthesia": [5000, 15000],
+                "hospital_stay": [8000, 20000],
+                "ot_charges": [10000, 25000],
+                "consumables": [5000, 15000],
+                "diagnostics": {
+                    "pelvic_ultrasound": [800, 1500],
+                    "endometrial_biopsy": [5000, 20000],
+                    "basic_lab_tests": [2000, 5000]
+                }
+            }
+        },
+        "government_cghs_rate": {
+            "vaginal_or_abdominal": {
+                "nabh": 19838,
+                "non_nabh": 17250
+            },
+            "laparoscopic": "package_rates_apply",
+            "note": "CGHS laparoscopic rates based on 3-day stay assumption"
+        }
+    },
+
+    "medical_necessity": {
+        "primary_indications": [
+            {
+                "indication": "Malignant and pre-malignant conditions",
+                "clinical_criteria": [
+                    "Confirmed cancers of uterus, cervix, or ovaries",
+                    "Endometrial hyperplasia with atypia",
+                    "High-grade cervical dysplasia (CIN III)"
+                ],
+                "documentation_must_include": [
+                    "Histopathology report confirming malignancy or pre-malignancy",
+                    "Imaging reports (ultrasound/MRI) showing extent",
+                    "Oncology consultation notes"
+                ],
+                "strength": "absolute"
+            },
+            {
+                "indication": "Symptomatic uterine fibroids refractory to conservative treatment",
+                "clinical_criteria": [
+                    "Severe bleeding causing anemia not controlled by medication",
+                    "Pain or pressure symptoms affecting quality of life",
+                    "Large fibroids (uterus ≥14 weeks size) causing complications",
+                    "Failed medical therapy for at least 3-6 months"
+                ],
+                "documentation_must_include": [
+                    "Ultrasound report showing fibroid size and location",
+                    "CBC showing anemia if applicable",
+                    "Documentation of failed conservative treatment (medication records)",
+                    "Patient symptom diary or functional impact assessment"
+                ],
+                "strength": "strong"
+            },
+            {
+                "indication": "Abnormal Uterine Bleeding (AUB) refractory to treatment",
+                "clinical_criteria": [
+                    "Failed medical therapies (hormonal pills, IUDs)",
+                    "Failed minor procedures (endometrial ablation, D&C)",
+                    "Significant impact on quality of life"
+                ],
+                "documentation_must_include": [
+                    "Endometrial biopsy ruling out malignancy",
+                    "Documentation of at least 3-6 months failed medical therapy",
+                    "Records of prior procedures attempted",
+                    "Hemoglobin levels showing anemia if applicable"
+                ],
+                "strength": "strong"
+            },
+            {
+                "indication": "Severe uterine prolapse",
+                "clinical_criteria": [
+                    "Third or fourth degree prolapse",
+                    "Lesser degrees with significant functional impairment",
+                    "Failed conservative management (pessary, pelvic floor exercises)"
+                ],
+                "documentation_must_include": [
+                    "Clinical examination notes documenting prolapse grade",
+                    "Documentation of functional impairment",
+                    "Evidence of failed conservative treatment"
+                ],
+                "strength": "strong"
+            },
+            {
+                "indication": "Severe endometriosis or adenomyosis",
+                "clinical_criteria": [
+                    "Debilitating pain when fertility no longer desired",
+                    "Failed medical management",
+                    "Significant impact on daily activities"
+                ],
+                "documentation_must_include": [
+                    "Imaging (ultrasound/MRI) confirming diagnosis",
+                    "Pain assessment scores",
+                    "Documentation of failed medical therapy",
+                    "Patient counseling on fertility implications"
+                ],
+                "strength": "moderate_to_strong"
+            },
+            {
+                "indication": "Acute obstetric emergencies",
+                "clinical_criteria": [
+                    "Intractable postpartum hemorrhage",
+                    "Uterine rupture",
+                    "Life-threatening complications"
+                ],
+                "documentation_must_include": [
+                    "Emergency operative notes",
+                    "Blood loss documentation",
+                    "Failed conservative measures documented"
+                ],
+                "strength": "absolute"
+            }
+        ],
+
+        "insufficient_justifications": [
+            {
+                "scenario": "Simple vaginal discharge (leucorrhoea)",
+                "typical_presentation": "White discharge without confirmed pathology",
+                "why_inadequate": "Not a surgical indication; treatable with medication",
+                "insurer_likely_response": "Reject as not medically necessary",
+                "fwa_severity": "high"
+            },
+            {
+                "scenario": "Non-specific chronic pelvic pain",
+                "typical_presentation": "Undiagnosed pelvic pain without confirmed pathology",
+                "why_inadequate": "Requires thorough investigation; hysterectomy not first-line",
+                "insurer_likely_response": "Reject; request proper diagnostic workup",
+                "fwa_severity": "high"
+            },
+            {
+                "scenario": "Small asymptomatic fibroids",
+                "typical_presentation": "Fibroids <5cm, no symptoms",
+                "why_inadequate": "Does not meet threshold for surgical intervention",
+                "insurer_likely_response": "Reject; recommend monitoring",
+                "fwa_severity": "moderate"
+            },
+            {
+                "scenario": "Minor uterine prolapse",
+                "typical_presentation": "First or second degree prolapse without functional impact",
+                "why_inadequate": "Conservative management should be tried first",
+                "insurer_likely_response": "Reject; request evidence of failed conservative therapy",
+                "fwa_severity": "moderate"
+            },
+            {
+                "scenario": "Primary method of contraception",
+                "typical_presentation": "Request for hysterectomy solely for sterilization",
+                "why_inadequate": "Less invasive contraceptive methods available",
+                "insurer_likely_response": "Reject; not medically necessary",
+                "fwa_severity": "high"
+            }
+        ],
+
+        "documentation_checklist": {
+            "essential_elements": [
+                {
+                    "element": "Patient age and reproductive status",
+                    "format": "Age in years, menopausal status, parity",
+                    "example": "42 years, pre-menopausal, P2L2",
+                    "weak_if": "Age not documented or reproductive counseling missing"
+                },
+                {
+                    "element": "Second specialist opinion (for age <40, benign conditions)",
+                    "format": "Consultation note from another qualified gynaecologist",
+                    "example": "Reviewed by Dr. X on DD/MM/YYYY; concurs with hysterectomy indication",
+                    "weak_if": "Missing for patient <40 with benign condition - MANDATORY per ICMR/Supreme Court",
+                    "regulatory_requirement": "Supreme Court directive and ICMR guidelines"
+                },
+                {
+                    "element": "Conservative treatment documentation",
+                    "format": "Medication prescriptions, duration, response for minimum 3-6 months",
+                    "example": "Trial of tranexamic acid 500mg TDS for 6 months - inadequate response; Trial of Mirena IUD for 4 months - failed",
+                    "weak_if": "No evidence of attempting non-surgical options for benign conditions"
+                },
+                {
+                    "element": "Confirmatory imaging",
+                    "format": "Ultrasound report with specific measurements and findings",
+                    "example": "TVS showing bulky uterus 14x10x12cm with multiple intramural fibroids, largest 8cm",
+                    "weak_if": "Vague description or imaging absent"
+                },
+                {
+                    "element": "Histopathology correlation",
+                    "format": "Pre-op endometrial biopsy for AUB; Post-op HPE report",
+                    "example": "Pre-op: Proliferative endometrium, no malignancy; Post-op: Leiomyoma uteri, chronic endometritis",
+                    "weak_if": "Missing endometrial biopsy for AUB cases; Post-op HPE showing normal tissue contradicting pre-op diagnosis"
+                }
+            ]
+        }
+    },
+
+    "required_diagnostics": {
+        "mandatory_preoperative": [
+            {
+                "test": "Complete Blood Count (CBC)",
+                "threshold": "Hemoglobin <10 g/dL indicates anemia requiring treatment",
+                "documentation": "Absolute Hb value, platelet count",
+                "cost": 500,
+                "red_flag_if_missing": "Cannot assess anemia severity or fitness for surgery"
+            },
+            {
+                "test": "Pelvic Ultrasound (Transabdominal/Transvaginal)",
+                "threshold": "Must document uterine size, endometrial thickness, adnexal masses",
+                "documentation": "Detailed report with measurements in cm, pathology description",
+                "cost": [800, 1500],
+                "red_flag_if_missing": "Cannot confirm diagnosis or plan surgical approach"
+            },
+            {
+                "test": "Pap Smear",
+                "threshold": "Must be negative or addressed if abnormal",
+                "documentation": "Cervical cytology report within last 12 months",
+                "cost": [500, 1000],
+                "red_flag_if_missing": "Risk of missing cervical pathology"
+            },
+            {
+                "test": "Endometrial Biopsy (for AUB cases)",
+                "threshold": "Mandatory for abnormal bleeding, especially if age >40 or thickened endometrium",
+                "documentation": "Histopathology report ruling out hyperplasia/malignancy",
+                "cost": [5000, 20000],
+                "red_flag_if_missing": "HIGH RISK - Cannot rule out endometrial cancer in AUB cases",
+                "when_mandatory": "All AUB cases, postmenopausal bleeding, endometrial thickness >12mm"
+            },
+            {
+                "test": "Blood grouping and typing",
+                "threshold": "Essential for blood bank preparation",
+                "documentation": "ABO and Rh type",
+                "cost": 300,
+                "red_flag_if_missing": "Safety concern if transfusion needed"
+            },
+            {
+                "test": "Renal and Liver Function Tests",
+                "threshold": "Assess fitness for anesthesia",
+                "documentation": "Creatinine, urea, liver enzymes",
+                "cost": [800, 1500],
+                "red_flag_if_missing": "Anesthesia safety concern"
+            },
+            {
+                "test": "ECG and Chest X-ray",
+                "threshold": "Mandatory for age >40 or with co-morbidities",
+                "documentation": "Reports confirming fitness",
+                "cost": [500, 1000],
+                "red_flag_if_missing": "Cannot assess cardiac/pulmonary fitness"
+            },
+            {
+                "test": "Pregnancy test (for reproductive age)",
+                "threshold": "Must be negative",
+                "documentation": "Serum/urine β-hCG",
+                "cost": [200, 500],
+                "red_flag_if_missing": "CRITICAL - Risk of operating on pregnant patient"
+            }
+        ],
+
+        "optional_situational": [
+            {
+                "test": "Hysteroscopy",
+                "when_indicated": "Suspected submucous fibroids, polyps, or intrauterine pathology",
+                "cost": [5000, 15000],
+                "fwa_flag_if": "Performed routinely without clear indication"
+            },
+            {
+                "test": "MRI Pelvis",
+                "when_indicated": "Complex cases, large fibroids, suspected deep infiltrating endometriosis, pre-operative mapping",
+                "cost": [8000, 20000],
+                "fwa_flag_if": "Routine use when ultrasound adequate"
+            },
+            {
+                "test": "Thyroid function tests",
+                "when_indicated": "AUB cases with suspected thyroid dysfunction",
+                "cost": [500, 1000],
+                "fwa_flag_if": "Routine use without clinical suspicion"
+            }
+        ],
+
+        "unnecessary_tests": [
+            {
+                "test": "Tumor markers (CA-125)",
+                "why_unnecessary": "Not diagnostic for benign conditions; may be falsely elevated",
+                "exception": "Only if malignancy strongly suspected",
+                "fwa_severity": "moderate"
+            },
+            {
+                "test": "CT scan pelvis",
+                "why_unnecessary": "MRI or ultrasound preferred for gynae pathology",
+                "exception": "Suspected malignancy with staging requirements",
+                "fwa_severity": "moderate"
+            }
+        ]
+    },
+
+    "fraud_waste_abuse_patterns": {
+        "overtreatment_schemes": [
+            {
+                "pattern": "Unnecessary hysterectomy for weak indications",
+                "how_detected": "Primary diagnosis does not warrant hysterectomy",
+                "red_flag_indicators": [
+                    "Diagnosis: Leucorrhoea/white discharge as primary indication",
+                    "Diagnosis: Non-specific pelvic pain without pathology",
+                    "Small fibroids <5cm without symptoms",
+                    "No documentation of conservative treatment trial",
+                    "Patient age <35 without second opinion",
+                    "Post-op histopathology shows normal/unremarkable tissue"
+                ],
+                "typical_scenario": "Young woman in rural area with minor complaint, fear tactics used, immediate surgery without proper workup",
+                "action": "HIGH RISK FWA FLAG - Deny claim; report to authorities",
+                "prevalence": "Documented epidemic in parts of India per research"
+            },
+            {
+                "pattern": "Diagnosis-Treatment Mismatch",
+                "how_detected": "Post-operative histopathology contradicts pre-operative diagnosis",
+                "red_flag_indicators": [
+                    "Pre-op diagnosis: Severe fibroids; Post-op HPE: Normal uterus or minimal pathology",
+                    "Pre-op diagnosis: Endometrial hyperplasia; Post-op HPE: Normal endometrium",
+                    "Specimen discarded/not sent for histopathology (to avoid verification)"
+                ],
+                "typical_overbilling": "Entire procedure unnecessary - 25,000 to 250,000 INR",
+                "action": "HIGH RISK FWA FLAG - Full claim denial; fraud investigation"
+            }
+        ],
+
+        "billing_fraud_schemes": [
+            {
+                "pattern": "Surgical approach upcoding",
+                "how_detected": "Cross-check operative notes with billed procedure",
+                "red_flag_indicators": [
+                    "Billing for laparoscopic but operative notes describe abdominal approach",
+                    "Billing for robotic but no documentation of robotic system use",
+                    "Hospital stay >3 days inconsistent with claimed laparoscopic approach"
+                ],
+                "typical_overbilling": "40,000-85,000 INR (difference between approaches)",
+                "action": "Downgrade to appropriate procedure code; recover overpayment"
+            },
+            {
+                "pattern": "Unbundling of included procedures",
+                "how_detected": "Separate charges for procedures included in hysterectomy package",
+                "red_flag_indicators": [
+                    "Separate billing for bilateral salpingo-oophorectomy without separate indication",
+                    "Separate billing for incidental appendectomy without pathology",
+                    "Unbundling of standard surgical supplies"
+                ],
+                "typical_overbilling": "15,000-50,000 INR",
+                "action": "Deny unbundled charges; approve only package rate"
+            },
+            {
+                "pattern": "Age-based exploitation without safeguards",
+                "how_detected": "Patient <40 years, benign condition, missing second opinion",
+                "red_flag_indicators": [
+                    "Patient age <40 years",
+                    "Benign indication",
+                    "No documented second specialist opinion (MANDATORY per ICMR/SC)",
+                    "Minimal diagnostic workup"
+                ],
+                "regulatory_violation": "Supreme Court directive and ICMR guidelines",
+                "action": "HIGH RISK FLAG - Deny claim; require second opinion documentation; report violation"
+            },
+            {
+                "pattern": "Technology premium disputes",
+                "how_detected": "Dispute over robotic/advanced technology charges",
+                "red_flag_indicators": [
+                    "Entire surgical bill classified as 'modern treatment' requiring co-pay",
+                    "Robotic equipment charges separated and inflated",
+                    "No clear documentation of technology necessity"
+                ],
+                "typical_overbilling": "50,000-150,000 INR in disputed charges",
+                "action": "Clarify policy on technology premiums; audit equipment charges"
+            }
+        ],
+
+        "consumables_abuse": [
+            {
+                "pattern": "Inflated medication and supply costs",
+                "how_detected": "Compare billed items with procedure requirements",
+                "red_flag_indicators": [
+                    "High-cost branded drugs when generics available",
+                    "Quantities exceeding procedure requirements",
+                    "Items billed but not documented in nursing/operative notes"
+                ],
+                "typical_overbilling": "10,000-30,000 INR",
+                "action": "Deny unsubstantiated consumables; approve only documented items at reasonable rates"
+            }
+        ]
+    },
+
+    "common_complications": {
+        "intraoperative": [
+            {
+                "complication": "Hemorrhage",
+                "incidence": "1-6% requiring transfusion",
+                "management": "Blood transfusion, hemostatic measures",
+                "cost_impact": "₹5,000-20,000",
+                "legitimate": true
+            },
+            {
+                "complication": "Bladder/ureter injury",
+                "incidence": "1-2% in major gynae surgeries; 75% occur during hysterectomy",
+                "management": "Immediate repair, catheterization",
+                "cost_impact": "₹20,000-80,000",
+                "legitimate": true,
+                "note": "Higher risk with previous surgery, large fibroids, endometriosis"
+            },
+            {
+                "complication": "Bowel injury",
+                "incidence": "0.1-1%",
+                "management": "Surgical repair, possible colostomy",
+                "cost_impact": "₹50,000-200,000",
+                "legitimate": true,
+                "note": "Rare but serious; higher risk in laparoscopic approach"
+            }
+        ],
+
+        "postoperative": [
+            {
+                "complication": "Infection (wound, vaginal cuff, UTI)",
+                "incidence": "9-13% depending on approach",
+                "management": "Antibiotics, wound care, possible drainage",
+                "cost_impact": "₹5,000-25,000",
+                "legitimate": true
+            },
+            {
+                "complication": "Vaginal cuff dehiscence",
+                "incidence": "0.14-4.1% (higher in laparoscopic)",
+                "management": "May require surgical repair",
+                "cost_impact": "₹30,000-100,000",
+                "legitimate": true
+            },
+            {
+                "complication": "Venous thromboembolism (DVT/PE)",
+                "incidence": "~1% clinical diagnosis",
+                "management": "Anticoagulation, possible IVC filter",
+                "cost_impact": "₹25,000-150,000",
+                "legitimate": true
+            }
+        ]
+    },
+
+    "insurer_specific_considerations": {
+        "waiting_periods": {
+            "benign_conditions": "12-24 months specific disease waiting period",
+            "pre_existing_conditions": "24-48 months",
+            "malignancy": "Usually waived - covered from day 1 or after initial waiting period",
+            "note": "Waiting period one of most common rejection reasons"
+        },
+
+        "pre_authorization": {
+            "elective_procedures": "Mandatory for cashless treatment",
+            "required_documents": [
+                "Detailed clinical history",
+                "Diagnosis confirmation (imaging, biopsy reports)",
+                "Conservative treatment documentation",
+                "Second opinion (if age <40)",
+                "Cost estimate"
+            ],
+            "emergency_procedures": "Pre-auth within 24-48 hours; intimation mandatory"
+        },
+
+        "common_rejection_reasons": [
+            {
+                "reason": "Waiting period violation",
+                "frequency": "Most common",
+                "prevention": "Verify policy tenure and waiting period completion"
+            },
+            {
+                "reason": "Lack of medical necessity",
+                "frequency": "Very common",
+                "prevention": "Ensure proper documentation of failed conservative therapy, severity of condition"
+            },
+            {
+                "reason": "Non-disclosure of pre-existing condition",
+                "frequency": "Common",
+                "prevention": "Full disclosure at policy purchase; document onset timing"
+            },
+            {
+                "reason": "Incomplete documentation",
+                "frequency": "Common",
+                "prevention": "Submit all reports, legible notes, detailed discharge summary"
+            },
+            {
+                "reason": "Weak indication (leucorrhoea, minor prolapse, etc.)",
+                "frequency": "Increasing awareness",
+                "prevention": "Avoid surgery for non-standard indications; ensure proper clinical justification"
+            },
+            {
+                "reason": "Missing second opinion for age <40",
+                "frequency": "Regulatory compliance issue",
+                "prevention": "MANDATORY second opinion documentation for women <40 with benign conditions"
+            }
+        ],
+
+        "special_alerts": {
+            "rural_vulnerable_populations": "High-risk for unnecessary procedures; extra scrutiny needed",
+            "insurance_scheme_patients": "Documented pattern of overtreatment; verify medical necessity rigorously",
+            "pattern_providers": "Flag hospitals/doctors with unusually high hysterectomy rates for young women"
+        }
+    },
+
+    "contextual_notes_for_llm": {
+        "medical_reasoning_guidance": "Hysterectomy is IRREVERSIBLE. For benign conditions in pre-menopausal women, conservative treatment trial is mandatory unless life-threatening emergency. The absence of conservative treatment documentation is a major red flag. Age <40 REQUIRES second opinion per ICMR/Supreme Court - this is non-negotiable.",
+
+        "cost_reasoning_guidance": "Wide cost variation based on surgical approach. Vaginal (₹30-68k) < Abdominal (₹41-100k) < Laparoscopic (₹70-250k) < Robotic (₹200-450k). Technology premium creates financial incentive for unnecessary advanced procedures. FOGSI guidelines recommend vaginal approach first when feasible.",
+
+        "common_pitfalls": [
+            "Do NOT approve claims where primary diagnosis is leucorrhoea, white discharge, or non-specific pain without confirmed pathology - these are classic FWA patterns in India",
+            "Post-op histopathology showing NORMAL tissue when pre-op diagnosis was pathological is DEFINITIVE fraud - entire claim should be denied",
+            "Missing second opinion for age <40 with benign condition violates Supreme Court directive - claim should be flagged even if otherwise appropriate",
+            "Extended hospital stay (>3 days) for laparoscopic approach without complications indicates either: (a) procedure was actually open, or (b) billing fraud",
+            "The absence of endometrial biopsy in AUB cases is critical gap - cannot rule out malignancy; claim should be questioned"
+        ],
+
+        "regional_context": "India faces epidemic of unnecessary hysterectomies, particularly targeting rural, illiterate women. Insurance schemes have paradoxically increased this problem. Pattern involves: minimal diagnostic workup → fear tactics → immediate surgery → normal pathology or specimen discarded. AI system must be highly sensitive to weak indications and missing safeguards.",
+
+        "regulatory_framework": "Supreme Court mandated second opinion for women <40. ICMR guidelines specify clear indications. FOGSI recommends vaginal approach first-line. These are not just guidelines but legal/regulatory requirements in India."
+    }
+}

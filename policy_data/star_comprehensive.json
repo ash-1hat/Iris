@@ -1,0 +1,170 @@
+{
+    "policy_id": "star_comprehensive_v23",
+    "insurer": "Star Health and Allied Insurance",
+    "policy_name": "Star Comprehensive Insurance Policy",
+    "uin": "SHAHLIP25037V082425",
+    
+    "waiting_periods": {
+      "initial_days": 30,
+      "pre_existing_disease_months": 36,
+      "specific_conditions": {
+        "cataract_surgery": 24,
+        "joint_replacement": 24,
+        "hernia": 24,
+        "ent_diseases": 24,
+        "hepato_pancreato_biliary_diseases": 24,
+        "kidney_genitourinary_calculi": 24,
+        "cervix_uterus_diseases": 24,
+        "prostate_urinary_diseases": 24,
+        "fistula_hemorrhoids": 24,
+        "varicose_veins": 24,
+        "hysterectomy": 24,
+        "gall_bladder_diseases": 24,
+        "pancreatitis": 24,
+        "bariatric_surgery": 36
+      },
+      "delivery_months": 24
+    },
+    
+    "exclusions": [
+      "Change of gender treatments",
+      "Obesity treatment (not meeting criteria)",
+      "Hazardous or adventure sports",
+      "Unproven treatments",
+      "Infertility and sterility treatment",
+      "War and nuclear weapons",
+      "Circumcision (unless medically necessary)",
+      "Congenital external conditions",
+      "Intentional self-injury",
+      "Alcoholism/drug abuse treatment",
+      "Refractive error < 7.5 dioptres",
+      "Investigation and evaluation only",
+      "Rest cure, rehabilitation",
+      "Cosmetic surgery (unless post-accident/burn/cancer)",
+      "Spectacles, contact lenses, hearing aids",
+      "Vaccination (except post-bite)"
+    ],
+    
+    "coverage_by_sum_insured": {
+      "500000": {
+        "room_rent_max_per_day": 5000,
+        "icu_rent_max_per_day": 10000,
+        "delivery_normal": 15000,
+        "delivery_caesarean": 20000,
+        "newborn_cover": 100000,
+        "health_checkup_annual": 2000,
+        "ayush_treatment": 15000,
+        "road_ambulance": 500000,
+        "organ_donor": 500000,
+        "domiciliary_hospitalization": 500000,
+        "modern_treatments": {
+          "deep_brain_stimulation": 250000,
+          "oral_chemotherapy": 125000,
+          "immunotherapy_mab": 250000,
+          "robotic_surgeries": 250000,
+          "stereotactic_radiosurgery": 200000
+        }
+      },
+      "1000000": {
+        "room_rent_max_per_day": 10000,
+        "icu_rent_max_per_day": 20000,
+        "delivery_normal": 30000,
+        "delivery_caesarean": 50000,
+        "newborn_cover": 100000,
+        "health_checkup_annual": 3000,
+        "ayush_treatment": 15000,
+        "road_ambulance": 1000000,
+        "organ_donor": 1000000,
+        "domiciliary_hospitalization": 1000000,
+        "modern_treatments": {
+          "deep_brain_stimulation": 300000,
+          "oral_chemotherapy": 200000,
+          "immunotherapy_mab": 400000,
+          "robotic_surgeries": 300000,
+          "stereotactic_radiosurgery": 250000
+        }
+      },
+      "2000000": {
+        "room_rent_max_per_day": 20000,
+        "icu_rent_max_per_day": 40000,
+        "delivery_normal": 30000,
+        "delivery_caesarean": 50000,
+        "newborn_cover": 100000,
+        "health_checkup_annual": 4500,
+        "ayush_treatment": 20000,
+        "road_ambulance": 2000000,
+        "organ_donor": 2000000,
+        "domiciliary_hospitalization": 2000000,
+        "modern_treatments": {
+          "deep_brain_stimulation": 450000,
+          "oral_chemotherapy": 275000,
+          "immunotherapy_mab": 550000,
+          "robotic_surgeries": 450000,
+          "stereotactic_radiosurgery": 275000
+        }
+      },
+      "5000000": {
+        "room_rent_max_per_day": 50000,
+        "icu_rent_max_per_day": 100000,
+        "delivery_normal": 50000,
+        "delivery_caesarean": 100000,
+        "newborn_cover": 200000,
+        "health_checkup_annual": 5000,
+        "ayush_treatment": 30000,
+        "road_ambulance": 5000000,
+        "organ_donor": 5000000,
+        "domiciliary_hospitalization": 5000000,
+        "modern_treatments": {
+          "deep_brain_stimulation": 600000,
+          "oral_chemotherapy": 400000,
+          "immunotherapy_mab": 750000,
+          "robotic_surgeries": 600000,
+          "stereotactic_radiosurgery": 350000
+        }
+      }
+    },
+    
+    "room_rent": {
+      "type": "single_private_ac",
+      "sublimit_applicable": true,
+      "proportionate_deduction": true,
+      "deduction_applies_to": [
+        "room_charges",
+        "nursing_charges",
+        "surgeon_fees",
+        "anesthetist_fees",
+        "consultant_fees"
+      ],
+      "deduction_not_applicable_to": [
+        "pharmacy_consumables",
+        "implants_medical_devices",
+        "diagnostics",
+        "icu_charges"
+      ]
+    },
+    
+    "co_payment": {
+      "applicable": true,
+      "mandatory_percent": 10,
+      "condition": "age_at_entry >= 61",
+      "voluntary_options": []
+    },
+    
+    "other_coverages": {
+      "pre_hospitalization_days": 60,
+      "post_hospitalization_days": 90,
+      "air_ambulance_max": 500000
+    },
+    
+    "special_features": {
+      "automatic_restoration": {
+        "applicable": true,
+        "percentage": 100,
+        "frequency": "once_per_policy_period"
+      },
+      "cumulative_bonus": {
+        "rate_percent": 100,
+        "max_percent": 100
+      }
+    }
+  }

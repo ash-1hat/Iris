@@ -1,0 +1,79 @@
+{
+  "test_name": "Test Case 3: Gallbladder Removal - Minor Infraction",
+  "expected_score": "70-75",
+  "expected_status": "Needs Review (Yellow)",
+  "main_issue": "Weak medical justification - missing specific details",
+  "policy_details": {
+    "insurance_company": "HDFC ERGO General Insurance",
+    "policy_type": "My Health Care Plan-1",
+    "policy_number": "HDFC/OPT/2022/123456",
+    "sum_insured": 1000000,
+    "policy_start_date": "01/01/2022",
+    "planned_admission_date": "10/10/2025",
+    "procedure": "Gallbladder Removal (Cholecystectomy)"
+  },
+  "patient_details": {
+    "patient_name": "Priya Sharma",
+    "gender": "Female",
+    "age": "42 Years",
+    "date_of_birth": "18/05/1983",
+    "contact_number": "9845123456",
+    "address": "67, Indiranagar, Bangalore - 560038",
+    "tpa_card_id": "HDFC/KA/987654"
+  },
+  "treating_doctor": {
+    "doctor_name": "Dr. Rajesh Malhotra",
+    "contact_number": "9876234567",
+    "qualification": "MBBS, MS (General Surgery), FMAS",
+    "registration_number": "KMC/45678/2008"
+  },
+  "illness_details": {
+    "presenting_complaint": "Patient has gallstones and needs surgery. She experiences abdominal pain and discomfort.",
+    "duration": "Several months",
+    "first_consultation_date": "20/09/2025",
+    "provisional_diagnosis": "Symptomatic Cholelithiasis",
+    "icd_10_code": "K80.2"
+  },
+  "clinical_findings": {
+    "relevant_findings": "USG Abdomen shows multiple gallstones. Patient has pain in right upper abdomen. Lab tests show normal liver function.",
+    "past_history": "Patient has been experiencing symptoms for some time."
+  },
+  "past_medical_history": "None",
+  "investigations": {
+    "diagnostic_tests": "1. USG Abdomen: Shows gallstones\n2. Liver Function Tests: Normal\n3. Complete Blood Count: Normal",
+    "medical_management": "Patient was given pain medications but symptoms persist.",
+    "proposed_treatment": "Surgical Management"
+  },
+  "surgical_details": {
+    "surgery_name": "Laparoscopic Cholecystectomy",
+    "icd_10_pcs_code": "0FT44ZZ",
+    "route_of_drug": "Intravenous + Oral",
+    "other_details": "Standard 4-port laparoscopic cholecystectomy planned."
+  },
+  "accident_details": "Not Applicable",
+  "maternity_details": "Not Applicable",
+  "hospitalization_details": {
+    "emergency_or_planned": "Planned",
+    "admission_date": "10/10/2025",
+    "admission_time": "09:00 AM",
+    "expected_days": "3 Days",
+    "icu_days": "0 Days",
+    "room_type": "Single Private AC"
+  },
+  "cost_breakdown": {
+    "room_nursing_diet": 18000,
+    "investigation_diagnostic": 6000,
+    "icu_charges": 0,
+    "ot_charges": 25000,
+    "professional_fees": 35000,
+    "medicines_consumables_implants": 15000,
+    "other_expenses": 11000,
+    "package_charges": 0,
+    "total_cost": 110000
+  },
+  "declaration": {
+    "doctor_name": "Dr. Rajesh Malhotra",
+    "date": "25/09/2025"
+  },
+  "notes": "Weak medical justification: Generic language like 'patient has gallstones and needs surgery', missing specific symptom duration (says 'several months' instead of exact duration), no detailed USG findings (size, number, location of stones), missing conservative management trial details (what medications, for how long). Should trigger Agent 3 WARNING for insufficient medical justification."
+}

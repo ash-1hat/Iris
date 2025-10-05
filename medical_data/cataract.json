@@ -1,0 +1,383 @@
+{
+    "metadata": {
+      "procedure_id": "cataract_phaco_001",
+      "name": "Cataract Surgery (Phacoemulsification with IOL)",
+      "category": "Ophthalmology",
+      "subcategory": "Anterior Segment Surgery",
+      "common_synonyms": ["Phaco", "Lens replacement", "IOL implantation", "MICS", "FLACS", "Robotic Cataract Surgery"],
+      "icd_10_codes": ["H25", "H25.0", "H25.1", "H25.2", "H25.9", "H26", "H26.0", "H26.1", "H26.9", "Z98.4", "Z96.1"],
+      "typical_age_group": "50+ years, but can occur at any age"
+    },
+
+    "hospitalization": {
+      "standard_type": "day_care",
+      "typical_duration": {
+        "unit": "hours",
+        "minimum": 4,
+        "maximum": 8,
+        "most_common": 6
+      },
+      "overnight_justifications": {
+        "valid_reasons": [
+          {
+            "reason": "Bilateral surgery in single sitting",
+            "clinical_rationale": "Requires prolonged monitoring for bilateral vision loss risk",
+            "expected_additional_duration": "12-24 hours"
+          },
+          {
+            "reason": "Intraoperative complications",
+            "examples": ["Posterior capsule rupture", "Vitreous loss", "Nucleus drop"],
+            "clinical_rationale": "Requires monitoring for raised IOP, inflammation"
+          },
+          {
+            "reason": "Severe comorbidities requiring extended observation",
+            "examples": ["Uncontrolled diabetes (HbA1c > 9)", "Unstable hypertension", "Recent MI/stroke"],
+            "clinical_rationale": "Perioperative risk requires extended observation"
+          },
+          {
+            "reason": "Social/geographical factors",
+            "examples": ["Patient from remote area >100km", "Lives alone with no caregiver", "Transportation difficulties"],
+            "clinical_rationale": "Safety concern for immediate post-op complications",
+            "note": "Should be documented explicitly"
+          }
+        ],
+        "red_flags": [
+          {
+            "pattern": "Routine unilateral cataract with overnight admission",
+            "severity": "high",
+            "explanation": "Standard phaco is day-care procedure; overnight not medically justified",
+            "action": "Query reason for admission >12 hours"
+          },
+          {
+            "pattern": "Admission >24 hours without documented complication",
+            "severity": "critical",
+            "explanation": "Even complex cases typically discharge within 24 hours",
+            "action": "Investigate potential billing fraud"
+          }
+        ]
+      },
+      "icu_requirement": {
+        "standard": "not_required",
+        "exceptional_scenarios": ["Severe systemic decompensation (cardiac/respiratory)", "Anaphylactic reaction to medications"],
+        "red_flag_if": "ICU admission for routine cataract surgery"
+      }
+    },
+
+    "cost_analysis": {
+      "india_tier1_cities": {
+        "currency": "INR",
+        "overall_range": {
+          "minimum": 15000,
+          "maximum": 150000,
+          "median": 55000,
+          "note": "Cost highly variable based on IOL type"
+        },
+        "detailed_breakdown": {
+          "surgeon_fee": {
+            "range": [10000, 30000],
+            "factors": ["Surgeon experience", "Hospital tier", "City"]
+          },
+          "ot_charges": {
+            "range": [5000, 25000],
+            "includes": ["OT setup", "Equipment", "Support staff"]
+          },
+          "anesthesia": {
+            "range": [3000, 10000],
+            "types": {
+              "topical": 8000,
+              "peribulbar_block": 8000,
+              "general": 8000
+            },
+            "note": "Topical/peribulbar is standard; GA only if patient uncooperative"
+          },
+          "iol_lens": {
+            "standard_monofocal": [15000, 40000],
+            "premium_options": {
+              "toric_astigmatism": [15000, 25000],
+              "multifocal": [25000, 40000],
+              "trifocal": [40000, 60000]
+            },
+            "justification_required_for_premium": [
+              "Toric: Pre-existing astigmatism >1.5D, documented keratometry readings",
+              "Multifocal: Patient occupation requires varied focal distances, realistic expectations counseled",
+              "Note: Premium IOL is NOT medically necessary, patient choice/preference"
+            ]
+          },
+          "pre_operative_investigations": {
+            "range": [2000, 5000],
+            "mandatory_tests": ["Visual acuity", "IOP", "Slit lamp", "A-scan biometry"],
+            "cost_breakdown": {
+              "basic_examination": 1000,
+              "biometry_iol_calculation": 1500,
+              "oct_if_indicated": 2500
+            }
+          },
+          "medications": {
+            "range": [1000, 3000],
+            "includes": ["Antibiotic drops", "Steroid drops", "Protective eyewear"],
+            "duration": "4-6 weeks post-op"
+          }
+        },
+        "cost_outlier_thresholds": {
+          "concerning_if_above": 120000,
+          "investigate_if_above": 150000,
+          "critical_fraud_alert_if_above": 200000,
+          "common_inflation_tactics": [
+            "Premium IOL charged without documented patient consent/medical need",
+            "Bilateral surgery charged as two separate procedures at full cost each",
+            "Unnecessary pre-op tests (OCT, Pachymetry, Specular microscopy for routine cataract)",
+            "Overnight charges for day-care procedure",
+            "Branded medications at 3-4x generic cost"
+          ]
+        }
+      },
+      "government_cghs_rates": {
+        "reference": 6613,
+        "note": "Related ophthalmic procedures like corneal grafting baseline; no direct CGHS rate for phaco"
+      }
+    },
+
+    "medical_necessity": {
+      "primary_indications": [
+        {
+          "indication": "Visually significant cataract per VISION 2020 guidelines",
+          "clinical_criteria": [
+            "Uncorrected Snellen Visual Acuity (UCVA) of 6/18 or worse",
+            "Patient reports difficulty in activities of daily living",
+            "Slit lamp confirms cataract as primary cause of vision loss"
+          ],
+          "documentation_must_include": [
+            "UCVA measurements for both eyes (Snellen notation)",
+            "Specific activities affected (reading, driving, recognizing faces, occupational tasks)",
+            "Slit lamp findings with cataract description"
+          ],
+          "strength": "strong"
+        },
+        {
+          "indication": "Functional disability with better VA (>6/18)",
+          "clinical_criteria": [
+            "UCVA better than 6/18 but with disabling glare",
+            "Central posterior subcapsular cataract impairing vision beyond acuity chart",
+            "Documented significant functional impact"
+          ],
+          "documentation_must_include": [
+            "VA readings showing better than 6/18",
+            "Specific glare/functional complaints",
+            "PSC cataract documented on slit lamp"
+          ],
+          "strength": "moderate"
+        },
+        {
+          "indication": "Cataract interfering with treatment of other eye conditions",
+          "clinical_criteria": [
+            "Known or suspected retinal pathology (diabetic retinopathy, AMD)",
+            "Media opacity preventing adequate fundus visualization",
+            "Retina specialist recommendation"
+          ],
+          "documentation_must_include": [
+            "Retinal condition diagnosis",
+            "Retina specialist notes recommending cataract removal",
+            "Fundus imaging attempts showing inadequate view"
+          ],
+          "strength": "strong",
+          "note": "Valid even if VA > 6/18"
+        }
+      ],
+
+      "insufficient_justifications": [
+        {
+          "scenario": "Patient desires surgery without objective visual impairment",
+          "typical_presentation": "UCVA 6/9 or better, minimal symptoms, wants 'better' vision",
+          "why_inadequate": "Cataract surgery carries risks; not justified for mild lens changes without functional impact",
+          "insurer_likely_response": "Reject as not medically necessary; patient can defer until vision worsens"
+        },
+        {
+          "scenario": "Age-related lens changes without significant opacity",
+          "typical_presentation": "Early nuclear sclerosis, UCVA 6/6-6/9, 'feels vision not sharp'",
+          "why_inadequate": "Normal aging changes; doesn't meet threshold for surgical intervention",
+          "insurer_likely_response": "Reject; recommend conservative management and monitoring"
+        }
+      ],
+
+      "documentation_checklist": {
+        "essential_elements": [
+          {
+            "element": "Pre-operative visual acuity",
+            "format": "Snellen notation for both eyes (distance and near), with best correction",
+            "example": "RE: 6/36 (BCVA 6/24 with +1.0DS), LE: 6/18",
+            "weak_if": "Vague terms like 'poor vision' or 'blurred vision' without measurements"
+          },
+          {
+            "element": "Functional impact description",
+            "format": "Specific activities affected with severity",
+            "example": "Unable to read newspaper even with glasses; difficulty recognizing faces at 2 meters; stopped driving at night due to glare",
+            "weak_if": "Generic 'vision affecting daily activities' without specifics"
+          },
+          {
+            "element": "A-scan biometry report",
+            "format": "IOL power calculation with axial length and K readings",
+            "example": "Axial length 23.5mm, K1: 43.5D, K2: 44.0D, Recommended IOL: +21.0D",
+            "weak_if": "Missing entirely - impossible to select correct IOL without biometry"
+          }
+        ]
+      }
+    },
+
+    "required_diagnostics": {
+      "mandatory_preoperative": [
+        {
+          "test": "Slit Lamp Biomicroscopy",
+          "method": "Systematic examination of anterior segment",
+          "threshold": "Must document cataract type, density, location",
+          "documentation": "Descriptive findings of lens opacity",
+          "cost": 500,
+          "red_flag_if_missing": "Cannot confirm cataract diagnosis and severity"
+        },
+        {
+          "test": "Intraocular Pressure (IOP)",
+          "method": "Tonometry",
+          "threshold": "Normal: 10-21 mmHg",
+          "documentation": "IOP value in mmHg for both eyes",
+          "cost": 300,
+          "red_flag_if_missing": "Risk of missing glaucoma or angle closure"
+        },
+        {
+          "test": "A-scan Biometry (IOL Power Calculation)",
+          "method": "Optical biometry or A-scan ultrasound",
+          "threshold": "Required for all phaco cases to determine IOL power",
+          "documentation": "Axial length, K readings, IOL power calculation",
+          "cost": 1500,
+          "red_flag_if_missing": "Cannot implant appropriate IOL power; surgical standard of care violation"
+        }
+      ],
+
+      "optional_situational": [
+        {
+          "test": "OCT Macula",
+          "when_indicated": ["Suspected macular pathology", "Diabetic retinopathy with possible DME", "Unexplained vision loss"],
+          "cost": 2500,
+          "fwa_flag_if": "Done routinely for all cataract cases without clinical indication"
+        },
+        {
+          "test": "Corneal Topography",
+          "when_indicated": ["Significant astigmatism (>1.5D) considering toric IOL", "Previous corneal surgery"],
+          "cost": 2500,
+          "fwa_flag_if": "Routine use without astigmatism concern"
+        }
+      ],
+
+      "unnecessary_tests": [
+        {
+          "test": "MRI Brain/Orbit",
+          "why_unnecessary": "Not indicated for cataract diagnosis or management",
+          "exception": "Only if neurological symptoms or orbital mass suspected",
+          "fwa_severity": "high"
+        },
+        {
+          "test": "CT Scan",
+          "why_unnecessary": "No role in routine cataract surgery workup",
+          "exception": "Trauma cases with suspected foreign body",
+          "fwa_severity": "high"
+        }
+      ]
+    },
+
+    "treatment_standards": {
+      "surgical_technique": {
+        "standard_approach": "Phacoemulsification with posterior chamber IOL implantation",
+        "anesthesia": {
+          "standard": "Topical or peribulbar block",
+          "general_anesthesia_if": ["Uncooperative patient", "Anxiety disorder"],
+          "red_flag": "General anesthesia routine use increases cost without medical benefit"
+        }
+      },
+      
+      "postoperative_protocol": {
+        "typical_follow_ups": ["Post-op day 1 (mandatory)", "1 week", "1 month"],
+        "expected_recovery": "Vision improvement by day 1-7"
+      }
+    },
+
+    "fraud_waste_abuse_patterns": {
+      "cost_inflation_schemes": [
+        {
+          "pattern": "Inappropriate inpatient admission for day-care procedure",
+          "how_detected": "Check admission type and duration; day-care standard for routine phaco",
+          "red_flag_indicators": [
+            "Overnight stay for uncomplicated unilateral cataract",
+            "No documented medical/social justification for extended stay",
+            "Billing for room rent and nursing for >12 hours"
+          ],
+          "typical_overbilling": "5,000-15,000 INR",
+          "action": "Require specific medical justification; reject if unjustified"
+        },
+        {
+          "pattern": "IOL Upcoding",
+          "how_detected": "Cross-verify IOL invoice, barcoded sticker, and billed amount",
+          "red_flag_indicators": [
+            "Toric IOL billed but no keratometry showing astigmatism >1.5D",
+            "Premium IOL cost >50% of total bill without documented justification",
+            "IOL sticker doesn't match billed model"
+          ],
+          "typical_overbilling": "30,000-50,000 INR",
+          "action": "Request IOL invoice, patient consent form, clinical justification for premium lens"
+        },
+        {
+          "pattern": "Unnecessary pre-operative investigations",
+          "how_detected": "Check if tests beyond mandatory 4 have clinical indication",
+          "common_unnecessary_tests": ["OCT routinely on all patients", "Specular microscopy without endothelial risk", "Pachymetry without glaucoma"],
+          "typical_overbilling": "5,000-15,000 INR",
+          "action": "Query clinical indication for each test beyond mandatory"
+        }
+      ],
+
+      "diagnosis_treatment_mismatches": [
+        {
+          "scenario": "Diagnosis: Early cataract with good vision",
+          "submitted_va": "UCVA 6/9 or better",
+          "submitted_treatment": "Phacoemulsification with premium IOL",
+          "mismatch_explanation": "Early cataract with good VA doesn't warrant surgery per VISION 2020 guidelines",
+          "insurer_action": "Reject as premature/not medically necessary",
+          "cost_involved": "50,000-80,000 INR"
+        }
+      ]
+    },
+
+    "common_complications": {
+      "postoperative_late": [
+        {
+          "complication": "Posterior Capsule Opacification (PCO)",
+          "incidence": "11.8% at 1 year, 20.7% at 3 years, 28.4% at 5 years",
+          "timeline": "Months to years post-op",
+          "management": "YAG laser capsulotomy",
+          "cost_impact": "8,000-15,000 INR",
+          "legitimate": true,
+          "note": "Should NOT be billed with primary cataract surgery; separate event"
+        }
+      ]
+    },
+
+    "insurer_specific_considerations": {
+      "waiting_periods": {
+        "typical_range_months": [12, 24],
+        "note": "Most policies impose 12-24 month waiting period for cataract surgery"
+      },
+      "common_rejection_reasons": [
+        "Claiming for premium IOLs when policy only covers standard monofocal",
+        "Lack of documented medical necessity (UCVA better than 6/18 without functional complaints)",
+        "Filing claim within waiting period"
+      ]
+    },
+
+    "contextual_notes_for_llm": {
+      "medical_reasoning_guidance": "UCVA <6/18 per VISION 2020 is the gold standard threshold. However, surgery can be justified with better VA if there's disabling glare or PSC cataract. Always look for both quantitative (VA measurement) and qualitative (functional impact) evidence.",
+      
+      "cost_reasoning_guidance": "Total cost varies dramatically by IOL type. ₹40,000-80,000 is reasonable for standard monofocal in private hospital. ₹1,50,000+ should trigger investigation unless premium multifocal/toric IOL with documented justification.",
+      
+      "common_pitfalls": [
+        "Don't flag premium IOL as fraud if documented astigmatism >1.5D and toric IOL chosen - that's appropriate",
+        "Don't approve overnight stay just because patient is elderly - need specific medical reason",
+        "Absence of A-scan biometry is critical red flag - impossible to select IOL without it"
+      ]
+    }
+}

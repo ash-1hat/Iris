@@ -1,0 +1,156 @@
+{
+  "hospital_info": {
+    "name": "Vision Eye Care Center",
+    "address": "23, Residency Road, Bengaluru - 560025",
+    "phone": "080-26305060",
+    "email": "medical.records@visioneyecare.com",
+    "registration_no": "KA/BLR/2006/23456"
+  },
+  "summary_info": {
+    "summary_no": "DS/2025/008234",
+    "date": "10/10/2025"
+  },
+  "patient_info": {
+    "name": "Lakshmi Devi",
+    "age_gender": "68 Years / Female",
+    "patient_id": "VEC2025008234",
+    "address": "23, Residency Road, Bangalore - 560025",
+    "contact": "+91-9876512345"
+  },
+  "insurance_details": {
+    "tpa_name": "Star Health Insurance TPA Ltd.",
+    "policy_number": "STAR/COMP/2021/456789",
+    "authorization_number": "AUTH-2025-78901"
+  },
+  "admission_discharge_details": {
+    "admission_datetime": "10/10/2025 at 07:00 hrs",
+    "discharge_datetime": "10/10/2025 at 16:30 hrs",
+    "total_duration": "1 Day (Day Care)",
+    "admission_type": "Planned/Elective",
+    "room_category": "Day Care Bed",
+    "treating_consultant": "Dr. Anil Kumar",
+    "qualification": "MS Ophthalmology, DNB",
+    "registration_number": "KMC/67890/2015",
+    "specialty": "Ophthalmology",
+    "contact": "9845123456"
+  },
+  "clinical_summary": {
+    "presenting_complaints": "Patient presented with progressive diminution of vision in right eye for past 8 months. Complaints of glare and halos around lights, especially at night. Difficulty in reading newspaper and recognizing faces at distance. Left eye also has mild symptoms but right eye predominantly affected.",
+    "medical_history": "Known case of systemic hypertension for 10 years, controlled on Tab. Amlodipine 5mg OD. No diabetes mellitus. No history of previous ocular surgery or trauma. No family history of glaucoma or retinal diseases.",
+    "preop_examination": "Visual Acuity: Right Eye - 6/36 improving to 6/24 with pinhole; Left Eye - 6/12.\\n\\nSlit Lamp Examination: Right Eye - Grade 3 nuclear sclerosis with posterior subcapsular component (NS3 PSC2). Left Eye - Grade 2 nuclear sclerosis.\\n\\nDilated Fundus Examination: Both eyes - Clear view of retina, optic disc healthy with CDR 0.3:1, macula normal, no diabetic or hypertensive retinopathy.\\n\\nIntraocular Pressure: Right Eye - 14 mmHg; Left Eye - 15 mmHg (within normal limits).\\n\\nA-scan Biometry: Right Eye - Axial length 23.45mm, IOL power calculation +21.5D for emmetropia (SRK-T formula).\\n\\nCorneal Astigmatism: <0.75D (within normal limits, no toric IOL required).\\n\\nSystemic Evaluation: Blood Sugar Fasting 98 mg/dL, HbA1c 5.6% (non-diabetic), BP 130/82 mmHg (controlled), ECG normal sinus rhythm.",
+    "preop_investigations": [
+      "Visual Acuity Testing: RE 6/36, LE 6/12",
+      "Slit Lamp Examination: RE NS3 PSC2, LE NS2",
+      "A-scan Biometry: IOL Power +21.5D for emmetropia",
+      "Dilated Fundus Examination: Retina healthy, no DR/HTR",
+      "IOP Measurement: RE 14mmHg, LE 15mmHg",
+      "Blood Sugar Fasting: 98 mg/dL",
+      "HbA1c: 5.6%",
+      "ECG: Normal sinus rhythm",
+      "Pre-operative Blood Tests: CBC, RFT, LFT all within normal limits"
+    ]
+  },
+  "diagnosis": {
+    "provisional_diagnosis": "Bilateral Senile Cataract (Immature), Right Eye > Left Eye",
+    "provisional_icd10": "H25.9",
+    "final_diagnosis": "Post-operative status following uncomplicated right eye phacoemulsification with posterior chamber IOL implantation for senile cataract",
+    "final_icd10": "H25.9"
+  },
+  "procedure": {
+    "name": "Right Eye Phacoemulsification with Posterior Chamber IOL Implantation",
+    "icd_10_pcs": "08DJ3ZZ",
+    "date_time": "10/10/2025 at 09:30 hrs",
+    "duration": "25 minutes",
+    "anesthesia": "Peribulbar block with 2% lignocaine and 0.5% bupivacaine",
+    "technique": "Standard clear corneal phacoemulsification performed under peribulbar anesthesia. Superior 2.8mm clear corneal incision with two side port entries at 2 and 10 o'clock positions. Continuous curvilinear capsulorhexis performed. Hydrodissection and hydrodelineation completed. Phacoemulsification using divide-and-conquer technique. Complete cortical aspiration. Foldable hydrophobic acrylic IOL (+21.5D) implanted in capsular bag with good centration. Viscoelastic material removed. Wound sealed with stromal hydration. Subconjunctival antibiotic and steroid injection given.",
+    "intraop_findings": "Clear cornea, good pupillary dilatation, Grade 3 nuclear sclerosis as expected. No posterior capsular rent, no vitreous loss, no zonular dialysis. Uncomplicated surgery.",
+    "implant_details": "Foldable Hydrophobic Acrylic IOL, Power +21.5D, Batch No: IOL2025-4567, implanted in capsular bag with excellent centration and stability"
+  },
+  "postop_course": {
+    "immediate_postop": "Patient comfortable post-procedure. Visual acuity perception of light with accurate projection in all quadrants. Intraocular pressure digitally normal. Eye pad and shield applied. Shifted to recovery area. Vitals stable. Light refreshments given.",
+    "at_discharge": "Patient reviewed at 4 hours post-surgery. Visual acuity 6/18 improving to 6/12 with pinhole (significant improvement from pre-op 6/36). Slit lamp examination: clear cornea, well-formed anterior chamber, IOL well-positioned in capsular bag, no inflammation. IOP: 16 mmHg. No complications. Patient comfortable, no pain, no redness. Declared fit for discharge with topical medications."
+  },
+  "complications": "None. Uncomplicated phacoemulsification surgery with excellent post-operative course.",
+  "condition_at_discharge": "Stable and comfortable. Visual acuity improved to 6/18 from pre-operative 6/36. No pain, no redness, no discharge. IOP within normal limits. Patient ambulating normally. Vitals stable (BP 128/80 mmHg, Pulse 76/min).",
+  "discharge_medications": [
+    {
+      "name": "Moxifloxacin 0.5% Eye Drops",
+      "dosage": "1 drop in right eye four times daily (8am, 12pm, 4pm, 8pm)",
+      "duration": "7 days",
+      "purpose": "Prophylaxis against post-operative bacterial infection"
+    },
+    {
+      "name": "Prednisolone Acetate 1% Eye Drops",
+      "dosage": "1 drop in right eye - Week 1: 6 times/day; Week 2: 4 times/day; Week 3: 3 times/day; Week 4: 2 times/day; then stop",
+      "duration": "4 weeks with tapering schedule",
+      "purpose": "Control post-operative inflammation and prevent posterior capsular opacification"
+    },
+    {
+      "name": "Nepafenac 0.1% Eye Drops (NSAID)",
+      "dosage": "1 drop in right eye three times daily",
+      "duration": "3 weeks",
+      "purpose": "Reduction of pain and inflammation, prevention of cystoid macular edema"
+    },
+    {
+      "name": "Carboxymethylcellulose 0.5% Eye Drops (Lubricant)",
+      "dosage": "1 drop in right eye 4-6 times daily or as needed for dryness",
+      "duration": "4 weeks minimum, continue longer if needed",
+      "purpose": "Maintain ocular surface hydration and comfort"
+    },
+    {
+      "name": "Tab. Paracetamol 500mg",
+      "dosage": "1-2 tablets as needed for discomfort (SOS)",
+      "duration": "3 days",
+      "purpose": "Mild post-operative discomfort management"
+    }
+  ],
+  "follow_up_instructions": {
+    "schedule": [
+      "Day 1 post-op (11/10/2025): Morning review for vision assessment and IOP check",
+      "Day 7 post-op (17/10/2025): Wound assessment, refraction check",
+      "Week 4 post-op (07/11/2025): Final post-operative assessment, glasses prescription if needed",
+      "Week 6 post-op (21/11/2025): Consider left eye cataract surgery if patient desires"
+    ],
+    "contact": "Ophthalmology OPD: 080-26305060 (Ext: 234), Timings: Mon-Sat 9am-5pm",
+    "activity_dos": [
+      "Instill eye drops at prescribed intervals maintaining sterile technique",
+      "Wash hands thoroughly before instilling drops",
+      "Wear protective eye shield while sleeping for 1 week",
+      "Resume normal diet and oral medications",
+      "Can watch television and read with adequate lighting from day 2"
+    ],
+    "activity_donts": [
+      "Avoid rubbing or pressing the operated eye",
+      "Do not allow water to enter the eye for 1 week (sponge bath for face)",
+      "Avoid swimming and dusty/smoky environments for 4 weeks",
+      "No strenuous exercise, heavy lifting (>5kg), or bending below waist level for 2 weeks",
+      "Do not drive until cleared by ophthalmologist (usually after 1 week)"
+    ],
+    "warning_signs": [
+      "Sudden decrease in vision or complete vision loss",
+      "Severe eye pain not relieved by paracetamol",
+      "Increasing redness or swelling of the eye",
+      "Purulent discharge from the eye",
+      "Appearance of floaters, flashes of light, or curtain-like shadow in vision field",
+      "Persistent headache with nausea/vomiting"
+    ],
+    "emergency_contact": "080-26305060 (24x7 Emergency Helpline), Dr. Anil Kumar: 9845123456"
+  },
+  "future_treatment_plan": "Patient counseled regarding left eye cataract surgery which can be planned after 4-6 weeks once right eye completely heals. No other ocular pathology detected. Continue management of systemic hypertension with regular physician follow-up. Annual comprehensive eye examination recommended.",
+  "doctor_declaration": {
+    "certifications": [
+      "The patient was under my care during the hospitalization period mentioned above.",
+      "The medical information provided in this discharge summary is true and correct to the best of my knowledge.",
+      "The treatment provided was medically necessary and appropriate for the patient's condition.",
+      "The surgery was uncomplicated and the patient had an excellent post-operative recovery.",
+      "All original documents including bills, investigation reports, and consent forms have been provided to the patient for insurance claim submission."
+    ],
+    "doctor_name": "Dr. Anil Kumar",
+    "qualification": "MS Ophthalmology, DNB",
+    "registration": "KMC/67890/2015",
+    "designation": "Consultant Ophthalmologist",
+    "contact": "9845123456",
+    "email": "dr.anil.kumar@visioneyecare.com",
+    "date": "10/10/2025"
+  }
+}

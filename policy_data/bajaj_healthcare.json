@@ -1,0 +1,169 @@
+{
+    "policy_id": "bajaj_healthcare_v1",
+    "insurer": "Bajaj Allianz General Insurance",
+    "policy_name": "My Health Care Plan-1",
+    "uin": "BAJHLIP23143V012223",
+    
+    "waiting_periods": {
+      "initial_days": 30,
+      "pre_existing_disease_months": 36,
+      "specific_conditions": {
+        "cataract_surgery": 24,
+        "joint_replacement": 24,
+        "hernia": 24,
+        "ent_diseases": 24,
+        "hepato_pancreato_biliary_diseases": 24,
+        "kidney_genitourinary_calculi": 24,
+        "cervix_uterus_diseases": 24,
+        "prostate_urinary_diseases": 24,
+        "fistula_hemorrhoids": 24,
+        "varicose_veins": 24,
+        "hysterectomy": 24,
+        "gall_bladder_diseases": 24,
+        "pancreatitis": 24,
+        "bariatric_surgery": 36
+      },
+      "delivery_months": 36
+    },
+    
+    "exclusions": [
+      "Cosmetic surgery (unless post-accident/burn/cancer)",
+      "Change of gender treatments",
+      "Obesity treatment (unless meets NIH criteria: BMI >= 40 or >= 35 with comorbidities)",
+      "Hazardous/adventure sports",
+      "Intentional self-injury",
+      "War and nuclear weapons",
+      "Alcoholism/drug abuse treatment",
+      "Infertility/sterility treatment",
+      "Refractive error < 7.5 dioptres",
+      "Circumcision (unless medically necessary)",
+      "Congenital external conditions",
+      "Unproven/experimental treatments",
+      "Investigation and evaluation only admissions",
+      "Rest cure, rehabilitation and respite care",
+      "Spectacles, contact lenses, hearing aids",
+      "Vaccination (unless post-bite or medically necessary)",
+      "Treatment outside India"
+    ],
+    
+    "coverage_by_sum_insured": {
+      "300000": {
+        "room_rent_max_per_day": 3000,
+        "icu_rent_max_per_day": 6000,
+        "delivery_normal": 30000,
+        "delivery_caesarean": 30000,
+        "newborn_cover": 100000,
+        "health_checkup_annual": 1000,
+        "ayush_treatment": 300000,
+        "road_ambulance": 300000,
+        "organ_donor": 300000,
+        "domiciliary_hospitalization": 300000,
+        "modern_treatments": {
+          "deep_brain_stimulation": 300000,
+          "oral_chemotherapy": 300000,
+          "immunotherapy_mab": 300000,
+          "robotic_surgeries": 300000,
+          "stereotactic_radiosurgery": 300000
+        }
+      },
+      "500000": {
+        "room_rent_max_per_day": 5000,
+        "icu_rent_max_per_day": 10000,
+        "delivery_normal": 50000,
+        "delivery_caesarean": 50000,
+        "newborn_cover": 500000,
+        "health_checkup_annual": 2000,
+        "ayush_treatment": 500000,
+        "road_ambulance": 500000,
+        "organ_donor": 500000,
+        "domiciliary_hospitalization": 500000,
+        "modern_treatments": {
+          "deep_brain_stimulation": 500000,
+          "oral_chemotherapy": 500000,
+          "immunotherapy_mab": 500000,
+          "robotic_surgeries": 500000,
+          "stereotactic_radiosurgery": 500000
+        }
+      },
+      "1000000": {
+        "room_rent_max_per_day": 10000,
+        "icu_rent_max_per_day": 20000,
+        "delivery_normal": 50000,
+        "delivery_caesarean": 50000,
+        "newborn_cover": 500000,
+        "health_checkup_annual": 3000,
+        "ayush_treatment": 1000000,
+        "road_ambulance": 1000000,
+        "organ_donor": 1000000,
+        "domiciliary_hospitalization": 1000000,
+        "modern_treatments": {
+          "deep_brain_stimulation": 1000000,
+          "oral_chemotherapy": 1000000,
+          "immunotherapy_mab": 1000000,
+          "robotic_surgeries": 1000000,
+          "stereotactic_radiosurgery": 1000000
+        }
+      },
+      "2000000": {
+        "room_rent_max_per_day": 20000,
+        "icu_rent_max_per_day": 40000,
+        "delivery_normal": 75000,
+        "delivery_caesarean": 75000,
+        "newborn_cover": 1000000,
+        "health_checkup_annual": 5000,
+        "ayush_treatment": 2000000,
+        "road_ambulance": 2000000,
+        "organ_donor": 2000000,
+        "domiciliary_hospitalization": 2000000,
+        "modern_treatments": {
+          "deep_brain_stimulation": 2000000,
+          "oral_chemotherapy": 2000000,
+          "immunotherapy_mab": 2000000,
+          "robotic_surgeries": 2000000,
+          "stereotactic_radiosurgery": 2000000
+        }
+      }
+    },
+    
+    "room_rent": {
+      "type": "single_private_ac",
+      "sublimit_applicable": true,
+      "proportionate_deduction": true,
+      "deduction_applies_to": [
+        "room_charges",
+        "nursing_charges",
+        "surgeon_fees",
+        "anesthetist_fees",
+        "consultant_fees"
+      ],
+      "deduction_not_applicable_to": [
+        "pharmacy_consumables",
+        "implants_medical_devices",
+        "diagnostics"
+      ]
+    },
+    
+    "co_payment": {
+      "applicable": false,
+      "voluntary_options": [5, 10, 15, 20]
+    },
+    
+    "other_coverages": {
+      "pre_hospitalization_days": 60,
+      "post_hospitalization_days": 90,
+      "air_ambulance_max": 0
+    },
+    
+    "special_features": {
+      "automatic_restoration": {
+        "applicable": true,
+        "percentage": 100,
+        "frequency": "once_below_5L_unlimited_above_5L"
+      },
+      "cumulative_bonus": {
+        "rate_percent": 50,
+        "max_percent": 100
+      }
+    }
+  }
+  

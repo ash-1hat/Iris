@@ -1,0 +1,740 @@
+{
+    "metadata": {
+        "procedure_id": "cabg_001",
+        "name": "Coronary Artery Bypass Grafting",
+        "category": "Cardiothoracic Surgery",
+        "subcategory": "Cardiac Revascularization",
+        "common_synonyms": ["Heart Bypass Surgery", "CABS", "Coronary Artery Bypass Surgery"],
+        "icd_10_codes": ["0210", "0211", "0212", "I25.10", "I25 series"],
+        "typical_age_group": "50+ years most common, but can occur at younger ages especially in Indians"
+    },
+
+    "hospitalization": {
+        "standard_type": "in_patient_with_icu",
+        "typical_duration": {
+            "unit": "days",
+            "by_approach": {
+                "conventional_on_pump": {
+                    "total_hospital": 5,
+                    "minimum": 5,
+                    "maximum": 7,
+                    "icu_stay": "1-2 days",
+                    "note": "Standard median sternotomy approach"
+                },
+                "off_pump_cabg": {
+                    "total_hospital": 5,
+                    "minimum": 4,
+                    "maximum": 7,
+                    "icu_stay": "1-2 days",
+                    "note": "Beating heart surgery; may reduce some complications"
+                },
+                "minimally_invasive": {
+                    "total_hospital": 3,
+                    "minimum": 3,
+                    "maximum": 5,
+                    "icu_stay": "1 day",
+                    "note": "MIDCAB/Robotic approaches; faster recovery"
+                }
+            },
+            "fast_track_protocols": {
+                "enabled": "Some Indian centers",
+                "target": "Early extubation (<8 hours), reduced ICU stay",
+                "note": "Requires careful patient selection and multidisciplinary team"
+            }
+        },
+        "red_flags": [
+            {
+                "pattern": "ICU stay >3 days without documented complications",
+                "severity": "moderate",
+                "explanation": "Prolonged ICU stay indicates complications or poor recovery",
+                "action": "Query for atrial fibrillation, renal dysfunction, low cardiac output, or other complications"
+            },
+            {
+                "pattern": "Total hospital stay >10 days without clear complication documentation",
+                "severity": "high",
+                "explanation": "Extended stay suggests significant complications or quality issues",
+                "action": "Require detailed complication documentation; investigate quality of care"
+            },
+            {
+                "pattern": "Hospital stay <4 days for conventional CABG",
+                "severity": "moderate",
+                "explanation": "Unusually short stay may indicate premature discharge or billing as fast-track without protocol",
+                "action": "Verify discharge criteria met and patient stability"
+            }
+        ]
+    },
+
+    "cost_analysis": {
+        "india_tier1_cities": {
+            "currency": "INR",
+            "overall_range": {
+                "minimum": 95000,
+                "maximum": 900000,
+                "median": 300000
+            },
+            "city_breakdown": {
+                "delhi": {
+                    "on_pump": [300000, 425000],
+                    "off_pump": [280000, 400000],
+                    "minimally_invasive": [378000, 600000]
+                },
+                "mumbai": {
+                    "on_pump": [275000, 350000],
+                    "off_pump": [250000, 325000],
+                    "minimally_invasive": [396000, 650000]
+                },
+                "bangalore": {
+                    "on_pump": [275000, 360000],
+                    "off_pump": [250000, 350000],
+                    "minimally_invasive": [360000, 600000]
+                },
+                "chennai": {
+                    "on_pump": [260000, 350000],
+                    "off_pump": [250000, 325000],
+                    "minimally_invasive": [342000, 600000]
+                }
+            },
+            "detailed_breakdown": {
+                "surgeon_fee": [60000, 200000],
+                "anesthesia": [25000, 60000],
+                "ot_charges": [40000, 100000],
+                "icu_stay_per_day": [6000, 15000],
+                "ward_stay_per_day": [3000, 8000],
+                "pre_op_diagnostics": {
+                    "coronary_angiography": [25000, 30000],
+                    "echocardiogram": [2000, 5000],
+                    "basic_lab_tests": [3000, 6000]
+                },
+                "medications_consumables": [30000, 80000],
+                "post_op_rehabilitation": [10000, 30000]
+            }
+        },
+        "government_cghs_rates": {
+            "off_pump_cabg": {
+                "nabh": 161000,
+                "non_nabh": 140000
+            },
+            "cabg_with_valve": {
+                "nabh": 194350,
+                "non_nabh": 169000
+            },
+            "general_grants": "150000-200000 depending on complexity",
+            "note": "CGHS rates significantly lower than private sector; based on specific inclusion criteria"
+        }
+    },
+
+    "medical_necessity": {
+        "primary_indications": [
+            {
+                "indication": "Significant Left Main Coronary Artery Disease",
+                "clinical_criteria": [
+                    "Left main stenosis >50%",
+                    "Angiography confirmed blockage"
+                ],
+                "documentation_must_include": [
+                    "Coronary angiography report explicitly stating left main disease with percentage stenosis",
+                    "Heart Team discussion notes (cardiologist + cardiac surgeon)",
+                    "Echocardiogram showing LV function"
+                ],
+                "strength": "absolute",
+                "class_recommendation": "Class 1 ACC/AHA"
+            },
+            {
+                "indication": "Three-Vessel Coronary Artery Disease",
+                "clinical_criteria": [
+                    "Significant stenosis (>70%) in all three major coronary arteries (LAD, LCx, RCA)",
+                    "Especially with LV dysfunction (EF <50%) or diabetes"
+                ],
+                "documentation_must_include": [
+                    "Angiography report specifying stenosis in LAD, LCx, and RCA with percentages",
+                    "Echocardiogram with ejection fraction measurement",
+                    "HbA1c if diabetic"
+                ],
+                "strength": "absolute",
+                "class_recommendation": "Class 1 ACC/AHA"
+            },
+            {
+                "indication": "Two-Vessel Disease with Proximal LAD Involvement",
+                "clinical_criteria": [
+                    "Significant stenosis (>70%) of proximal LAD plus one other major artery",
+                    "High-risk anatomy"
+                ],
+                "documentation_must_include": [
+                    "Angiography clearly showing proximal LAD disease",
+                    "Documentation of second vessel involvement",
+                    "Risk stratification assessment"
+                ],
+                "strength": "strong",
+                "class_recommendation": "Class 1 ACC/AHA"
+            },
+            {
+                "indication": "Refractory Angina Despite Optimal Medical Therapy",
+                "clinical_criteria": [
+                    "Disabling angina limiting daily activities",
+                    "Failed maximum medical therapy (OMT) for at least 3 months",
+                    "Significant stenosis amenable to bypass"
+                ],
+                "documentation_must_include": [
+                    "Detailed angina history with CCS/NYHA classification",
+                    "Documentation of OMT trial (aspirin, beta-blocker, statin, nitrates, etc.) with dosages",
+                    "Angiography confirming bypass targets",
+                    "Quality of life impact documentation"
+                ],
+                "strength": "strong",
+                "note": "OMT documentation critical - absence is red flag"
+            },
+            {
+                "indication": "Failed PCI or Unsuitable Anatomy for Stenting",
+                "clinical_criteria": [
+                    "Restenosis after previous stenting",
+                    "Complex lesions unsuitable for PCI (calcified, bifurcation, chronic total occlusion)",
+                    "High SYNTAX score"
+                ],
+                "documentation_must_include": [
+                    "Previous PCI records if applicable",
+                    "Angiography with SYNTAX score calculation",
+                    "Heart Team decision documenting why PCI not suitable"
+                ],
+                "strength": "strong"
+            },
+            {
+                "indication": "Acute Coronary Syndrome with Ongoing Ischemia",
+                "clinical_criteria": [
+                    "STEMI/NSTEMI with cardiogenic shock",
+                    "Failed medical/PCI management",
+                    "Mechanical complications (VSD, mitral regurgitation)"
+                ],
+                "documentation_must_include": [
+                    "Emergency angiography report",
+                    "ECG showing STEMI/ischemia",
+                    "Hemodynamic data if shock present",
+                    "Documentation of failed conservative measures"
+                ],
+                "strength": "absolute",
+                "note": "Emergency indication - different documentation standards"
+            }
+        ],
+
+        "weak_justifications": [
+            {
+                "scenario": "Single-vessel disease without high-risk features",
+                "typical_presentation": "Single LAD lesion, normal LV function, no symptoms",
+                "why_inadequate": "PCI preferred for single-vessel disease unless specific contraindications",
+                "insurer_likely_response": "Query why CABG chosen over PCI; may deny or approve at lower rate"
+            },
+            {
+                "scenario": "Stable CAD with normal LV function and less complex anatomy",
+                "typical_presentation": "Two-vessel disease (non-proximal LAD), EF >50%, stable symptoms",
+                "why_inadequate": "Recent guidelines debate survival benefit of CABG over OMT in this group without refractory symptoms",
+                "insurer_likely_response": "Require strong documentation of refractory angina despite OMT"
+            },
+            {
+                "scenario": "CABG without documented Heart Team discussion",
+                "typical_presentation": "Missing multidisciplinary decision documentation",
+                "why_inadequate": "Standard of care requires Heart Team (cardiologist + surgeon) review per guidelines",
+                "insurer_likely_response": "Flag as suboptimal process; query decision-making"
+            }
+        ],
+
+        "documentation_checklist": {
+            "essential_elements": [
+                {
+                    "element": "Coronary Angiography Report",
+                    "format": "Detailed report with vessel-by-vessel stenosis percentages",
+                    "example": "LAD: 90% proximal stenosis; LCx: 80% mid-vessel stenosis; RCA: 70% proximal stenosis",
+                    "weak_if": "Vague description without specific percentages or missing vessel details",
+                    "critical": "This is THE definitive justification - mismatch with claimed bypasses is fraud"
+                },
+                {
+                    "element": "Number of Bypasses Planned and Performed",
+                    "format": "Operative note must detail each anastomosis",
+                    "example": "Triple CABG: LIMA to LAD, SVG to OM1, SVG to PDA",
+                    "weak_if": "Operative note doesn't match claimed number of bypasses",
+                    "critical": "Must correlate with angiography findings and billing codes"
+                },
+                {
+                    "element": "Echocardiogram with Ejection Fraction",
+                    "format": "Report with EF percentage, wall motion abnormalities",
+                    "example": "EF 35%, global hypokinesia, moderate LV dysfunction",
+                    "weak_if": "Missing EF or outdated study (>3 months old)"
+                },
+                {
+                    "element": "Heart Team Discussion Documentation",
+                    "format": "Multidisciplinary note with cardiologist and surgeon consensus",
+                    "example": "Heart Team reviewed angiography; consensus for CABG over PCI due to three-vessel disease with poor targets for stenting",
+                    "weak_if": "No documentation of joint decision-making"
+                },
+                {
+                    "element": "Optimal Medical Therapy Trial (for elective cases)",
+                    "format": "Medication list with dosages and duration, response documented",
+                    "example": "OMT trial: Aspirin 75mg, Atorvastatin 40mg, Metoprolol 50mg BD, Isosorbide mononitrate - inadequate symptom control after 4 months",
+                    "weak_if": "No documentation of medical management prior to surgery"
+                },
+                {
+                    "element": "Graft Conduits Used",
+                    "format": "Specify arterial vs. venous grafts and harvest sites",
+                    "example": "LIMA (left internal mammary artery), SVG from left leg",
+                    "weak_if": "Conduit type not specified or unclear"
+                }
+            ]
+        }
+    },
+
+    "required_diagnostics": {
+        "mandatory_preoperative": [
+            {
+                "test": "Coronary Angiography (Diagnostic Cardiac Catheterization)",
+                "threshold": "MANDATORY - defines indication and surgical plan",
+                "documentation": "Complete report with all vessels visualized, stenosis percentages, TIMI flow grade",
+                "cost": [25000, 30000],
+                "red_flag_if_missing": "CRITICAL - Cannot perform CABG without angiography; claim is fraudulent if missing"
+            },
+            {
+                "test": "Echocardiogram (2D Echo with Doppler)",
+                "threshold": "Must document LV function, EF, valve function",
+                "documentation": "EF percentage, regional wall motion, valve assessment",
+                "cost": [2000, 5000],
+                "red_flag_if_missing": "Cannot assess cardiac function and surgical risk"
+            },
+            {
+                "test": "ECG (12-lead Electrocardiogram)",
+                "threshold": "Baseline rhythm, ischemia assessment",
+                "documentation": "Rhythm, ischemic changes, old MI evidence",
+                "cost": [200, 500],
+                "red_flag_if_missing": "Basic cardiac assessment incomplete"
+            },
+            {
+                "test": "Complete Blood Count (CBC)",
+                "threshold": "Assess anemia, infection, platelet count",
+                "documentation": "Hb, WBC, platelets",
+                "cost": 500,
+                "red_flag_if_missing": "Cannot assess fitness and transfusion needs"
+            },
+            {
+                "test": "Renal Function Tests",
+                "threshold": "Critical for post-op risk assessment",
+                "documentation": "Creatinine, eGFR, electrolytes",
+                "cost": [500, 1000],
+                "red_flag_if_missing": "Renal dysfunction major predictor of complications"
+            },
+            {
+                "test": "Liver Function Tests",
+                "threshold": "Assess metabolic function",
+                "documentation": "ALT, AST, bilirubin, albumin",
+                "cost": [500, 1000],
+                "red_flag_if_missing": "Baseline hepatic function needed"
+            },
+            {
+                "test": "Coagulation Profile",
+                "threshold": "Essential for surgery planning",
+                "documentation": "PT, aPTT, INR",
+                "cost": [500, 1000],
+                "red_flag_if_missing": "Critical for bleeding risk assessment"
+            },
+            {
+                "test": "HbA1c (for diabetics)",
+                "threshold": "Assess glycemic control; poor control increases infection risk",
+                "documentation": "HbA1c percentage",
+                "cost": [400, 800],
+                "red_flag_if_missing": "Missing in known diabetics is quality concern"
+            },
+            {
+                "test": "Chest X-ray",
+                "threshold": "Baseline pulmonary assessment",
+                "documentation": "PA and lateral views",
+                "cost": [300, 800],
+                "red_flag_if_missing": "Standard pre-operative requirement"
+            }
+        ],
+
+        "optional_situational": [
+            {
+                "test": "Carotid Doppler Ultrasound",
+                "when_indicated": "Age >65, previous stroke/TIA, carotid bruit, known peripheral vascular disease",
+                "cost": [2000, 4000],
+                "fwa_flag_if": "Routine use in young patients without risk factors",
+                "note": "Significant carotid stenosis increases stroke risk"
+            },
+            {
+                "test": "Stress Test (Treadmill/Pharmacological)",
+                "when_indicated": "Initial diagnosis workup before angiography; assess ischemia",
+                "cost": [3000, 8000],
+                "fwa_flag_if": "Performed after angiography already confirms disease"
+            },
+            {
+                "test": "Cardiac CT Angiography",
+                "when_indicated": "Non-invasive alternative to diagnostic angiography in select cases; post-op graft assessment",
+                "cost": [15000, 25000],
+                "fwa_flag_if": "Routine use when invasive angiography already performed"
+            },
+            {
+                "test": "Pulmonary Function Tests",
+                "when_indicated": "Known COPD, smoking history, respiratory symptoms",
+                "cost": [1500, 3000],
+                "fwa_flag_if": "Routine use without pulmonary history"
+            }
+        ],
+
+        "unnecessary_tests": [
+            {
+                "test": "Routine brain MRI",
+                "why_unnecessary": "Not standard pre-CABG unless neurological symptoms",
+                "exception": "Suspected stroke or focal neurological signs",
+                "fwa_severity": "high"
+            },
+            {
+                "test": "Whole body PET scan",
+                "why_unnecessary": "No role in routine CABG workup",
+                "exception": "Suspected malignancy evaluation",
+                "fwa_severity": "high"
+            }
+        ]
+    },
+
+    "fraud_waste_abuse_patterns": {
+        "upcoding_schemes": [
+            {
+                "pattern": "Exaggerating number of bypasses performed",
+                "how_detected": "Cross-reference angiography report with operative note and billing",
+                "red_flag_indicators": [
+                    "Claim for quadruple bypass but angiography shows only 2-vessel disease",
+                    "Operative note describes 3 anastomoses but billing shows 4 or 5",
+                    "Mismatch between diseased vessels and grafts performed"
+                ],
+                "typical_overbilling": "₹50,000-150,000 per additional bypass claimed",
+                "action": "HIGH RISK FRAUD - Match angiography vessels to operative grafts; downcode or deny excess"
+            },
+            {
+                "pattern": "Billing for emergency CABG when elective",
+                "how_detected": "Check admission timing, pre-op workup, urgency documentation",
+                "red_flag_indicators": [
+                    "Extensive elective pre-op workup inconsistent with emergency",
+                    "Admission several days before surgery",
+                    "No documentation of emergency indications (cardiogenic shock, failed PCI, acute MI)"
+                ],
+                "typical_overbilling": "Emergency packages 20-30% higher",
+                "action": "Downgrade to elective procedure rate"
+            }
+        ],
+
+        "unbundling_schemes": [
+            {
+                "pattern": "Unbundling heart-lung machine charges",
+                "how_detected": "Check if on-pump procedure code used",
+                "red_flag_indicators": [
+                    "Separate line item for cardiopulmonary bypass (CPB) when included in package",
+                    "Perfusion charges billed separately from CABG package"
+                ],
+                "typical_overbilling": "₹30,000-80,000",
+                "action": "Deny unbundled CPB charges if included in procedure code"
+            },
+            {
+                "pattern": "Separate billing for routine ICU care",
+                "how_detected": "Verify if ICU included in CABG package rate",
+                "red_flag_indicators": [
+                    "Standard 1-2 day ICU stay billed separately when package includes ICU",
+                    "Routine monitoring equipment billed as add-ons"
+                ],
+                "typical_overbilling": "₹20,000-60,000",
+                "action": "Approve only package rate; deny routine ICU unbundling"
+            },
+            {
+                "pattern": "Graft conduit harvesting billed separately",
+                "how_detected": "Check if SVG/LIMA harvest included in CABG code",
+                "red_flag_indicators": [
+                    "Separate CPT codes for saphenous vein or IMA harvest",
+                    "Additional surgeon fees for conduit procurement"
+                ],
+                "typical_overbilling": "₹25,000-50,000",
+                "action": "Deny - harvesting is integral to CABG procedure"
+            }
+        ],
+
+        "diagnosis_treatment_mismatch": [
+            {
+                "pattern": "Angiography-Bypass Mismatch",
+                "how_detected": "Parse angiography report and compare to claimed bypasses",
+                "example_fraud": "Angiography: 'Single vessel disease - LAD 80% stenosis, LCx normal, RCA normal' → Claim: 'Triple CABG performed'",
+                "red_flag_indicators": [
+                    "Number of diseased vessels < number of bypasses claimed",
+                    "Vessels with <70% stenosis (non-significant) receiving grafts",
+                    "Normal vessels grafted"
+                ],
+                "typical_overbilling": "Entire additional bypass charges - ₹100,000-300,000",
+                "action": "DEFINITIVE FRAUD - Deny fraudulent bypass charges; approve only justified grafts; report provider"
+            },
+            {
+                "pattern": "CABG performed without appropriate indication",
+                "how_detected": "Check angiography severity and attempt at medical management",
+                "red_flag_indicators": [
+                    "Single vessel disease without trial of PCI/OMT",
+                    "Stenosis <70% (non-significant) as primary indication",
+                    "No documentation of symptoms or OMT trial"
+                ],
+                "typical_overbilling": "Entire procedure unnecessary - ₹200,000-600,000",
+                "action": "HIGH RISK - Question medical necessity; may deny if unjustified"
+            }
+        ],
+
+        "consumables_abuse": [
+            {
+                "pattern": "Inflated hemostatic agent charges",
+                "how_detected": "Cross-check operative notes for bleeding complications",
+                "red_flag_indicators": [
+                    "Multiple units of expensive hemostatic agents (Fibrin glue, Surgicel) without documented bleeding",
+                    "Operative notes describe 'minimal blood loss' but bill for extensive hemostatic products"
+                ],
+                "typical_overbilling": "₹50,000-150,000",
+                "action": "Approve only documented usage; deny excessive amounts"
+            },
+            {
+                "pattern": "High-cost medication substitution fraud",
+                "how_detected": "Compare billed drugs with standard CABG protocol",
+                "red_flag_indicators": [
+                    "Branded medications at 10x cost when generics available",
+                    "Medications billed but not in nursing/anesthesia records",
+                    "Quantities exceeding procedure requirements"
+                ],
+                "typical_overbilling": "₹30,000-100,000",
+                "action": "Reimburse at generic rates; deny undocumented medications"
+            }
+        ],
+
+        "complications_upcoding": [
+            {
+                "pattern": "Billing for management of self-created complications",
+                "how_detected": "Review operative notes and complication timeline",
+                "red_flag_indicators": [
+                    "Reoperation for bleeding within 24 hours (may indicate inadequate hemostasis)",
+                    "Sternal wound infection requiring multiple debridements",
+                    "Prolonged ventilation due to intra-op issues"
+                ],
+                "gray_area": "Legitimate complications vs. preventable quality issues",
+                "action": "Review for quality of care; may partially deny complication management costs"
+            }
+        ]
+    },
+
+    "common_complications": {
+        "early_postoperative": [
+            {
+                "complication": "Atrial Fibrillation",
+                "incidence": "20-50%",
+                "timeline": "Post-op day 2-4 peak",
+                "management": "Rate control, anticoagulation, cardioversion if unstable",
+                "cost_impact": "₹10,000-40,000",
+                "legitimate": true,
+                "note": "Most common complication; strong predictor of prolonged ICU stay"
+            },
+            {
+                "complication": "Bleeding requiring re-exploration",
+                "incidence": "2-5%",
+                "timeline": "Within 24-48 hours",
+                "management": "Return to OT, surgical hemostasis",
+                "cost_impact": "₹80,000-200,000",
+                "legitimate": true,
+                "note": "Distinguish from inadequate initial hemostasis (quality issue)"
+            },
+            {
+                "complication": "Acute Kidney Injury",
+                "incidence": "2-3% (1% requiring dialysis)",
+                "timeline": "First 48-72 hours",
+                "management": "Fluid management, dialysis if severe",
+                "cost_impact": "₹50,000-250,000",
+                "legitimate": true,
+                "note": "Major predictor of prolonged stay and mortality; higher in pre-existing CKD"
+            },
+            {
+                "complication": "Stroke/Neurological complications",
+                "incidence": "1-2%",
+                "timeline": "Peri-operative or early post-op",
+                "management": "Neurological consultation, supportive care",
+                "cost_impact": "₹100,000-500,000",
+                "legitimate": true,
+                "note": "Devastating complication; higher risk in elderly, carotid disease"
+            },
+            {
+                "complication": "Low Cardiac Output Syndrome",
+                "incidence": "3-5%",
+                "timeline": "Immediate post-op",
+                "management": "Inotropes, IABP if needed",
+                "cost_impact": "₹80,000-300,000",
+                "legitimate": true
+            }
+        ],
+
+        "late_postoperative": [
+            {
+                "complication": "Sternal Wound Infection",
+                "incidence": "1-2% (deep infection 0.2-0.5%)",
+                "timeline": "1-4 weeks post-op",
+                "management": "Antibiotics, wound care, possible debridement",
+                "cost_impact": "₹50,000-300,000",
+                "legitimate": true,
+                "note": "Higher risk in diabetes, obesity, bilateral IMA use"
+            },
+            {
+                "complication": "Pneumonia",
+                "incidence": "5-10%",
+                "timeline": "First week post-op",
+                "management": "Antibiotics, respiratory therapy",
+                "cost_impact": "₹30,000-100,000",
+                "legitimate": true
+            },
+            {
+                "complication": "Pericardial effusion/Tamponade",
+                "incidence": "1-2%",
+                "timeline": "1-2 weeks post-op",
+                "management": "Pericardiocentesis if significant",
+                "cost_impact": "₹40,000-150,000",
+                "legitimate": true
+            },
+            {
+                "complication": "Graft failure/occlusion",
+                "incidence": "5-10% (varies by graft type)",
+                "timeline": "Early (days) or late (months-years)",
+                "management": "Medical therapy, possible re-intervention",
+                "cost_impact": "Variable",
+                "legitimate": true,
+                "note": "Higher in venous grafts; arterial grafts more durable"
+            }
+        ],
+
+        "cognitive_psychological": [
+            {
+                "complication": "Post-operative cognitive dysfunction ('pump head')",
+                "incidence": "Variable; more common with on-pump",
+                "timeline": "Immediate to months post-op",
+                "management": "Supportive, usually improves",
+                "cost_impact": "Difficult to quantify",
+                "legitimate": true
+            },
+            {
+                "complication": "Depression and anxiety",
+                "incidence": "Common",
+                "timeline": "Post-operative period",
+                "management": "Counseling, medications",
+                "cost_impact": "₹10,000-50,000",
+                "legitimate": true
+            }
+        ]
+    },
+
+    "insurer_specific_considerations": {
+        "waiting_periods": {
+            "initial_waiting_period": "30-90 days for new policies",
+            "pre_existing_cad": {
+                "standard": "24-48 months if CAD pre-existing",
+                "specialized_cardiac_plans": "Some offer reduced waiting of 90 days to 1 year",
+                "note": "Recent MI <90 days often excluded or requires specific approval"
+            },
+            "emergency_cabg": "Waiting periods may be waived if acute emergency (cardiogenic shock, failed PCI)"
+        },
+
+        "pre_authorization": {
+            "elective_cabg": {
+                "mandatory": true,
+                "required_documents": [
+                    "Detailed clinical history with symptom timeline",
+                    "Complete coronary angiography report with films/images",
+                    "Echocardiogram with EF",
+                    "Heart Team recommendation documentation",
+                    "Evidence of OMT trial (medication records)",
+                    "Surgical plan with number of grafts anticipated",
+                    "Cost estimate breakdown"
+                ],
+                "approval_timeline": "3-7 days typical",
+                "note": "Extensive documentation required due to high cost"
+            },
+            "emergency_cabg": {
+                "mandatory": "Intimation within 24-48 hours",
+                "required_documents": [
+                    "Emergency angiography report",
+                    "Documentation of acute indication (MI, cardiogenic shock)",
+                    "Reason why PCI not performed or failed"
+                ],
+                "note": "Post-facto review for medical necessity"
+            }
+        },
+
+        "common_rejection_reasons": [
+            {
+                "reason": "Lack of medical necessity",
+                "frequency": "Common",
+                "examples": [
+                    "Angiography doesn't support multi-vessel disease claimed",
+                    "No documentation of symptoms or OMT failure",
+                    "Single-vessel disease where PCI more appropriate"
+                ],
+                "prevention": "Ensure angiography supports bypass indications; document OMT trial and symptoms"
+            },
+            {
+                "reason": "Pre-existing disease waiting period",
+                "frequency": "Very common",
+                "examples": [
+                    "Known CAD/previous MI before policy inception",
+                    "Surgery performed before waiting period completion"
+                ],
+                "prevention": "Verify waiting period status; document acute vs. chronic timeline"
+            },
+            {
+                "reason": "Non-disclosure of pre-existing condition",
+                "frequency": "Common",
+                "examples": [
+                    "Previous cardiac history not declared",
+                    "Known diabetes, hypertension not disclosed"
+                ],
+                "prevention": "Full disclosure at policy purchase"
+            },
+            {
+                "reason": "Upcoding detected",
+                "frequency": "Increasing with scrutiny",
+                "examples": [
+                    "Claimed bypasses don't match angiography",
+                    "Billing for procedures not documented in operative notes"
+                ],
+                "prevention": "Ensure billing matches documented procedures exactly"
+            },
+            {
+                "reason": "Incomplete documentation",
+                "frequency": "Common",
+                "examples": [
+                    "Missing angiography report",
+                    "Illegible operative notes",
+                    "No Heart Team documentation"
+                ],
+                "prevention": "Submit complete, legible reports; ensure all mandatory documents included"
+            },
+            {
+                "reason": "Billing for experimental/non-covered items",
+                "frequency": "Occasional",
+                "examples": [
+                    "Robotic equipment charges when not covered",
+                    "Non-standard medications or devices"
+                ],
+                "prevention": "Verify policy coverage for advanced technologies before procedure"
+            }
+        ],
+
+        "sub_limits_capping": {
+            "note": "Some policies cap CABG at specific amounts (e.g., ₹3-5 lakhs) regardless of actual cost",
+            "patient_impact": "Significant out-of-pocket if costs exceed cap",
+            "recommendation": "Review policy documents for cardiac surgery sub-limits before hospitalization"
+        }
+    },
+
+    "contextual_notes_for_llm": {
+        "medical_reasoning_guidance": "CABG is a major, life-saving but high-risk surgery. The coronary angiography report is the definitive justification - it must show significant stenosis (>70%) in the vessels claimed to be bypassed. The number of diseased vessels on angiography MUST correlate with the number of bypasses performed. A mismatch is definitive fraud. Heart Team discussion is standard of care per ACC/AHA guidelines - absence suggests suboptimal decision-making.",
+
+        "cost_reasoning_guidance": "CABG costs ₹200,000-600,000+ in India depending on complexity and hospital tier. On-pump vs. off-pump costs similar. Minimally invasive significantly higher. CGHS off-pump rate is ₹161,000 (NABH) - private sector charges 2-4x this. The number of bypasses impacts cost, creating incentive for upcoding. ICU stay duration is major cost driver and complication predictor.",
+
+        "critical_fraud_detection_points": [
+            "ANGIOGRAPHY-BYPASS MISMATCH IS DEFINITIVE FRAUD: Parse angiography report for number of vessels with significant stenosis (>70%). Compare to claimed bypasses. Flag if bypasses > diseased vessels.",
+            "Operative notes must detail each anastomosis: LIMA to LAD, SVG to OM, SVG to PDA, etc. Count these and match to billing code for number of bypasses.",
+            "Missing angiography report = claim should be denied - cannot perform CABG without it; either fraud or gross negligence.",
+            "Check for unbundling: CPB charges, ICU for standard 1-2 days, conduit harvesting should be included in package.",
+            "Prolonged ICU stay (>3 days) must have documented complication - atrial fibrillation, renal dysfunction, bleeding, stroke. Absence suggests billing inflation or quality issues.",
+            "Emergency vs. elective coding: Emergency has higher rates. Check admission timeline and documentation of acute indication."
+        ]
+    }
+}

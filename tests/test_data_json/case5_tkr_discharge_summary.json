@@ -1,0 +1,218 @@
+{
+  "hospital_info": {
+    "name": "Manipal Hospital Bangalore",
+    "address": "98, HAL Airport Road, Bengaluru - 560017",
+    "phone": "080-25023344",
+    "email": "medical.records@manipalhospitals.com",
+    "registration_no": "KA/BLR/2001/45678"
+  },
+  "summary_info": {
+    "summary_no": "DS/2025/012890",
+    "date": "17/10/2025"
+  },
+  "patient_info": {
+    "name": "Sudha Rao",
+    "age_gender": "65 Years / Female",
+    "patient_id": "MAN2025012890",
+    "address": "45, Koramangala, Bangalore - 560034",
+    "contact": "+91-9845678901"
+  },
+  "insurance_details": {
+    "tpa_name": "Star Health Insurance TPA Ltd.",
+    "policy_number": "STAR/COMP/2021/567890",
+    "authorization_number": "AUTH-2025-90123"
+  },
+  "admission_discharge_details": {
+    "admission_datetime": "10/10/2025 at 07:00 hrs",
+    "discharge_datetime": "17/10/2025 at 15:00 hrs",
+    "total_duration": "7 Days",
+    "admission_type": "Planned/Elective",
+    "room_category": "Single Private AC Room",
+    "treating_consultant": "Dr. Arvind Kumar",
+    "qualification": "MBBS, MS (Orthopaedics), DNB, Fellowship in Joint Replacement",
+    "registration_number": "KMC/34567/2006",
+    "specialty": "Orthopaedic Surgery - Joint Replacement",
+    "contact": "9876345678"
+  },
+  "clinical_summary": {
+    "presenting_complaints": "Patient presented with severe left knee pain for past 5 years, progressively worsening over last 2 years. Pain score 8-9/10 on VAS scale, significantly limiting daily activities. Unable to walk more than 50 meters without rest. Cannot climb stairs without support. Difficulty getting up from chair or squatting. Night pain disturbing sleep. Conservative management with NSAIDs, physiotherapy, weight reduction, and intra-articular hyaluronic acid injection (6 months ago) provided inadequate relief.",
+    "medical_history": "Known Type 2 Diabetes Mellitus for 8 years, managed on oral hypoglycemics (Tab. Metformin 500mg BD + Tab. Glimepiride 2mg OD). HbA1c 6.5% pre-operatively (well controlled). Known Hypertension for 6 years, controlled on Tab. Telmisartan 40mg OD. No history of ischemic heart disease, stroke, or other major illnesses. No previous surgeries. No known drug allergies.",
+    "preop_examination": "Physical Examination: Height 158cm, Weight 72kg, BMI 28.8 (overweight). BP 132/84 mmHg (controlled), Pulse 76/min regular. Gait antalgic, requires walking stick support. Left knee examination: Range of motion limited - Flexion 90° (normal 135°), Extension lag 5°. Crepitus on movement. Tenderness over medial joint line. No effusion. Varus deformity 8 degrees clinically.\\n\\nX-ray Left Knee AP & Lateral (05/08/2025): Kellgren-Lawrence Grade IV Osteoarthritis. Complete loss of joint space in medial compartment. Subchondral sclerosis. Large osteophytes at joint margins. 8-degree varus angulation. Patellofemoral joint also shows degenerative changes.\\n\\nCardiac Evaluation: 2D Echo (18/08/2025) - Normal LV systolic function, EF 60%, no valvular abnormalities. ECG - Normal sinus rhythm. Cleared for surgery under regional anesthesia.\\n\\nDiabetes Control: HbA1c 6.5%, Fasting blood sugar 118 mg/dL - Acceptable for surgery. Endocrinology consultation obtained for perioperative glucose management plan.",
+    "preop_investigations": [
+      "X-ray Left Knee: Grade IV OA, complete medial joint space loss, 8° varus",
+      "Complete Blood Count: Hb 12.5 g/dL, TLC 7800/cumm, Platelets 2.5 lakhs",
+      "HbA1c: 6.5%",
+      "Blood Sugar Fasting: 118 mg/dL",
+      "Renal Function Tests: Normal",
+      "Liver Function Tests: Normal",
+      "Coagulation Profile: PT/INR normal",
+      "ECG: Normal sinus rhythm",
+      "2D Echocardiography: EF 60%, normal LV function",
+      "Chest X-ray: Clear lung fields",
+      "ESR: 22 mm/hr",
+      "CRP: Normal",
+      "Rheumatoid Factor: Negative"
+    ]
+  },
+  "diagnosis": {
+    "provisional_diagnosis": "Severe Osteoarthritis Left Knee (Kellgren-Lawrence Grade IV) in Type 2 Diabetic Patient",
+    "provisional_icd10": "M17.1",
+    "final_diagnosis": "Post-operative status following left total knee replacement (cemented, posterior stabilized with computer navigation) for end-stage osteoarthritis in diabetic patient with post-operative anemia managed with blood transfusion",
+    "final_icd10": "M17.1"
+  },
+  "procedure": {
+    "name": "Left Total Knee Replacement (Cemented, Posterior Stabilized) with Computer Navigation",
+    "icd_10_pcs": "0SRC0JZ",
+    "date_time": "10/10/2025 at 10:00 hrs",
+    "duration": "110 minutes",
+    "anesthesia": "Spinal anesthesia (Bupivacaine 0.5% heavy 3ml) with sedation",
+    "technique": "Patient positioned supine. Pneumatic tourniquet applied to left thigh. Midline skin incision, medial parapatellar approach. Computer navigation trackers placed on femur and tibia for precise alignment. Measured resection technique used. Distal femoral cut, anterior and posterior femoral cuts, chamfer cuts performed using navigation-guided cutting jigs. Proximal tibial cut perpendicular to mechanical axis. Trial components inserted - excellent stability achieved in flexion and extension, 0° varus/valgus alignment confirmed on navigation. Patella resurfaced. Final cemented components implanted: Posterior Stabilized femoral component, tibial baseplate with polyethylene insert, patellar button. Bone cement cured. Range of motion 0-120° achieved intraoperatively. Thorough lavage. Hemostasis achieved. 16Fr surgical drain inserted. Wound closed in layers. Compression bandage and ice pack applied.",
+    "intraop_findings": "Severe Grade IV tricompartmental osteoarthritis as expected. Medial compartment bone-on-bone wear. Large osteophytes removed. Posterior cruciate ligament sacrificed (PS design). No intraoperative complications. Navigation confirmed mechanical axis alignment within 0° ± 1° (ideal). Estimated blood loss: 350ml (within acceptable range).",
+    "implant_details": "Cemented Posterior Stabilized Total Knee Prosthesis: Femoral component (size 3), Tibial baseplate (size 3) with polyethylene insert (10mm thickness), Patellar button (32mm). Bone cement (2 packs). Batch No: TKR2025-8901. All components from same manufacturer system for optimal compatibility."
+  },
+  "postop_course": {
+    "day0": "Patient shifted to recovery room post-surgery. Vitals stable. Spinal anesthesia wore off after 4 hours, sensation and motor power returning normally. Started on IV fluids, antibiotics (Inj. Ceftriaxone 1g BD), IV analgesics, Inj. Tranexamic acid for bleeding control. Drain output: 180ml blood-stained fluid in first 6 hours (acceptable). Blood sugar monitoring initiated - insulin sliding scale started as per endocrinology protocol. Ice packs applied to reduce swelling. Patient monitored closely.",
+    "day1": "Post-op day 1 (11/10): Patient comfortable. Drain output: 320ml total in 24 hours. Drain removed as output decreasing. Hemoglobin checked: 9.2 g/dL (dropped from pre-op 12.5 g/dL - expected post-operative hemodilution). Patient tolerating liquids. Blood sugar levels: Fasting 145 mg/dL, Post-lunch 198 mg/dL - insulin doses adjusted. Physiotherapy initiated: Ankle pumps, quadriceps isometric exercises, knee bending 0-40° with CPM machine. Pain score 6/10, managed with IV analgesics.",
+    "day2": "Post-op day 2 (12/10): Patient complained of fatigue and dizziness. Hemoglobin rechecked: 7.8 g/dL (significant drop, symptomatic anemia). Patient counseled regarding need for blood transfusion. Consent obtained. 2 units Packed RBC transfused over 6 hours. Post-transfusion Hb: 10.2 g/dL. Patient feeling better. Blood sugar: Fasting 162 mg/dL - insulin regimen continued. Started on soft diet. Physiotherapy: Sitting on bedside, active knee bending 0-60°, quadriceps strengthening.",
+    "day3": "Post-op day 3 (13/10): Post-transfusion recovery excellent. Patient energetic. Hemoglobin stable at 10.1 g/dL. Blood sugar improving (Fasting 138 mg/dL, Post-lunch 175 mg/dL). Switched to oral antibiotics and analgesics. Physiotherapy: Standing with walker support achieved, knee ROM 0-75°, partial weight bearing walking (10 steps with walker). Wound check - clean, dry, healing well.",
+    "day4": "Post-op day 4 (14/10): Patient ambulating with walker independently (20 meters). Knee ROM 0-85°. Blood sugar well controlled (Fasting 128 mg/dL). IV lines removed. Completely on oral medications. Physiotherapy: Stair climbing training initiated (3 steps up and down with walker support). Quadriceps strength improving (able to do straight leg raise).",
+    "day5": "Post-op day 5 (15/10): Excellent progress. Walking 50 meters with walker. Knee ROM 0-90°. Blood sugars consistently <140 mg/dL fasting. Physiotherapy: Advanced exercises - mini squats, wall slides, stationary cycling. Patient and family trained on home exercise protocol.",
+    "day6": "Post-op day 6 (16/10): Patient ready for discharge functionally. Walking 100 meters with walker. Knee ROM 0-95°. X-ray left knee post-op (Day 6): Prosthesis well positioned, mechanical axis alignment excellent, no fractures, no loosening. Suture line intact. Blood sugar stable. Hemoglobin 10.3 g/dL. All wounds healing well.",
+    "day7": "Post-op day 7 (17/10): Patient completely comfortable. Independent with walker for ambulation and basic ADLs (activities of daily living). Knee ROM 0-100°. Pain minimal (VAS 2/10). Blood sugar well controlled on adjusted oral medications. Declared medically fit for discharge with home physiotherapy protocol and medications."
+  },
+  "complications": "Post-operative anemia (Hemoglobin dropped from 12.5 g/dL to 7.8 g/dL by Day 2) due to surgical blood loss and hemodilution, requiring 2 units Packed RBC transfusion on Day 2. Patient recovered well post-transfusion with Hb stabilizing at 10.2-10.3 g/dL. Perioperative blood sugar fluctuations in diabetic patient requiring insulin sliding scale adjustment and physician consultations - blood sugars stabilized by Day 5. These complications necessitated extended hospital stay (7 days instead of planned 5 days) for close monitoring. No surgical complications, no wound infection, no deep vein thrombosis, no thromboembolic events.",
+  "condition_at_discharge": "Stable and comfortable. Afebrile (temperature 98.4°F). Pain minimal (VAS 2/10). Surgical wound clean, dry, healing well, sutures intact. Knee ROM 0-100° (excellent for Day 7 post-op). Ambulating independently with walker for 100+ meters. Able to climb stairs with walker support. Hemoglobin stable at 10.3 g/dL. Blood sugar well controlled (Fasting 122 mg/dL on adjusted oral medications). BP 126/80 mmHg (controlled on home medication). Patient and family well-trained on physiotherapy exercises, medication schedule, DVT injection technique, and wound care.",
+  "discharge_medications": [
+    {
+      "name": "Tab. Amoxicillin-Clavulanate 625mg",
+      "dosage": "1 tablet three times daily after food",
+      "duration": "7 days",
+      "purpose": "Complete antibiotic course for surgical site infection prophylaxis"
+    },
+    {
+      "name": "Tab. Aceclofenac 100mg + Paracetamol 325mg",
+      "dosage": "1 tablet twice daily after food",
+      "duration": "14 days",
+      "purpose": "Pain and inflammation control"
+    },
+    {
+      "name": "Tab. Pantoprazole 40mg",
+      "dosage": "1 tablet once daily before breakfast",
+      "duration": "14 days",
+      "purpose": "Gastric protection while on NSAIDs"
+    },
+    {
+      "name": "Inj. Enoxaparin 40mg (Subcutaneous)",
+      "dosage": "1 injection once daily (self-administered or by family member)",
+      "duration": "14 days",
+      "purpose": "Deep vein thrombosis (DVT) prophylaxis post-joint replacement"
+    },
+    {
+      "name": "Tab. Aspirin 75mg",
+      "dosage": "1 tablet once daily after dinner",
+      "duration": "6 weeks (continue after Enoxaparin stopped)",
+      "purpose": "Extended DVT prophylaxis"
+    },
+    {
+      "name": "Tab. Metformin 500mg",
+      "dosage": "1 tablet twice daily after meals",
+      "duration": "Continue (chronic medication)",
+      "purpose": "Diabetes management"
+    },
+    {
+      "name": "Tab. Glimepiride 2mg",
+      "dosage": "1 tablet once daily before breakfast",
+      "duration": "Continue (chronic medication), dose may need adjustment",
+      "purpose": "Diabetes management"
+    },
+    {
+      "name": "Tab. Telmisartan 40mg",
+      "dosage": "1 tablet once daily in morning",
+      "duration": "Continue (chronic medication)",
+      "purpose": "Blood pressure control"
+    },
+    {
+      "name": "Tab. Calcium Carbonate 500mg + Vitamin D3 400 IU",
+      "dosage": "1 tablet twice daily with meals",
+      "duration": "3 months",
+      "purpose": "Bone health and healing support"
+    },
+    {
+      "name": "Tab. Iron + Folic Acid (Ferrous Fumarate 200mg + Folic Acid 1.5mg)",
+      "dosage": "1 tablet once daily after lunch",
+      "duration": "6 weeks",
+      "purpose": "Correction of post-operative anemia"
+    },
+    {
+      "name": "Povidone-Iodine 5% Solution",
+      "dosage": "Apply to wound during dressing change (every alternate day)",
+      "duration": "Until suture removal (Day 14)",
+      "purpose": "Wound antiseptic care"
+    }
+  ],
+  "follow_up_instructions": {
+    "schedule": [
+      "Day 14 post-op (24/10/2025): Wound check, suture removal, X-ray knee",
+      "Week 6 post-op (21/11/2025): Clinical assessment, ROM measurement, X-ray knee",
+      "Week 12 post-op (02/01/2026): Final post-operative assessment, ROM, functional evaluation",
+      "Blood sugar monitoring: Weekly for 4 weeks with primary physician, adjust medications as needed",
+      "Hemoglobin check at Week 4: Confirm anemia correction"
+    ],
+    "contact": "Orthopaedic OPD: 080-25023344 (Ext: 789), Mon-Sat 9am-5pm",
+    "activity_dos": [
+      "Perform physiotherapy exercises 3 times daily as demonstrated (detailed protocol provided separately)",
+      "Walk with walker support initially, progress to stick by Week 3-4",
+      "Apply ice packs to knee 3-4 times daily for 15-20 minutes to reduce swelling",
+      "Keep leg elevated when sitting or lying down",
+      "Wear compression stockings (TED) for 6 weeks to prevent DVT",
+      "Take all medications strictly as prescribed, especially DVT injections for 14 days",
+      "Monitor blood sugar daily (fasting and post-lunch) for 4 weeks, maintain log",
+      "Keep surgical wound clean and dry, change dressing every alternate day",
+      "Resume normal diet, maintain adequate protein intake for healing"
+    ],
+    "activity_donts": [
+      "Do not bear full weight without walker/stick support for first 3 weeks",
+      "Avoid sitting cross-legged or squatting for 3 months",
+      "Do not kneel directly on operated knee for 6 months",
+      "Avoid high-impact activities (running, jumping) permanently",
+      "Do not drive for 6 weeks or until surgeon clearance",
+      "Avoid prolonged sitting (>30 minutes) without getting up and walking",
+      "Do not wet surgical wound until sutures removed (Day 14) - sponge bath only",
+      "Avoid air travel for 6 weeks (DVT risk)",
+      "Do not miss DVT injection doses (very important)",
+      "Do not stop diabetes medications without physician consultation"
+    ],
+    "warning_signs": [
+      "Fever >100.4°F (38°C) or chills",
+      "Increasing redness, swelling, warmth, or pus discharge from wound",
+      "Severe pain not controlled by medications",
+      "Calf pain, swelling, or warmth (may indicate DVT)",
+      "Sudden shortness of breath or chest pain (may indicate pulmonary embolism - call ambulance immediately)",
+      "Persistent numbness or tingling in foot",
+      "Blood sugar levels consistently >250 mg/dL or <70 mg/dL",
+      "Excessive bleeding from wound or injection sites",
+      "Unable to move knee or sudden loss of knee flexion"
+    ],
+    "emergency_contact": "080-25023344 (24x7 Emergency), Dr. Arvind Kumar: 9876345678"
+  },
+  "future_treatment_plan": "Continue home-based physiotherapy exercises for 3 months with progressive strengthening and ROM improvement (target: 0-120° by Week 12). Weekly blood sugar monitoring with primary physician for medication adjustment. Hemoglobin recheck at Week 4 to confirm anemia correction (target Hb >11 g/dL); continue iron supplementation if needed. Gradual weight reduction to BMI <25 to reduce stress on prosthesis (target: lose 8-10kg over 6 months). Transition from walker to stick by Week 3-4, then independent walking by Week 6-8. Return to normal daily activities by Week 8-10. Low-impact exercises (swimming, stationary cycling) can be started after 3 months with surgeon approval. Avoid high-impact activities permanently to preserve prosthesis longevity. Annual X-ray knee follow-up to monitor prosthesis positioning and wear. Expected prosthesis lifespan: 15-20 years with proper care.",
+  "doctor_declaration": {
+    "certifications": [
+      "The patient was under my care during the hospitalization period mentioned above.",
+      "The medical information provided in this discharge summary is true and correct to the best of my knowledge.",
+      "The treatment provided was medically necessary and appropriate for the patient's condition.",
+      "Computer navigation was used to ensure precise implant alignment and optimal outcomes, which added to surgical time and cost but is considered standard of care for complex joint replacements.",
+      "Post-operative anemia requiring blood transfusion was a recognized complication of major joint replacement surgery and was managed appropriately with 2 units PRBC.",
+      "Perioperative diabetes management requiring insulin therapy and physician consultations was medically necessary to prevent wound healing complications and surgical site infections in this diabetic patient.",
+      "Extended hospital stay (7 days instead of planned 5 days) was medically warranted for close monitoring of anemia recovery and blood sugar control before safe discharge.",
+      "All original documents including bills, investigation reports, X-rays, transfusion records, and navigation reports have been provided to the patient for insurance claim submission."
+    ],
+    "doctor_name": "Dr. Arvind Kumar",
+    "qualification": "MBBS, MS (Orthopaedics), DNB, Fellowship in Joint Replacement",
+    "registration": "KMC/34567/2006",
+    "designation": "Consultant Orthopaedic Surgeon - Joint Replacement Specialist",
+    "contact": "9876345678",
+    "email": "dr.arvind.kumar@manipalhospitals.com",
+    "date": "17/10/2025"
+  }
+}

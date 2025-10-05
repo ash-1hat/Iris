@@ -1,0 +1,79 @@
+{
+  "test_name": "Test Case 5: Total Knee Replacement - Good Score",
+  "expected_score": "75-80",
+  "expected_status": "Needs Review (Yellow) - Minor improvements needed",
+  "main_issue": "Documentation adequate but could be more specific",
+  "policy_details": {
+    "insurance_company": "Star Health and Allied Insurance",
+    "policy_type": "Star Comprehensive Insurance Policy",
+    "policy_number": "STAR/COMP/2021/567890",
+    "sum_insured": 1000000,
+    "policy_start_date": "01/01/2021",
+    "planned_admission_date": "10/10/2025",
+    "procedure": "Total Knee Replacement (TKR)"
+  },
+  "patient_details": {
+    "patient_name": "Sudha Rao",
+    "gender": "Female",
+    "age": "65 Years",
+    "date_of_birth": "22/08/1960",
+    "contact_number": "9845678901",
+    "address": "45, Koramangala, Bangalore - 560034",
+    "tpa_card_id": "STAR/KA/135790"
+  },
+  "treating_doctor": {
+    "doctor_name": "Dr. Arvind Kumar",
+    "contact_number": "9876345678",
+    "qualification": "MBBS, MS (Orthopaedics), DNB, Fellowship in Joint Replacement",
+    "registration_number": "KMC/34567/2006"
+  },
+  "illness_details": {
+    "presenting_complaint": "Patient presents with severe osteoarthritis of the left knee causing significant pain and functional limitation. She reports difficulty walking more than 50 meters without rest, inability to climb stairs without support, and severe pain limiting daily activities such as getting up from a chair and squatting. Pain score is 8/10 on VAS scale at rest, increasing to 9-10/10 on movement.",
+    "duration": "5 Years (Progressive deterioration over last 2 years)",
+    "first_consultation_date": "10/08/2025",
+    "provisional_diagnosis": "Severe Osteoarthritis Left Knee (Kellgren-Lawrence Grade IV)",
+    "icd_10_code": "M17.1"
+  },
+  "clinical_findings": {
+    "relevant_findings": "Physical Examination: Gait antalgic, walks with walking stick support. Range of Motion limited - Flexion 90 degrees (normal 135), Extension lag 5 degrees. Crepitus present on movement. Tenderness over medial joint line. X-ray Left Knee AP and Lateral (05/08/2025): Shows Grade IV Kellgren-Lawrence Osteoarthritis with complete loss of joint space in medial compartment, subchondral sclerosis, large osteophytes, and varus deformity of 8 degrees. Blood Investigations: ESR 22 mm/hr, CRP normal, Rheumatoid Factor negative.",
+    "past_history": "Patient has been experiencing progressive knee pain for 5 years. Initially managed with NSAIDs and physiotherapy for 1 year with minimal relief. Conservative management including weight reduction, activity modification, and medications no longer providing adequate pain relief."
+  },
+  "past_medical_history": "Type 2 Diabetes Mellitus on oral hypoglycemics for 8 years (well controlled, HbA1c 6.5%). Hypertension on Tab. Telmisartan 40mg OD for 6 years (well controlled).",
+  "investigations": {
+    "diagnostic_tests": "1. X-ray Left Knee AP & Lateral (05/08/2025): Grade IV Kellgren-Lawrence OA, complete joint space loss medially, osteophytes, 8-degree varus\n2. Complete Blood Count (15/08/2025): Hb 12.5 g/dL, TLC 7800/cumm, normal\n3. ESR (15/08/2025): 22 mm/hr\n4. CRP (15/08/2025): Normal\n5. Rheumatoid Factor (15/08/2025): Negative\n6. Blood Sugar Fasting (15/08/2025): 118 mg/dL\n7. HbA1c (15/08/2025): 6.5%\n8. Renal Function Tests (15/08/2025): Normal\n9. ECG (15/08/2025): Normal sinus rhythm\n10. 2D Echo (18/08/2025): Normal LV function, EF 60%",
+    "medical_management": "Conservative management trial for 1 year including: NSAIDs (Tab. Diclofenac 50mg BD), physiotherapy sessions, weight reduction program, activity modification, intra-articular hyaluronic acid injection (6 months ago) - all provided inadequate relief. Surgical intervention is now medically necessary.",
+    "proposed_treatment": "Surgical Management - Left Total Knee Replacement"
+  },
+  "surgical_details": {
+    "surgery_name": "Left Total Knee Replacement (Cemented)",
+    "icd_10_pcs_code": "0SRC0JZ",
+    "route_of_drug": "Intravenous + Oral",
+    "other_details": "Standard cemented TKR with posterior stabilized prosthesis. Spinal anesthesia. Post-operative physiotherapy protocol for early mobilization."
+  },
+  "accident_details": "Not Applicable",
+  "maternity_details": "Not Applicable",
+  "hospitalization_details": {
+    "emergency_or_planned": "Planned",
+    "admission_date": "10/10/2025",
+    "admission_time": "07:00 AM",
+    "expected_days": "5 Days",
+    "icu_days": "0 Days",
+    "room_type": "Single Private AC"
+  },
+  "cost_breakdown": {
+    "room_nursing_diet": 30000,
+    "investigation_diagnostic": 12000,
+    "icu_charges": 0,
+    "ot_charges": 60000,
+    "professional_fees": 85000,
+    "medicines_consumables_implants": 75000,
+    "other_expenses": 13000,
+    "package_charges": 0,
+    "total_cost": 275000
+  },
+  "declaration": {
+    "doctor_name": "Dr. Arvind Kumar",
+    "date": "20/08/2025"
+  },
+  "notes": "Good documentation overall: X-ray shows Grade IV OA, conservative management mentioned (NSAIDs, PT for 1 year), basic functional impact documented (difficulty walking, climbing stairs). Minor gaps: Missing specific PT trial duration details, no detailed pain scoring timeline, could provide more specific functional assessment metrics. Cost is median range for TKR (Rs.2,75,000). Room rent Rs.30,000/5 days = Rs.6,000/day which is UNDER Rs.10,000/day limit for SI 10L. Should score 75-80 with minor WARNING from Agent 3 for documentation gaps."
+}

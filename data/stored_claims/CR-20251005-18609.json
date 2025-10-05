@@ -1,0 +1,54 @@
+{
+  "claim_id": "CR-20251005-18609",
+  "timestamp": "2025-10-05T05:13:30.057383",
+  "validation_score": 80,
+  "readiness_status": "warning",
+  "patient_info": {
+    "name": "Unknown",
+    "age": null,
+    "gender": null,
+    "contact": null
+  },
+  "policy_info": {
+    "insurer": "Bajaj Allianz General Insurance",
+    "policy_type": "My Health Care Plan-1",
+    "policy_number": "Sh12345678",
+    "sum_insured": 1000000,
+    "policy_start_date": "2023-01-01"
+  },
+  "procedure_info": {
+    "procedure_id": "cataract_surgery",
+    "diagnosis": null,
+    "icd_code": null,
+    "planned_admission_date": "2025-10-08",
+    "expected_stay_days": 1,
+    "room_type": "Unknown"
+  },
+  "hospital_info": {
+    "name": null,
+    "address": null
+  },
+  "doctor_info": {
+    "name": null,
+    "qualification": null,
+    "registration_number": null
+  },
+  "expected_costs": {
+    "room_charges": 0,
+    "surgeon_fees": 0,
+    "anesthetist_fees": 0,
+    "ot_charges": 0,
+    "icu_charges": 0,
+    "investigations": 0,
+    "medicines_consumables": 0,
+    "implants": 0,
+    "other_charges": 0,
+    "total_estimated_cost": 0
+  },
+  "validation_summary": {
+    "completeness_status": "pass",
+    "policy_status": "pass",
+    "medical_review_status": "warning",
+    "fwa_status": "pass"
+  }
+}

@@ -1,0 +1,32 @@
+# Core API Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Data Validation
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# LLM & AI
+anthropic==0.18.1
+
+# PDF Processing
+pdfplumber==0.10.3
+PyPDF2==3.0.1
+
+# Utilities
+python-dotenv==1.0.0
+python-dateutil==2.8.2
+
+# Frontend (Streamlit)
+streamlit==1.31.0
+requests==2.31.0
+
+# Testing
+pytest==8.0.0
+pytest-asyncio==0.23.3
+httpx==0.26.0
+
+# Development
+black==24.1.1
+flake8==7.0.0

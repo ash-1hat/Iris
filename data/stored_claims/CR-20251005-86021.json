@@ -1,0 +1,54 @@
+{
+  "claim_id": "CR-20251005-86021",
+  "timestamp": "2025-10-05T13:28:28.414884",
+  "validation_score": 80,
+  "readiness_status": "warning",
+  "patient_info": {
+    "name": "Lakshmi Devi",
+    "age": 68,
+    "gender": "Female",
+    "contact": "9876512345"
+  },
+  "policy_info": {
+    "insurer": "Star Health and Allied Insurance",
+    "policy_type": "Star Comprehensive Insurance Policy",
+    "policy_number": "SH12345678",
+    "sum_insured": 1000000,
+    "policy_start_date": "2023-01-01"
+  },
+  "procedure_info": {
+    "procedure_id": "cataract_surgery",
+    "diagnosis": "Bilateral Senile Cataract (Immature), Right Eye > Le ft Eye",
+    "icd_code": "H25.9",
+    "planned_admission_date": "2025-10-06",
+    "expected_stay_days": 1,
+    "room_type": null
+  },
+  "hospital_info": {
+    "name": "Hospital name not specified in document",
+    "address": null
+  },
+  "doctor_info": {
+    "name": "Dr. Anil Kumar",
+    "qualification": "MBBS, MS (Ophthalmology), DNB",
+    "registration_number": "KMC/67890/2005"
+  },
+  "expected_costs": {
+    "room_charges": 3500.0,
+    "surgeon_fees": 14000.0,
+    "anesthetist_fees": 6000.0,
+    "ot_charges": 15000.0,
+    "icu_charges": 0.0,
+    "investigations": 4500.0,
+    "medicines_consumables": 7000.0,
+    "implants": 0.0,
+    "other_charges": 2000.0,
+    "total_estimated_cost": 52000.0
+  },
+  "validation_summary": {
+    "completeness_status": "pass",
+    "policy_status": "pass",
+    "medical_review_status": "warning",
+    "fwa_status": "pass"
+  }
+}

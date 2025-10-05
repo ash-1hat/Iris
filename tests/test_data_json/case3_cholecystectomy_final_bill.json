@@ -1,0 +1,410 @@
+{
+  "hospital_info": {
+    "name": "Apollo Specialty Hospital",
+    "address": "45, MG Road, Bengaluru - 560001, Karnataka, India",
+    "phone": "080-40505050",
+    "fax": "080-40505051",
+    "email": "billing@apollospecialty.com",
+    "gstin": "29AAACS1234G1Z6",
+    "registration_no": "KA/BLR/2003/67890"
+  },
+  "bill_info": {
+    "bill_no": "ASH/BLR/2025/011567",
+    "date": "15/10/2025",
+    "time": "14:00 hrs",
+    "patient_id": "ASH2025011567"
+  },
+  "patient_info": {
+    "name": "Priya Sharma",
+    "age_gender": "42 Years / Female",
+    "address": "67, Indiranagar, Bangalore - 560038",
+    "contact": "+91-9845123456",
+    "email": "priya.sharma@email.com"
+  },
+  "insurance_info": {
+    "tpa_name": "HDFC ERGO Health Insurance TPA",
+    "policy_number": "HDFC/OPT/2022/123456",
+    "authorization_number": "AUTH-2025-89012",
+    "authorized_amount": "110000.00"
+  },
+  "admission_details": {
+    "date_of_admission": "10/10/2025",
+    "date_of_discharge": "15/10/2025",
+    "total_days": "5 Days",
+    "room_type": "Single Private AC Room",
+    "treating_consultant": "Dr. Rajesh Malhotra (MS General Surgery, FMAS)",
+    "department": "General & Laparoscopic Surgery",
+    "admission_type": "Planned/Elective"
+  },
+  "diagnosis_procedure": {
+    "primary_diagnosis": "Symptomatic Cholelithiasis with Common Bile Duct Stone (Intraoperative Finding)",
+    "icd_10_code": "K80.5",
+    "procedure_performed": "Laparoscopic Cholecystectomy with Laparoscopic Common Bile Duct Exploration and T-tube Insertion",
+    "icd_10_pcs_code": "0FT44ZZ + 0FC98ZZ",
+    "complication": "Intraoperative finding: Common bile duct stone (12mm) identified during surgery, required additional CBDE procedure"
+  },
+  "itemized_charges": [
+    {
+      "section": "A",
+      "section_name": "ROOM & BOARDING CHARGES",
+      "items": [
+        {
+          "sr": "1",
+          "description": "Room Rent - Single AC (10-15 Oct)",
+          "qty": "5",
+          "rate": "5000.00",
+          "amount": "25000.00"
+        },
+        {
+          "sr": "2",
+          "description": "Nursing Charges",
+          "qty": "5",
+          "rate": "800.00",
+          "amount": "4000.00"
+        },
+        {
+          "sr": "3",
+          "description": "Patient Diet",
+          "qty": "10",
+          "rate": "200.00",
+          "amount": "2000.00"
+        },
+        {
+          "sr": "4",
+          "description": "Service Charges",
+          "qty": "5",
+          "rate": "400.00",
+          "amount": "2000.00"
+        }
+      ],
+      "subtotal": "33000.00"
+    },
+    {
+      "section": "B",
+      "section_name": "CONSULTATION & PROFESSIONAL FEES",
+      "items": [
+        {
+          "sr": "5",
+          "description": "Surgeon's Fee (Dr. Rajesh Malhotra) - Cholecystectomy",
+          "qty": "1",
+          "rate": "25000.00",
+          "amount": "25000.00"
+        },
+        {
+          "sr": "6",
+          "description": "Surgeon's Fee - Additional CBDE Procedure",
+          "qty": "1",
+          "rate": "18000.00",
+          "amount": "18000.00"
+        },
+        {
+          "sr": "7",
+          "description": "Anesthetist's Fee (Extended Duration)",
+          "qty": "1",
+          "rate": "12000.00",
+          "amount": "12000.00"
+        },
+        {
+          "sr": "8",
+          "description": "Post-op Consultation Charges",
+          "qty": "4",
+          "rate": "800.00",
+          "amount": "3200.00"
+        },
+        {
+          "sr": "9",
+          "description": "Pre-Anesthetic Consultation",
+          "qty": "1",
+          "rate": "1500.00",
+          "amount": "1500.00"
+        }
+      ],
+      "subtotal": "59700.00"
+    },
+    {
+      "section": "C",
+      "section_name": "OPERATION THEATRE CHARGES",
+      "items": [
+        {
+          "sr": "10",
+          "description": "OT Charges (Complex Laparoscopic Procedure)",
+          "qty": "1",
+          "rate": "28000.00",
+          "amount": "28000.00"
+        },
+        {
+          "sr": "11",
+          "description": "OT Extended Time (Additional 90 minutes)",
+          "qty": "1",
+          "rate": "8000.00",
+          "amount": "8000.00"
+        },
+        {
+          "sr": "12",
+          "description": "OT Consumables & Supplies",
+          "qty": "1",
+          "rate": "3500.00",
+          "amount": "3500.00"
+        },
+        {
+          "sr": "13",
+          "description": "Surgical Instruments Usage",
+          "qty": "1",
+          "rate": "1500.00",
+          "amount": "1500.00"
+        },
+        {
+          "sr": "14",
+          "description": "Laparoscopic Equipment Usage",
+          "qty": "1",
+          "rate": "5000.00",
+          "amount": "5000.00"
+        }
+      ],
+      "subtotal": "46000.00"
+    },
+    {
+      "section": "D",
+      "section_name": "PHARMACY & CONSUMABLES",
+      "items": [
+        {
+          "sr": "15",
+          "description": "Inj. Ceftriaxone 1g (IV)",
+          "qty": "10",
+          "rate": "180.00",
+          "amount": "1800.00"
+        },
+        {
+          "sr": "16",
+          "description": "Inj. Metronidazole 500mg (IV)",
+          "qty": "15",
+          "rate": "120.00",
+          "amount": "1800.00"
+        },
+        {
+          "sr": "17",
+          "description": "Inj. Pantoprazole 40mg (IV)",
+          "qty": "10",
+          "rate": "80.00",
+          "amount": "800.00"
+        },
+        {
+          "sr": "18",
+          "description": "Inj. Analgesics (IV)",
+          "qty": "12",
+          "rate": "150.00",
+          "amount": "1800.00"
+        },
+        {
+          "sr": "19",
+          "description": "IV Fluids (RL, DNS, NS)",
+          "qty": "15",
+          "rate": "120.00",
+          "amount": "1800.00"
+        },
+        {
+          "sr": "20",
+          "description": "Oral Antibiotics (Discharge)",
+          "qty": "1",
+          "rate": "950.00",
+          "amount": "950.00"
+        },
+        {
+          "sr": "21",
+          "description": "Surgical Consumables (drapes, gloves, sutures)",
+          "qty": "1",
+          "rate": "3500.00",
+          "amount": "3500.00"
+        },
+        {
+          "sr": "22",
+          "description": "Syringes, Cannula, IV Sets",
+          "qty": "1",
+          "rate": "1500.00",
+          "amount": "1500.00"
+        },
+        {
+          "sr": "23",
+          "description": "T-tube & Drainage System",
+          "qty": "1",
+          "rate": "3500.00",
+          "amount": "3500.00"
+        },
+        {
+          "sr": "24",
+          "description": "Wound Care & Dressing Material",
+          "qty": "1",
+          "rate": "1200.00",
+          "amount": "1200.00"
+        },
+        {
+          "sr": "25",
+          "description": "Bile Bag & Accessories",
+          "qty": "1",
+          "rate": "850.00",
+          "amount": "850.00"
+        }
+      ],
+      "subtotal": "19500.00"
+    },
+    {
+      "section": "E",
+      "section_name": "IMPLANTS",
+      "items": [],
+      "subtotal": "0.00"
+    },
+    {
+      "section": "F",
+      "section_name": "INVESTIGATIONS & DIAGNOSTICS",
+      "items": [
+        {
+          "sr": "26",
+          "description": "Complete Blood Count (CBC)",
+          "qty": "3",
+          "rate": "400.00",
+          "amount": "1200.00"
+        },
+        {
+          "sr": "27",
+          "description": "Liver Function Tests",
+          "qty": "2",
+          "rate": "800.00",
+          "amount": "1600.00"
+        },
+        {
+          "sr": "28",
+          "description": "Renal Function Tests",
+          "qty": "1",
+          "rate": "700.00",
+          "amount": "700.00"
+        },
+        {
+          "sr": "29",
+          "description": "Serum Electrolytes",
+          "qty": "1",
+          "rate": "600.00",
+          "amount": "600.00"
+        },
+        {
+          "sr": "30",
+          "description": "Serum Bilirubin (Total & Direct)",
+          "qty": "2",
+          "rate": "500.00",
+          "amount": "1000.00"
+        },
+        {
+          "sr": "31",
+          "description": "Serum Amylase & Lipase",
+          "qty": "1",
+          "rate": "900.00",
+          "amount": "900.00"
+        },
+        {
+          "sr": "32",
+          "description": "Intraoperative Cholangiogram",
+          "qty": "1",
+          "rate": "3500.00",
+          "amount": "3500.00"
+        },
+        {
+          "sr": "33",
+          "description": "Post-op X-ray Abdomen",
+          "qty": "2",
+          "rate": "500.00",
+          "amount": "1000.00"
+        },
+        {
+          "sr": "34",
+          "description": "USG Abdomen (Follow-up)",
+          "qty": "1",
+          "rate": "1500.00",
+          "amount": "1500.00"
+        },
+        {
+          "sr": "35",
+          "description": "T-tube Cholangiogram",
+          "qty": "1",
+          "rate": "2500.00",
+          "amount": "2500.00"
+        },
+        {
+          "sr": "36",
+          "description": "Other Lab Tests",
+          "qty": "1",
+          "rate": "1500.00",
+          "amount": "1500.00"
+        }
+      ],
+      "subtotal": "16000.00"
+    },
+    {
+      "section": "G",
+      "section_name": "OTHER CHARGES",
+      "items": [
+        {
+          "sr": "37",
+          "description": "Hospital Registration Charges",
+          "qty": "1",
+          "rate": "300.00",
+          "amount": "300.00"
+        },
+        {
+          "sr": "38",
+          "description": "Medical Records Fee",
+          "qty": "1",
+          "rate": "200.00",
+          "amount": "200.00"
+        },
+        {
+          "sr": "39",
+          "description": "Bio-medical Waste Disposal",
+          "qty": "1",
+          "rate": "500.00",
+          "amount": "500.00"
+        },
+        {
+          "sr": "40",
+          "description": "Administrative Charges",
+          "qty": "1",
+          "rate": "1800.00",
+          "amount": "1800.00"
+        }
+      ],
+      "subtotal": "2800.00"
+    }
+  ],
+  "billing_summary": {
+    "total_bill_amount": "177000.00",
+    "discount": "0.00",
+    "gross_bill_amount": "177000.00",
+    "gst_5_percent": "0.00",
+    "net_payable_amount": "177000.00"
+  },
+  "payment_details": {
+    "mode": "Insurance + Patient",
+    "amount_paid_by_patient": "67000.00",
+    "amount_claimed_from_tpa": "110000.00",
+    "balance_due": "0.00",
+    "receipt_no": "RC/89012/2025"
+  },
+  "payment_breakdown": {
+    "total_net_bill": "177000.00",
+    "tpa_authorized": "110000.00",
+    "patient_responsibility": "67000.00",
+    "reasons": [
+      "Additional CBDE procedure not in original pre-authorization (surgeon fee + extended OT time): Rs.34,000",
+      "Extended hospital stay (2 additional days for T-tube monitoring): Rs.13,200",
+      "Intraoperative cholangiogram and T-tube cholangiogram: Rs.6,000",
+      "T-tube insertion and drainage system: Rs.4,350",
+      "Extended anesthesia and additional medications: Rs.5,600",
+      "Additional investigations (bilirubin, amylase, lipase, follow-up imaging): Rs.3,850"
+    ]
+  },
+  "notes": [
+    "This is a computer-generated bill and requires hospital seal and signature for insurance claims.",
+    "Original bill must be submitted to TPA/Insurance company.",
+    "All amounts are in Indian Rupees (Rs).",
+    "For billing queries, contact within 7 days of discharge.",
+    "Additional procedure (CBDE) was medically necessary due to intraoperative finding of CBD stone - documented in discharge summary."
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "test_name": "Test Case 6: Appendectomy - Waiting Period Violation",
+  "expected_score": "60-65",
+  "expected_status": "Critical Issues (Red)",
+  "main_issue": "Initial 30-day waiting period not met",
+  "policy_details": {
+    "insurance_company": "Bajaj Allianz General Insurance",
+    "policy_type": "Health Guard",
+    "policy_number": "BAJ/HC/2024/111222",
+    "sum_insured": 500000,
+    "policy_start_date": "01/11/2024",
+    "planned_admission_date": "12/11/2024",
+    "procedure": "Appendectomy (Appendix Removal)"
+  },
+  "patient_details": {
+    "patient_name": "Amit Verma",
+    "gender": "Male",
+    "age": "35 Years",
+    "date_of_birth": "10/06/1989",
+    "contact_number": "9845789012",
+    "address": "56, HSR Layout, Bangalore - 560102",
+    "tpa_card_id": "BAJ/KA/567890"
+  },
+  "treating_doctor": {
+    "doctor_name": "Dr. Meena Krishnan",
+    "contact_number": "9876567890",
+    "qualification": "MBBS, MS (General Surgery), FMAS",
+    "registration_number": "KMC/56789/2011"
+  },
+  "illness_details": {
+    "presenting_complaint": "Patient presented to emergency department with acute onset severe abdominal pain in right lower quadrant for past 18 hours. Pain started periumbilically and migrated to right iliac fossa. Associated with high-grade fever (103°F), multiple episodes of vomiting (5 episodes), and severe tenderness. Pain aggravated by any movement. Patient has marked rebound tenderness, rigidity, and guarding on palpation suggestive of peritonitis.",
+    "duration": "18 Hours (Emergency)",
+    "first_consultation_date": "11/11/2024",
+    "provisional_diagnosis": "Acute Appendicitis with Perforation and Generalized Peritonitis",
+    "icd_10_code": "K35.32"
+  },
+  "clinical_findings": {
+    "relevant_findings": "Physical Examination: Temperature 103.2°F, Pulse 118/min, BP 110/70 mmHg. Patient appears toxic and dehydrated. Abdomen: Generalized tenderness maximum in right iliac fossa, marked guarding and rigidity, positive McBurney's point tenderness, positive Rovsing's sign, positive Blumberg's sign (rebound tenderness). Bowel sounds diminished. CECT Abdomen (11/11/2024): Perforated appendix with surrounding abscess (4cm x 3cm), free fluid in pelvis and peritoneal cavity, features of localized peritonitis extending to generalized peritonitis. Blood Investigations: TLC 22,500/cumm (markedly elevated), Neutrophils 92%, CRP 128 mg/L (highly elevated), Serum Lactate 3.2 mmol/L (elevated suggesting sepsis).",
+    "past_history": "No previous episodes of similar pain. Patient was completely well until 18 hours ago when symptoms began acutely. This is clearly an emergency medical condition requiring urgent surgical intervention."
+  },
+  "past_medical_history": "None. No chronic illnesses. No previous surgeries.",
+  "investigations": {
+    "diagnostic_tests": "1. CECT Abdomen with IV contrast (11/11/2024): Perforated appendicitis with peri-appendicular abscess (4cm x 3cm), free fluid in peritoneal cavity, signs of generalized peritonitis\n2. Complete Blood Count (11/11/2024): TLC 22,500/cumm, Neutrophils 92%, Hemoglobin 13.5 g/dL\n3. CRP (11/11/2024): 128 mg/L (highly elevated)\n4. Serum Lactate (11/11/2024): 3.2 mmol/L (elevated)\n5. Serum Electrolytes (11/11/2024): Hyponatremia 132 mEq/L due to dehydration\n6. Renal Function Tests (11/11/2024): Creatinine 1.4 mg/dL (mildly elevated due to dehydration)\n7. Blood Culture (11/11/2024): Sent (pending)\n8. Chest X-ray (11/11/2024): No free gas under diaphragm, no aspiration",
+    "medical_management": "Patient started on aggressive IV fluid resuscitation (2L crystalloid bolus), broad-spectrum IV antibiotics (Inj. Piperacillin-Tazobactam 4.5g TDS + Inj. Metronidazole 500mg TDS), IV analgesics (Inj. Tramadol 100mg), anti-emetics (Inj. Ondansetron 4mg), IV PPI (Inj. Pantoprazole 40mg), correction of electrolyte imbalance. NPO status maintained. Foley's catheter inserted for urine output monitoring. Emergency laparoscopic/open appendectomy with peritoneal lavage planned within 2 hours of presentation. Patient and family counseled about surgical risks given perforation and peritonitis. ICU bed reserved for post-operative monitoring given sepsis risk.",
+    "proposed_treatment": "Emergency Surgical Management - Appendectomy with peritoneal lavage"
+  },
+  "surgical_details": {
+    "surgery_name": "Emergency Laparoscopic Appendectomy (may convert to open) with Peritoneal Lavage and Drainage",
+    "icd_10_pcs_code": "0DTJ4ZZ",
+    "route_of_drug": "Intravenous + Oral",
+    "other_details": "Emergency surgery planned. Initial laparoscopic approach, may convert to open if needed. Appendectomy, abscess drainage, thorough peritoneal lavage, drain placement. Post-operative ICU care for 24-48 hours. IV antibiotics for 7-10 days. Expected prolonged hospitalization (6-7 days) given perforation and peritonitis."
+  },
+  "accident_details": "Not Applicable (Medical Emergency)",
+  "maternity_details": "Not Applicable",
+  "hospitalization_details": {
+    "emergency_or_planned": "Emergency",
+    "admission_date": "12/11/2024",
+    "admission_time": "01:15 AM",
+    "expected_days": "6 Days",
+    "icu_days": "2 Days",
+    "room_type": "Single Private AC"
+  },
+  "cost_breakdown": {
+    "room_nursing_diet": 24000,
+    "investigation_diagnostic": 18000,
+    "icu_charges": 25000,
+    "ot_charges": 22000,
+    "professional_fees": 18000,
+    "medicines_consumables_implants": 13000,
+    "other_expenses": 5000,
+    "package_charges": 0,
+    "total_cost": 125000
+  },
+  "declaration": {
+    "doctor_name": "Dr. Meena Krishnan",
+    "date": "11/11/2024"
+  },
+  "notes": "CRITICAL ISSUE: Initial waiting period NOT met - Policy started 01/11/2024, admission 12/11/2024 = only 11 days elapsed, required 30 days. However, documentation is complete and medical emergency is well-justified (perforation with peritonitis requiring immediate surgery). Higher cost (Rs.1,25,000 vs typical Rs.85,000) is justified by complications (perforation, abscess, peritonitis, extended 6-day stay with 2 ICU days). Room rent Rs.24,000/6 days = Rs.4,000/day which is UNDER Rs.5,000/day limit for SI 5L. Agent 2 should FAIL with CRITICAL violation for waiting period. Other agents should PASS given excellent documentation and justified emergency. NOTE: Some policies waive waiting period for accidents/emergencies - need to check Bajaj policy terms."
+}

@@ -1,0 +1,288 @@
+{
+    "metadata": {
+      "procedure_id": "lap_chole_001",
+      "name": "Laparoscopic Cholecystectomy",
+      "category": "General Surgery / Hepatobiliary Surgery",
+      "subcategory": "Minimally Invasive Surgery",
+      "common_synonyms": ["Gallbladder removal surgery", "Keyhole surgery for gallstones", "Lap chole"],
+      "icd_10_codes": ["K80", "K80.00", "K80.20"],
+      "typical_age_group": "30-60 years; higher in women (F:M = 3:1)"
+    },
+
+    "hospitalization": {
+      "standard_type": "in_patient",
+      "typical_duration": {
+        "unit": "days",
+        "minimum": 1,
+        "maximum": 2,
+        "most_common": 1,
+        "note": "Elective lap chole 1-2 days; acute cholecystitis may require longer"
+      }
+    },
+
+    "cost_analysis": {
+      "india_tier1_cities": {
+        "currency": "INR",
+        "overall_range": {
+          "minimum": 40000,
+          "maximum": 150000,
+          "median": 80000
+        },
+        "city_breakdown": {
+          "bangalore": [55000, 125000],
+          "chennai": [48000, 108000]
+        },
+        "detailed_breakdown": {
+          "surgeon_fee": {
+            "bangalore": [20000, 45000],
+            "chennai": [18000, 40000]
+          },
+          "anesthesia": {
+            "range": [6000, 15000]
+          },
+          "ot_laparoscopy_charges": {
+            "bangalore": [15000, 30000],
+            "chennai": [12000, 25000]
+          },
+          "hospital_stay_1_2days": {
+            "bangalore": [8000, 20000],
+            "chennai": [7000, 18000]
+          },
+          "consumables": {
+            "range": [5000, 15000]
+          }
+        }
+      },
+      "government_cghs_rate": {
+        "laparoscopic": 33000,
+        "open": 24000,
+        "note": "NABH-accredited hospitals"
+      }
+    },
+
+    "medical_necessity": {
+      "primary_indications": [
+        {
+          "indication": "Symptomatic gallstones (Biliary Colic)",
+          "clinical_criteria": [
+            "Recurrent RUQ pain episodes",
+            "Pain triggered by fatty meals",
+            "Ultrasound confirming gallstones",
+            "Interferes with quality of life"
+          ],
+          "documentation_must_include": [
+            "History of recurrent biliary colic episodes with frequency",
+            "Ultrasound report showing gallstones with size/number",
+            "Impact on daily activities/quality of life"
+          ],
+          "strength": "strong"
+        },
+        {
+          "indication": "Acute Cholecystitis",
+          "clinical_criteria": [
+            "RUQ pain, fever, leukocytosis",
+            "Positive Murphy's sign",
+            "USG showing gallbladder wall thickening, pericholecystic fluid"
+          ],
+          "documentation_must_include": [
+            "Clinical triad: RUQ pain, fever, positive Murphy's sign",
+            "USG showing cholecystitis features",
+            "WBC count elevation"
+          ],
+          "strength": "strong",
+          "note": "Often requires urgent surgery"
+        },
+        {
+          "indication": "Prophylactic cholecystectomy for asymptomatic gallstones - GEOGRAPHY SPECIFIC",
+          "clinical_criteria": [
+            "Young healthy women from North/Northeast India (high GBC risk region)",
+            "Large stones >3cm OR calcified 'porcelain' gallbladder OR polyps >10mm",
+            "Immunocompromised patients"
+          ],
+          "documentation_must_include": [
+            "Patient location (North/Northeast India for cancer risk justification)",
+            "Stone size or gallbladder characteristics from USG",
+            "Age and gender (young women in high-risk regions)"
+          ],
+          "strength": "conditional",
+          "note": "CRITICAL: Geographic location matters. Prophylactic surgery NOT indicated for asymptomatic stones in South India without other risk factors"
+        }
+      ],
+
+      "insufficient_justifications": [
+        {
+          "scenario": "Asymptomatic gallstones in low-risk region",
+          "typical_presentation": "Incidental USG finding of gallstones, no symptoms, patient from South India",
+          "why_inadequate": "Asymptomatic stones generally not surgical indication unless high cancer risk (North India geography) or other risk factors",
+          "insurer_likely_response": "Reject; surgery not medically necessary for asymptomatic stones in low-risk population"
+        }
+      ],
+
+      "documentation_checklist": {
+        "essential_elements": [
+          {
+            "element": "Ultrasound abdomen showing gallstones",
+            "format": "Number, size, location of stones; gallbladder wall thickness; CBD diameter",
+            "example": "Multiple gallstones largest 1.2cm, GB wall 4mm, CBD 5mm",
+            "weak_if": "No USG report or vague 'stones present' without details"
+          },
+          {
+            "element": "Symptom documentation for symptomatic cases",
+            "format": "Frequency of biliary colic episodes, severity, triggers",
+            "example": "Recurrent RUQ pain x 6 episodes over 3 months, post-prandial, each lasting 2-4 hours, requiring ER visits x2",
+            "weak_if": "No symptom history for claimed 'symptomatic' gallstones"
+          },
+          {
+            "element": "Geographic location for prophylactic cases",
+            "format": "Patient's state/region of residence",
+            "example": "Patient from Uttar Pradesh (high GBC risk region), young female age 32, asymptomatic 2cm stone - prophylactic surgery justified",
+            "weak_if": "Prophylactic surgery claimed without geographic/risk factor justification"
+          }
+        ]
+      }
+    },
+
+    "required_diagnostics": {
+      "mandatory_preoperative": [
+        {
+          "test": "Abdominal Ultrasound",
+          "threshold": "Confirms gallstones; assesses CBD diameter",
+          "documentation": "Stone count/size, GB wall thickness, CBD diameter",
+          "cost": 1500,
+          "red_flag_if_missing": "Cannot confirm gallstone diagnosis without imaging"
+        },
+        {
+          "test": "Liver Function Tests (LFTs)",
+          "threshold": "Normal in chronic cholelithiasis; elevated if CBD stone",
+          "documentation": "Bilirubin, ALT, AST, ALP, GGT values",
+          "cost": 800,
+          "note": "Abnormal LFTs suggest CBD stone - may need ERCP before surgery"
+        },
+        {
+          "test": "Complete Blood Count",
+          "threshold": "Leukocytosis in acute cholecystitis",
+          "documentation": "WBC count, differential",
+          "cost": 500
+        }
+      ],
+
+      "optional_situational": [
+        {
+          "test": "MRCP (Magnetic Resonance Cholangiopancreatography)",
+          "when_indicated": ["Abnormal LFTs suggesting CBD stone", "Dilated CBD on USG (>6mm)"],
+          "cost": 8000,
+          "note": "Needed if CBD stone suspected before surgery"
+        },
+        {
+          "test": "ERCP (Endoscopic Retrograde Cholangiopancreatography)",
+          "when_indicated": ["Confirmed CBD stone needing removal before cholecystectomy", "Jaundice with choledocholithiasis"],
+          "cost": 25000,
+          "fwa_flag_if": "Performed when both LFTs and USG are normal - unnecessary invasive test"
+        }
+      ],
+
+      "unnecessary_tests": [
+        {
+          "test": "ERCP when LFTs and USG normal",
+          "why_unnecessary": "ERCP invasive with risks; only indicated if CBD stone evidence",
+          "fwa_severity": "high",
+          "action": "Reject ERCP charges if no clinical indication"
+        }
+      ]
+    },
+
+    "fraud_waste_abuse_patterns": {
+      "cost_inflation_schemes": [
+        {
+          "pattern": "Unjustified prophylactic cholecystectomy",
+          "how_detected": "Check patient geography, stone characteristics, symptoms",
+          "red_flag_indicators": [
+            "Asymptomatic stones, patient from South India (low GBC risk)",
+            "No documented high-risk features (large stones, porcelain GB)",
+            "Surgery performed without symptom documentation"
+          ],
+          "action": "Reject if not medically necessary per geographic/risk-based guidelines"
+        },
+        {
+          "pattern": "Unnecessary ERCP",
+          "how_detected": "Check LFTs and CBD diameter on USG",
+          "red_flag_indicators": [
+            "ERCP performed when LFTs normal and CBD <6mm on USG",
+            "No clinical indication for invasive biliary intervention",
+            "ERCP billed 'routinely' before all cholecystectomies"
+          ],
+          "typical_overbilling": "₹25,000",
+          "action": "Reject ERCP charges if no documented CBD pathology"
+        },
+        {
+          "pattern": "High conversion rate to open surgery",
+          "how_detected": "Monitor provider-specific laparoscopic-to-open conversion rates",
+          "red_flag_indicators": [
+            "Conversion rate >10% (normal: 5-7% per Indian studies)",
+            "Pattern of billing higher open procedure rates",
+            "Lack of documented intraoperative difficulty"
+          ],
+          "clinical_context": "While conversion is legitimate safety measure, consistently high rate may indicate inadequate laparoscopic skills or billing manipulation",
+          "action": "Approve conversion if documented difficulty; flag provider for audit if pattern persists"
+        }
+      ],
+
+      "medical_negligence_considerations": [
+        {
+          "issue": "Bile duct injury during laparoscopic cholecystectomy",
+          "incidence": "Higher in lap vs open cholecystectomy",
+          "context": "Common cause of medical negligence litigation in India",
+          "validation_approach": "If claim includes follow-up bile duct repair surgery, flag original cholecystectomy claim for review",
+          "note": "Not FWA but medicolegal concern"
+        }
+      ]
+    },
+
+    "common_complications": {
+      "intraoperative": [
+        {
+          "complication": "Bile duct injury",
+          "incidence": "0.3-0.7% (higher than open surgery)",
+          "management": "Immediate repair or staged reconstruction",
+          "cost_impact": "₹1,00,000-3,00,000 for repair surgery",
+          "legitimate": true,
+          "note": "Serious complication requiring specialist hepatobiliary surgeon"
+        }
+      ],
+      "postoperative": [
+        {
+          "complication": "Bile leak",
+          "incidence": "1-2%",
+          "management": "ERCP with stenting or percutaneous drainage",
+          "cost_impact": "₹30,000-80,000",
+          "legitimate": true
+        }
+      ]
+    },
+
+    "insurer_specific_considerations": {
+      "waiting_periods": {
+        "symptomatic_gallstones": "2-3 years typical waiting period",
+        "acute_cholecystitis": "May be covered as emergency after initial waiting period",
+        "note": "Long waiting period for elective cholecystectomy in most policies"
+      },
+      "geographic_considerations": {
+        "high_gbc_risk_regions": ["North India", "Northeast India", "Uttar Pradesh", "Bihar", "Assam"],
+        "validation_rule": "Prophylactic cholecystectomy in young women from these regions may be justified even if asymptomatic",
+        "low_risk_regions": ["South India"],
+        "validation_rule_low_risk": "Asymptomatic stones generally NOT surgical indication without other risk factors"
+      }
+    },
+
+    "contextual_notes_for_llm": {
+      "medical_reasoning_guidance": "Cholecystectomy necessity depends on THREE factors: (1) Symptoms (recurrent biliary colic), (2) Complications (acute cholecystitis, pancreatitis), OR (3) Cancer risk (geography + demographics). North India has world's highest gallbladder cancer rates, making prophylactic surgery reasonable in young women. South India low-risk, so asymptomatic stones NOT surgical.",
+      
+      "geographic_intelligence": "This is UNIQUE to Indian context. Validation system MUST have geographic rules. Patient from Uttar Pradesh with asymptomatic stones = consider approving. Same patient from Kerala = likely reject as unnecessary. This geographic nuance is evidence-based (GBC epidemiology studies) and critical for fair adjudication.",
+      
+      "common_pitfalls": [
+        "Don't reject all asymptomatic gallstone surgeries - check geography first",
+        "ERCP is invasive with risks - only approve if LFTs abnormal or CBD dilated",
+        "Conversion to open surgery is legitimate if documented difficulty, but watch for patterns"
+      ]
+    }
+  }

@@ -1,0 +1,163 @@
+{
+  "hospital_info": {
+    "name": "Apollo Specialty Hospital",
+    "address": "45, MG Road, Bengaluru - 560001",
+    "phone": "080-40505050",
+    "email": "medical.records@apollospecialty.com",
+    "registration_no": "KA/BLR/2003/67890"
+  },
+  "summary_info": {
+    "summary_no": "DS/2025/011567",
+    "date": "15/10/2025"
+  },
+  "patient_info": {
+    "name": "Priya Sharma",
+    "age_gender": "42 Years / Female",
+    "patient_id": "ASH2025011567",
+    "address": "67, Indiranagar, Bangalore - 560038",
+    "contact": "+91-9845123456"
+  },
+  "insurance_details": {
+    "tpa_name": "HDFC ERGO Health Insurance TPA",
+    "policy_number": "HDFC/OPT/2022/123456",
+    "authorization_number": "AUTH-2025-89012"
+  },
+  "admission_discharge_details": {
+    "admission_datetime": "10/10/2025 at 09:00 hrs",
+    "discharge_datetime": "15/10/2025 at 14:00 hrs",
+    "total_duration": "5 Days",
+    "admission_type": "Planned/Elective",
+    "room_category": "Single Private AC Room",
+    "treating_consultant": "Dr. Rajesh Malhotra",
+    "qualification": "MBBS, MS (General Surgery), FMAS",
+    "registration_number": "KMC/45678/2008",
+    "specialty": "General & Laparoscopic Surgery",
+    "contact": "9876234567"
+  },
+  "clinical_summary": {
+    "presenting_complaints": "Patient presented with recurrent episodes of right upper quadrant abdominal pain for past 6 months. Pain typically occurred 1-2 hours after fatty meals, lasting 2-4 hours. Associated with nausea and occasional vomiting. No fever, no jaundice. Pain progressively worsening in frequency and intensity over past 2 months.",
+    "medical_history": "No significant past medical history. No diabetes, hypertension, or other chronic illnesses. No previous surgeries. No known drug allergies. Family history: Mother had gallstone surgery at age 55.",
+    "preop_examination": "Physical Examination: Vitals stable - BP 118/76 mmHg, Pulse 78/min, Temperature 98.4°F. Abdomen soft, mild tenderness in right hypochondrium, positive Murphy's sign. No palpable mass, no guarding or rigidity.\\n\\nUSG Abdomen (18/09/2025): Multiple gallstones (largest 15mm) in gallbladder. Gallbladder wall thickness 3.2mm (mildly thickened). No pericholecystic fluid. Common bile duct diameter 5mm (normal). No intrahepatic biliary dilatation. Liver, pancreas, kidneys normal.\\n\\nLiver Function Tests: Total Bilirubin 0.9 mg/dL, Direct Bilirubin 0.3 mg/dL, SGOT 32 U/L, SGPT 28 U/L, ALP 110 U/L, Total Protein 7.2 g/dL, Albumin 4.1 g/dL - All within normal limits.\\n\\nComplete Blood Count: Hb 12.8 g/dL, TLC 7,800/cumm, Platelets 2.8 lakhs/cumm - Normal.\\n\\nPre-operative fitness: Patient declared medically fit for surgery under general anesthesia.",
+    "preop_investigations": [
+      "USG Abdomen: Multiple gallstones (largest 15mm), GB wall 3.2mm, CBD 5mm",
+      "Liver Function Tests: All parameters normal",
+      "Complete Blood Count: Normal",
+      "Renal Function Tests: Normal",
+      "Blood Sugar Random: 102 mg/dL",
+      "ECG: Normal sinus rhythm",
+      "Chest X-ray: Clear lung fields"
+    ]
+  },
+  "diagnosis": {
+    "provisional_diagnosis": "Symptomatic Cholelithiasis",
+    "provisional_icd10": "K80.2",
+    "final_diagnosis": "Post-operative status following laparoscopic cholecystectomy with laparoscopic common bile duct exploration for cholelithiasis with choledocholithiasis (intraoperative finding)",
+    "final_icd10": "K80.5"
+  },
+  "procedure": {
+    "name": "Laparoscopic Cholecystectomy with Laparoscopic Common Bile Duct Exploration and T-tube Insertion",
+    "icd_10_pcs": "0FT44ZZ + 0FC98ZZ",
+    "date_time": "10/10/2025 at 11:00 hrs",
+    "duration": "165 minutes (extended from planned 60-75 minutes)",
+    "anesthesia": "General Anesthesia with Endotracheal Intubation",
+    "technique": "Standard 4-port laparoscopic technique initiated. Pneumoperitoneum created. Ports placed at umbilicus (10mm), epigastrium (10mm), right subcostal (5mm x2). Calot's triangle dissected - cystic duct and artery identified and clipped. During dissection, cystic duct appeared dilated. Intraoperative cholangiogram performed via cystic duct cannulation which revealed filling defect in common bile duct (CBD) suggestive of CBD stone (12mm diameter, located in mid-CBD). Decision made to proceed with laparoscopic CBDE. CBD exposed and longitudinal choledochotomy performed (15mm incision). Stone extracted using Dormia basket under fluoroscopic guidance. CBD flushed with saline - completion cholangiogram showed clear bile duct, free flow into duodenum, no residual stones. 14Fr T-tube inserted into CBD and secured. Choledochotomy closed around T-tube with 4-0 Vicryl interrupted sutures. Cholecystectomy completed - gallbladder dissected from liver bed, extracted via umbilical port in specimen bag. Hemostasis achieved. 16Fr drain placed in Morrison's pouch. Ports closed in layers.",
+    "intraop_findings": "Contracted gallbladder with multiple stones (largest 15mm). Dilated cystic duct (8mm). UNEXPECTED FINDING: Single large CBD stone (12mm) in mid-CBD confirmed on intraoperative cholangiogram. No bile leak. No bleeding. Liver and other intra-abdominal organs normal.",
+    "implant_details": "14Fr T-tube inserted into common bile duct for biliary drainage and future cholangiography"
+  },
+  "postop_course": {
+    "day0": "Patient shifted to recovery room post-surgery. Vitals stable. Started on IV fluids and antibiotics (Inj. Ceftriaxone 1g BD + Inj. Metronidazole 500mg TDS). NPO status maintained. T-tube draining bile (60ml greenish-brown bile in first 6 hours - normal). Abdominal drain minimal serosanguinous output (30ml). Pain managed with IV analgesics. Patient monitored closely.",
+    "day1": "Post-op day 1 (11/10): Patient comfortable. Vitals stable, afebrile. T-tube output: 250ml bile in 24 hours (normal range). Drain output: 40ml serous fluid. Started on oral sips of water, tolerating well. Mobilized to chair. Pain score 5/10. Liver function tests ordered - showed mild elevation (Total Bilirubin 1.8 mg/dL, SGOT 88 U/L, SGPT 102 U/L) - expected post-CBDE, trend improving.",
+    "day2": "Post-op day 2 (12/10): T-tube output: 220ml bile. Drain output minimal (20ml). Abdominal drain removed as output <30ml and serous. Started on soft diet, tolerating well. Walking independently. Pain well controlled with oral analgesics. LFT improving (Bilirubin 1.4 mg/dL).",
+    "day3": "Post-op day 3 (13/10): T-tube output: 200ml bile. Patient on regular diet, no nausea. Afebrile. Surgical wounds clean and dry. Bowel sounds present, passed flatus. LFT further improving (Bilirubin 1.1 mg/dL, SGOT 52 U/L, SGPT 68 U/L). T-tube site clean, no bile leak around tube. Patient counseled about T-tube care.",
+    "day4": "Post-op day 4 (14/10): T-tube output: 180ml bile (decreasing trend - normal). Patient completely comfortable, tolerating diet well. Ambulating normally. T-tube cholangiogram performed - showed patent CBD, free flow into duodenum, no retained stones, no stricture. T-tube functioning well. Surgical wounds healing nicely. Patient and family trained on T-tube home care.",
+    "day5": "Post-op day 5 (15/10): T-tube output: 150ml bile. Patient ready for discharge. All wounds healed, T-tube secured properly with bile bag attached. Patient confident about T-tube care at home. Vitals stable. LFT near-normal (Bilirubin 0.9 mg/dL, SGOT 38 U/L, SGPT 42 U/L). Declared medically fit for discharge with T-tube in situ and oral antibiotics."
+  },
+  "complications": "Intraoperative finding of common bile duct stone requiring unplanned additional procedure (laparoscopic CBDE with T-tube insertion). This was NOT a post-operative complication but an unanticipated pathological finding discovered during surgery. The CBD stone was not visualized on pre-operative USG (CBD diameter was 5mm on USG, stone was 12mm - likely mobile stone that moved into CBD between USG and surgery). Intraoperative cholangiogram confirmed the finding and guided successful laparoscopic extraction. No bile leak, no post-operative bleeding, no wound infection.",
+  "condition_at_discharge": "Stable and comfortable. Afebrile (temperature 98.2°F). Pain minimal (VAS 2/10). Tolerating regular oral diet. All surgical wounds clean, dry, healing well. T-tube in situ, draining bile normally (150ml/24hrs), T-tube site clean with no bile leak. Patient and family well-trained on T-tube care and bile bag management. Ambulatory without assistance. Vitals stable (BP 116/74 mmHg, Pulse 72/min).",
+  "discharge_medications": [
+    {
+      "name": "Tab. Amoxicillin-Clavulanate 625mg",
+      "dosage": "1 tablet three times daily after food",
+      "duration": "7 days",
+      "purpose": "Complete antibiotic course for infection prophylaxis"
+    },
+    {
+      "name": "Tab. Metronidazole 400mg",
+      "dosage": "1 tablet three times daily after food",
+      "duration": "7 days",
+      "purpose": "Anaerobic bacterial coverage"
+    },
+    {
+      "name": "Tab. Pantoprazole 40mg",
+      "dosage": "1 tablet once daily before breakfast",
+      "duration": "14 days",
+      "purpose": "Gastric protection while on antibiotics"
+    },
+    {
+      "name": "Tab. Paracetamol 500mg",
+      "dosage": "1-2 tablets as needed for pain (SOS)",
+      "duration": "7 days",
+      "purpose": "Pain management"
+    },
+    {
+      "name": "Tab. Ursodeoxycholic Acid 300mg",
+      "dosage": "1 tablet twice daily after meals",
+      "duration": "3 months",
+      "purpose": "Bile flow support and prevention of bile sludge"
+    }
+  ],
+  "follow_up_instructions": {
+    "schedule": [
+      "Day 7 post-op (22/10/2025): Wound check, T-tube output assessment",
+      "Day 14 post-op (29/10/2025): Suture removal, LFT check, T-tube review",
+      "Week 6 post-op (26/11/2025): T-tube cholangiogram, plan T-tube removal if bile duct clear",
+      "Week 8-10 post-op: T-tube removal (outpatient procedure) if Week 6 cholangiogram normal"
+    ],
+    "contact": "Surgery OPD: 080-40505050 (Ext: 567), Mon-Sat 9am-6pm",
+    "activity_dos": [
+      "Maintain T-tube and bile collection bag as trained",
+      "Empty bile bag when 2/3rd full, measure and record daily bile output",
+      "Keep T-tube site clean and dry, change dressing daily",
+      "Take all medications as prescribed",
+      "Resume normal low-fat diet gradually",
+      "Gentle walking encouraged from day 2 at home"
+    ],
+    "activity_donts": [
+      "Do not pull, tug, or put tension on T-tube",
+      "Avoid heavy lifting (>5kg) for 4 weeks",
+      "Avoid strenuous exercise for 6 weeks",
+      "Do not wet surgical wounds or T-tube site for 48 hours",
+      "Avoid high-fat, fried, or spicy foods for 6 weeks",
+      "Do not miss antibiotic doses"
+    ],
+    "warning_signs": [
+      "Fever >100°F (37.8°C) or chills",
+      "Severe abdominal pain not relieved by medications",
+      "Bile leak around T-tube site or accidental T-tube dislodgement",
+      "Redness, swelling, or pus discharge from surgical wounds or T-tube site",
+      "Persistent vomiting or inability to tolerate food",
+      "Sudden decrease in T-tube bile output (<50ml/day) or change in bile color",
+      "Yellowing of eyes or skin (jaundice)",
+      "Dark urine or pale stools"
+    ],
+    "emergency_contact": "080-40505050 (24x7 Emergency), Dr. Rajesh Malhotra: 9876234567"
+  },
+  "future_treatment_plan": "Patient to continue T-tube in situ for 6 weeks to allow CBD tract to mature. Repeat T-tube cholangiogram at Week 6 to confirm CBD patency, no retained stones, and free flow into duodenum. If cholangiogram normal, T-tube will be removed as outpatient procedure (clamping trial followed by removal). Continue low-fat diet for 3 months. Follow-up USG abdomen at 3 months to check for any biliary complications. Ursodeoxycholic acid for 3 months to support bile flow. No further surgical intervention anticipated if recovery remains uncomplicated.",
+  "doctor_declaration": {
+    "certifications": [
+      "The patient was under my care during the hospitalization period mentioned above.",
+      "The medical information provided in this discharge summary is true and correct to the best of my knowledge.",
+      "The treatment provided was medically necessary and appropriate for the patient's condition.",
+      "The intraoperative finding of CBD stone was unexpected and not visualized on pre-operative imaging. The decision to proceed with laparoscopic CBDE was made intraoperatively based on cholangiogram findings to avoid future complications and need for repeat surgery.",
+      "The extended hospital stay and additional procedure were medically warranted due to the complexity of CBDE and need for T-tube monitoring.",
+      "All original documents including bills, investigation reports, intraoperative cholangiogram images, and T-tube cholangiogram have been provided to the patient for insurance claim submission."
+    ],
+    "doctor_name": "Dr. Rajesh Malhotra",
+    "qualification": "MBBS, MS (General Surgery), FMAS",
+    "registration": "KMC/45678/2008",
+    "designation": "Consultant General & Laparoscopic Surgeon",
+    "contact": "9876234567",
+    "email": "dr.rajesh.malhotra@apollospecialty.com",
+    "date": "15/10/2025"
+  }
+}

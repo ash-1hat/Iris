@@ -1,0 +1,79 @@
+{
+  "test_name": "Test Case 4: Total Knee Replacement - Multiple Failures",
+  "expected_score": "30-45",
+  "expected_status": "Critical Issues (Red)",
+  "main_issue": "Waiting period violation + poor documentation + excessive cost",
+  "policy_details": {
+    "insurance_company": "Star Health and Allied Insurance",
+    "policy_type": "Family Health Optima Insurance Plan",
+    "policy_number": "STAR/FHO/2024/987654",
+    "sum_insured": 500000,
+    "policy_start_date": "01/08/2024",
+    "planned_admission_date": "10/10/2025",
+    "procedure": "Total Knee Replacement (TKR)"
+  },
+  "patient_details": {
+    "patient_name": "Ramesh Patel",
+    "gender": "Male",
+    "age": "62 Years",
+    "date_of_birth": "15/04/1963",
+    "contact_number": "9876456789",
+    "address": "89, Jayanagar, Bangalore - 560041",
+    "tpa_card_id": "STAR/KA/246810"
+  },
+  "treating_doctor": {
+    "doctor_name": "Dr. Vikram Singh",
+    "contact_number": "9845234567",
+    "qualification": "MBBS, MS (Orthopaedics)",
+    "registration_number": "KMC/23456/2012"
+  },
+  "illness_details": {
+    "presenting_complaint": "Patient has knee pain and difficulty walking.",
+    "duration": "Long standing",
+    "first_consultation_date": "25/09/2025",
+    "provisional_diagnosis": "Osteoarthritis Left Knee",
+    "icd_10_code": "M17.1"
+  },
+  "clinical_findings": {
+    "relevant_findings": "Patient complains of knee pain. X-ray shows degenerative changes.",
+    "past_history": "Patient has had knee pain for a while."
+  },
+  "past_medical_history": "Diabetes, Hypertension",
+  "investigations": {
+    "diagnostic_tests": "1. X-ray Knee: Degenerative changes seen\n2. Blood tests: Done",
+    "medical_management": "Patient took some painkillers.",
+    "proposed_treatment": "Surgical Management"
+  },
+  "surgical_details": {
+    "surgery_name": "Left Total Knee Replacement",
+    "icd_10_pcs_code": "0SRC0JZ",
+    "route_of_drug": "Intravenous + Oral",
+    "other_details": "TKR with premium imported implant planned."
+  },
+  "accident_details": "Not Applicable",
+  "maternity_details": "Not Applicable",
+  "hospitalization_details": {
+    "emergency_or_planned": "Planned",
+    "admission_date": "10/10/2025",
+    "admission_time": "08:00 AM",
+    "expected_days": "5 Days",
+    "icu_days": "0 Days",
+    "room_type": "Deluxe Private AC"
+  },
+  "cost_breakdown": {
+    "room_nursing_diet": 45000,
+    "investigation_diagnostic": 15000,
+    "icu_charges": 0,
+    "ot_charges": 80000,
+    "professional_fees": 120000,
+    "medicines_consumables_implants": 170000,
+    "other_expenses": 20000,
+    "package_charges": 0,
+    "total_cost": 450000
+  },
+  "declaration": {
+    "doctor_name": "Dr. Vikram Singh",
+    "date": "28/09/2025"
+  },
+  "notes": "CRITICAL ISSUES: 1) Waiting period violation - Policy only 14 months old (Aug 2024 to Oct 2025), TKR requires 24 months. 2) Poor documentation - no X-ray evidence of Grade IV OA, generic justification 'patient has knee pain', no conservative management trial documented (no PT duration, no specific medications), missing functional assessment. 3) Excessive cost - Rs.4,50,000 with premium implant but no justification for upgrade. 4) Room rent - Rs.45,000/5 days = Rs.9,000/day EXCEEDS Rs.5,000/day limit for SI 5L. Expected deductions: Waiting period -20, Missing diagnostics -10, Poor justification -10, Unjustified cost -20, Room rent violation -10, Missing documentation -10. Should score 30-45 with multiple FAIL agents."
+}

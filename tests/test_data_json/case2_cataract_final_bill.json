@@ -1,0 +1,347 @@
+{
+  "hospital_info": {
+    "name": "Vision Eye Care Center",
+    "address": "23, Residency Road, Bengaluru - 560025, Karnataka, India",
+    "phone": "080-26305060",
+    "fax": "080-26772936",
+    "email": "billing@visioneyecare.com",
+    "gstin": "29AAVEC1234F1Z5",
+    "registration_no": "KA/BLR/2006/23456"
+  },
+  "bill_info": {
+    "bill_no": "VEC/BLR/2025/008234",
+    "date": "10/10/2025",
+    "time": "16:30 hrs",
+    "patient_id": "VEC2025008234"
+  },
+  "patient_info": {
+    "name": "Lakshmi Devi",
+    "age_gender": "68 Years / Female",
+    "address": "23, Residency Road, Bangalore - 560025",
+    "contact": "+91-9876512345",
+    "email": "lakshmi.devi@email.com"
+  },
+  "insurance_info": {
+    "tpa_name": "Star Health Insurance TPA Ltd.",
+    "policy_number": "STAR/COMP/2021/456789",
+    "authorization_number": "AUTH-2025-78901",
+    "authorized_amount": "52000.00"
+  },
+  "admission_details": {
+    "date_of_admission": "10/10/2025",
+    "date_of_discharge": "10/10/2025",
+    "total_days": "1 Day (Day Care)",
+    "room_type": "Day Care Bed",
+    "treating_consultant": "Dr. Anil Kumar (MS Ophthalmology, DNB)",
+    "department": "Ophthalmology",
+    "admission_type": "Planned/Elective"
+  },
+  "diagnosis_procedure": {
+    "primary_diagnosis": "Bilateral Senile Cataract (Immature), Right Eye > Left Eye",
+    "icd_10_code": "H25.9",
+    "procedure_performed": "Right Eye Phacoemulsification with Posterior Chamber IOL Implantation",
+    "icd_10_pcs_code": "08DJ3ZZ",
+    "complication": "None"
+  },
+  "itemized_charges": [
+    {
+      "section": "A",
+      "section_name": "ROOM & BOARDING CHARGES",
+      "items": [
+        {
+          "sr": "1",
+          "description": "Day Care Bed Charges",
+          "qty": "1",
+          "rate": "2500.00",
+          "amount": "2500.00"
+        },
+        {
+          "sr": "2",
+          "description": "Nursing Charges",
+          "qty": "1",
+          "rate": "800.00",
+          "amount": "800.00"
+        },
+        {
+          "sr": "3",
+          "description": "Patient Diet (Light Meal)",
+          "qty": "1",
+          "rate": "200.00",
+          "amount": "200.00"
+        }
+      ],
+      "subtotal": "3500.00"
+    },
+    {
+      "section": "B",
+      "section_name": "CONSULTATION & PROFESSIONAL FEES",
+      "items": [
+        {
+          "sr": "4",
+          "description": "Surgeon's Fee (Dr. Anil Kumar)",
+          "qty": "1",
+          "rate": "15000.00",
+          "amount": "15000.00"
+        },
+        {
+          "sr": "5",
+          "description": "Anesthetist's Fee",
+          "qty": "1",
+          "rate": "4000.00",
+          "amount": "4000.00"
+        },
+        {
+          "sr": "6",
+          "description": "Pre-op & Post-op Consultation",
+          "qty": "1",
+          "rate": "1000.00",
+          "amount": "1000.00"
+        }
+      ],
+      "subtotal": "20000.00"
+    },
+    {
+      "section": "C",
+      "section_name": "OPERATION THEATRE CHARGES",
+      "items": [
+        {
+          "sr": "7",
+          "description": "OT Charges (Phaco Surgery)",
+          "qty": "1",
+          "rate": "12000.00",
+          "amount": "12000.00"
+        },
+        {
+          "sr": "8",
+          "description": "OT Consumables & Supplies",
+          "qty": "1",
+          "rate": "2000.00",
+          "amount": "2000.00"
+        },
+        {
+          "sr": "9",
+          "description": "Surgical Instruments Usage",
+          "qty": "1",
+          "rate": "1000.00",
+          "amount": "1000.00"
+        }
+      ],
+      "subtotal": "15000.00"
+    },
+    {
+      "section": "D",
+      "section_name": "PHARMACY & CONSUMABLES",
+      "items": [
+        {
+          "sr": "10",
+          "description": "Moxifloxacin Eye Drops 0.5% (5ml)",
+          "qty": "2",
+          "rate": "250.00",
+          "amount": "500.00"
+        },
+        {
+          "sr": "11",
+          "description": "Prednisolone Eye Drops 1% (5ml)",
+          "qty": "2",
+          "rate": "180.00",
+          "amount": "360.00"
+        },
+        {
+          "sr": "12",
+          "description": "Nepafenac Eye Drops 0.1% (5ml)",
+          "qty": "1",
+          "rate": "320.00",
+          "amount": "320.00"
+        },
+        {
+          "sr": "13",
+          "description": "Carboxymethylcellulose Eye Drops 0.5%",
+          "qty": "2",
+          "rate": "200.00",
+          "amount": "400.00"
+        },
+        {
+          "sr": "14",
+          "description": "Cyclopentolate Eye Drops 1%",
+          "qty": "1",
+          "rate": "120.00",
+          "amount": "120.00"
+        },
+        {
+          "sr": "15",
+          "description": "Tab. Paracetamol 500mg",
+          "qty": "1",
+          "rate": "50.00",
+          "amount": "50.00"
+        },
+        {
+          "sr": "16",
+          "description": "Surgical Consumables (drapes, gloves)",
+          "qty": "1",
+          "rate": "800.00",
+          "amount": "800.00"
+        },
+        {
+          "sr": "17",
+          "description": "Eye Pad, Shield, Dressing Material",
+          "qty": "1",
+          "rate": "250.00",
+          "amount": "250.00"
+        },
+        {
+          "sr": "18",
+          "description": "Syringes, Cannula, IV Sets",
+          "qty": "1",
+          "rate": "200.00",
+          "amount": "200.00"
+        }
+      ],
+      "subtotal": "3000.00"
+    },
+    {
+      "section": "E",
+      "section_name": "IMPLANTS",
+      "items": [
+        {
+          "sr": "19",
+          "description": "Foldable IOL +21.5D (Hydrophobic Acrylic) Batch No: IOL2025-4567",
+          "qty": "1",
+          "rate": "4000.00",
+          "amount": "4000.00"
+        }
+      ],
+      "subtotal": "4000.00"
+    },
+    {
+      "section": "F",
+      "section_name": "INVESTIGATIONS & DIAGNOSTICS",
+      "items": [
+        {
+          "sr": "20",
+          "description": "Visual Acuity Testing",
+          "qty": "1",
+          "rate": "200.00",
+          "amount": "200.00"
+        },
+        {
+          "sr": "21",
+          "description": "Slit Lamp Examination",
+          "qty": "1",
+          "rate": "300.00",
+          "amount": "300.00"
+        },
+        {
+          "sr": "22",
+          "description": "A-scan Biometry (IOL Power)",
+          "qty": "1",
+          "rate": "800.00",
+          "amount": "800.00"
+        },
+        {
+          "sr": "23",
+          "description": "Dilated Fundus Examination",
+          "qty": "1",
+          "rate": "400.00",
+          "amount": "400.00"
+        },
+        {
+          "sr": "24",
+          "description": "IOP Measurement",
+          "qty": "1",
+          "rate": "200.00",
+          "amount": "200.00"
+        },
+        {
+          "sr": "25",
+          "description": "Blood Sugar Fasting",
+          "qty": "1",
+          "rate": "150.00",
+          "amount": "150.00"
+        },
+        {
+          "sr": "26",
+          "description": "HbA1c",
+          "qty": "1",
+          "rate": "600.00",
+          "amount": "600.00"
+        },
+        {
+          "sr": "27",
+          "description": "ECG",
+          "qty": "1",
+          "rate": "300.00",
+          "amount": "300.00"
+        },
+        {
+          "sr": "28",
+          "description": "Pre-op Blood Tests",
+          "qty": "1",
+          "rate": "550.00",
+          "amount": "550.00"
+        }
+      ],
+      "subtotal": "3500.00"
+    },
+    {
+      "section": "G",
+      "section_name": "OTHER CHARGES",
+      "items": [
+        {
+          "sr": "29",
+          "description": "Hospital Registration Charges",
+          "qty": "1",
+          "rate": "200.00",
+          "amount": "200.00"
+        },
+        {
+          "sr": "30",
+          "description": "Medical Records Fee",
+          "qty": "1",
+          "rate": "100.00",
+          "amount": "100.00"
+        },
+        {
+          "sr": "31",
+          "description": "Bio-medical Waste Disposal",
+          "qty": "1",
+          "rate": "200.00",
+          "amount": "200.00"
+        },
+        {
+          "sr": "32",
+          "description": "Administrative Charges",
+          "qty": "1",
+          "rate": "1500.00",
+          "amount": "1500.00"
+        }
+      ],
+      "subtotal": "2000.00"
+    }
+  ],
+  "billing_summary": {
+    "total_bill_amount": "51000.00",
+    "discount": "0.00",
+    "gross_bill_amount": "51000.00",
+    "gst_5_percent": "1000.00",
+    "net_payable_amount": "52000.00"
+  },
+  "payment_details": {
+    "mode": "Insurance",
+    "amount_paid_by_patient": "0.00",
+    "amount_claimed_from_tpa": "52000.00",
+    "balance_due": "0.00",
+    "receipt_no": "RC/78901/2025"
+  },
+  "payment_breakdown": {
+    "total_net_bill": "52000.00",
+    "tpa_authorized": "52000.00",
+    "patient_responsibility": "0.00",
+    "reasons": []
+  },
+  "notes": [
+    "This is a computer-generated bill and requires hospital seal and signature for insurance claims.",
+    "Original bill must be submitted to TPA/Insurance company.",
+    "All amounts are in Indian Rupees (Rs).",
+    "For billing queries, contact within 7 days of discharge."
+  ]
+}

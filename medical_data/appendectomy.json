@@ -1,0 +1,242 @@
+{
+    "metadata": {
+      "procedure_id": "lap_appy_001",
+      "name": "Laparoscopic Appendectomy",
+      "category": "General Surgery",
+      "subcategory": "Minimally Invasive Surgery",
+      "common_synonyms": ["Appendix removal surgery", "Keyhole appendix surgery", "Lap appy"],
+      "icd_10_codes": ["K35", "K35.80", "K35.33", "K36", "K37"],
+      "typical_age_group": "10-30 years most common, but can occur at any age"
+    },
+
+    "hospitalization": {
+      "standard_type": "in_patient",
+      "typical_duration": {
+        "unit": "hours_to_days",
+        "minimum": 24,
+        "maximum": 72,
+        "most_common": 48,
+        "note": "Uncomplicated cases 24-72 hours; perforated cases 5-7 days"
+      },
+      "duration_by_complexity": {
+        "uncomplicated_appendicitis": "24-72 hours",
+        "perforated_appendicitis": "5-7 days for IV antibiotics"
+      },
+      "red_flags": [
+        {
+          "pattern": "Hospital stay >3 days for uncomplicated laparoscopic appendectomy",
+          "severity": "moderate",
+          "explanation": "Uncomplicated lap appy typically 24-72 hour stay",
+          "action": "Query for documented complications; extended stay should have clear medical reason"
+        },
+        {
+          "pattern": "Hospital stay <24 hours for perforated appendicitis",
+          "severity": "high",
+          "explanation": "Perforated cases require extended IV antibiotics",
+          "action": "Verify perforation status matches hospital duration"
+        }
+      ]
+    },
+
+    "cost_analysis": {
+      "india_tier1_cities": {
+        "currency": "INR",
+        "overall_range": {
+          "minimum": 40000,
+          "maximum": 140000,
+          "median": 70000
+        },
+        "city_breakdown": {
+          "delhi": [43000, 115000],
+          "mumbai": [55000, 136000]
+        },
+        "detailed_breakdown": {
+          "surgeon_fee": {
+            "delhi": [15000, 40000],
+            "mumbai": [20000, 45000]
+          },
+          "anesthesia": {
+            "delhi": [5000, 15000],
+            "mumbai": [7000, 18000]
+          },
+          "ot_laparoscopy_charges": {
+            "delhi": [10000, 25000],
+            "mumbai": [12000, 30000]
+          },
+          "hospital_stay_2days": {
+            "delhi": [8000, 20000],
+            "mumbai": [10000, 25000]
+          },
+          "consumables_prepost_op": {
+            "delhi": [5000, 15000],
+            "mumbai": [6000, 18000]
+          }
+        }
+      },
+      "government_cghs_rate": {
+        "laparoscopic": 30000,
+        "open": 19000,
+        "note": "NABH-accredited hospital rates; lap appy costlier than open due to equipment"
+      }
+    },
+
+    "medical_necessity": {
+      "primary_indications": [
+        {
+          "indication": "Acute appendicitis diagnosed clinically and radiologically",
+          "clinical_criteria": [
+            "RIF pain migrating from periumbilical region",
+            "McBurney's point tenderness",
+            "Leukocytosis (elevated WBC)",
+            "Ultrasound/CT confirming inflamed appendix"
+          ],
+          "documentation_must_include": [
+            "Clinical history: Pain onset, migration pattern, duration",
+            "Physical exam: McBurney's point tenderness, rebound tenderness",
+            "CBC showing leukocytosis",
+            "Imaging (USG preferred, CT if unclear) showing appendicitis"
+          ],
+          "strength": "absolute",
+          "note": "Once diagnosed, appendectomy is medical emergency to prevent rupture"
+        }
+      ],
+
+      "alternative_treatment": {
+        "antibiotic_therapy": {
+          "applicable_to": "Uncomplicated acute appendicitis only",
+          "limitation": "30.7% recurrence requiring appendectomy within 1 year",
+          "note": "Not considered definitive treatment; surgery remains standard"
+        }
+      },
+
+      "documentation_checklist": {
+        "essential_elements": [
+          {
+            "element": "WBC count showing leukocytosis",
+            "format": "Absolute WBC value",
+            "example": "WBC: 14,500 cells/μL (normal: 4,000-11,000)",
+            "weak_if": "Normal WBC - questions diagnosis severity"
+          },
+          {
+            "element": "Ultrasound abdomen confirming appendicitis",
+            "format": "Radiologist report with appendix measurements",
+            "example": "Dilated appendix measuring 9mm diameter, non-compressible, peri-appendiceal fluid",
+            "weak_if": "No imaging confirmation - diagnosis based on clinical alone"
+          }
+        ]
+      }
+    },
+
+    "required_diagnostics": {
+      "mandatory_preoperative": [
+        {
+          "test": "Complete Blood Count (CBC) with WBC differential",
+          "threshold": "Leukocytosis typically >11,000 cells/μL",
+          "documentation": "Absolute WBC count, neutrophil percentage",
+          "cost": 500,
+          "red_flag_if_missing": "Cannot confirm inflammatory process"
+        },
+        {
+          "test": "Abdominal Ultrasound",
+          "threshold": "Appendix >6mm diameter, non-compressible",
+          "documentation": "Appendix diameter, wall thickness, peri-appendiceal fluid",
+          "cost": 1500,
+          "note": "Highly effective for confirming diagnosis"
+        }
+      ],
+
+      "optional_situational": [
+        {
+          "test": "CT Abdomen",
+          "when_indicated": ["Diagnosis uncertain after USG", "Suspected perforation/abscess", "Atypical presentation"],
+          "cost": 5000,
+          "fwa_flag_if": "Routine use when USG already confirmed diagnosis - unnecessary expense"
+        }
+      ],
+
+      "unnecessary_tests": [
+        {
+          "test": "MRI abdomen",
+          "why_unnecessary": "USG/CT sufficient; MRI expensive and not standard of care",
+          "fwa_severity": "high",
+          "cost": 12000
+        }
+      ]
+    },
+
+    "fraud_waste_abuse_patterns": {
+      "cost_inflation_schemes": [
+        {
+          "pattern": "Upcoding surgical method",
+          "how_detected": "Cross-check operative notes and hospital stay duration",
+          "red_flag_indicators": [
+            "Billing for laparoscopic but operative notes suggest open procedure",
+            "Hospital stay >5 days (more consistent with open, not lap)",
+            "Large incision wound description inconsistent with laparoscopy"
+          ],
+          "typical_overbilling": "₹11,000 (CGHS lap rate ₹30k vs open ₹19k)",
+          "action": "Review operative notes; if open procedure done, reimburse at open rate"
+        },
+        {
+          "pattern": "Unnecessary CT scan",
+          "how_detected": "Check if USG already confirmed diagnosis",
+          "red_flag_indicators": [
+            "USG report clearly shows appendicitis, then CT also done",
+            "No documentation of diagnostic uncertainty",
+            "CT adds no new information"
+          ],
+          "typical_overbilling": "₹5,000",
+          "action": "Approve only USG if diagnosis clear; reject CT as waste"
+        },
+        {
+          "pattern": "Prolonged hospital stay without complications",
+          "how_detected": "Check discharge summary for documented complications",
+          "red_flag_indicators": [
+            "Stay >3 days for uncomplicated lap appy",
+            "No mention of ileus, abscess, infection in notes",
+            "Patient described as 'recovering well' but prolonged stay"
+          ],
+          "typical_overbilling": "₹10,000-20,000 (extra room/nursing charges)",
+          "action": "Approve only medically justified duration; query additional days"
+        },
+        {
+          "pattern": "Incidental appendectomy fraud",
+          "how_detected": "Check if appendix removal was primary procedure or added to another surgery",
+          "red_flag_indicators": [
+            "Appendectomy billed separately during hysterectomy/cholecystectomy",
+            "No pre-op diagnosis of appendicitis",
+            "Pathology shows normal appendix"
+          ],
+          "fwa_severity": "moderate",
+          "action": "Reject appendectomy charges if not primary indication and not pre-approved"
+        }
+      ]
+    },
+
+    "common_complications": {
+      "postoperative": [
+        {
+          "complication": "Surgical site infection",
+          "incidence": "2-3% uncomplicated; up to 10% if perforated",
+          "management": "Antibiotics, wound care",
+          "cost_impact": "₹5,000-15,000",
+          "legitimate": true
+        },
+        {
+          "complication": "Intra-abdominal abscess",
+          "incidence": "9.4% in complicated/perforated cases",
+          "management": "Drainage (percutaneous or surgical), antibiotics",
+          "cost_impact": "₹20,000-60,000",
+          "legitimate": true,
+          "note": "Expected in perforated cases, not negligence"
+        }
+      ]
+    },
+
+    "insurer_specific_considerations": {
+      "waiting_periods": {
+        "emergency_appendectomy": "Covered after initial 30-day policy waiting period",
+        "note": "Emergency surgery, short waiting period applies"
+      }
+    }
+  }

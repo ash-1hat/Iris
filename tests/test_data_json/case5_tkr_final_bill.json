@@ -1,0 +1,506 @@
+{
+  "hospital_info": {
+    "name": "Manipal Hospital Bangalore",
+    "address": "98, HAL Airport Road, Bengaluru - 560017, Karnataka, India",
+    "phone": "080-25023344",
+    "fax": "080-25023345",
+    "email": "billing@manipalhospitals.com",
+    "gstin": "29AAMH1234H1Z7",
+    "registration_no": "KA/BLR/2001/45678"
+  },
+  "bill_info": {
+    "bill_no": "MAN/BLR/2025/012890",
+    "date": "17/10/2025",
+    "time": "15:00 hrs",
+    "patient_id": "MAN2025012890"
+  },
+  "patient_info": {
+    "name": "Sudha Rao",
+    "age_gender": "65 Years / Female",
+    "address": "45, Koramangala, Bangalore - 560034",
+    "contact": "+91-9845678901",
+    "email": "sudha.rao@email.com"
+  },
+  "insurance_info": {
+    "tpa_name": "Star Health Insurance TPA Ltd.",
+    "policy_number": "STAR/COMP/2021/567890",
+    "authorization_number": "AUTH-2025-90123",
+    "authorized_amount": "275000.00"
+  },
+  "admission_details": {
+    "date_of_admission": "10/10/2025",
+    "date_of_discharge": "17/10/2025",
+    "total_days": "7 Days",
+    "room_type": "Single Private AC Room",
+    "treating_consultant": "Dr. Arvind Kumar (MS Ortho, DNB, Fellowship Joint Replacement)",
+    "department": "Orthopaedic Surgery - Joint Replacement",
+    "admission_type": "Planned/Elective"
+  },
+  "diagnosis_procedure": {
+    "primary_diagnosis": "Severe Osteoarthritis Left Knee (Kellgren-Lawrence Grade IV) in Type 2 Diabetic Patient",
+    "icd_10_code": "M17.1",
+    "procedure_performed": "Left Total Knee Replacement (Cemented, Posterior Stabilized) with Computer Navigation",
+    "icd_10_pcs_code": "0SRC0JZ",
+    "complication": "Post-operative anemia requiring 2 units PRBC transfusion on Day 2. Perioperative blood sugar management required due to diabetes."
+  },
+  "itemized_charges": [
+    {
+      "section": "A",
+      "section_name": "ROOM & BOARDING CHARGES",
+      "items": [
+        {
+          "sr": "1",
+          "description": "Room Rent - Single AC (10-17 Oct)",
+          "qty": "7",
+          "rate": "6000.00",
+          "amount": "42000.00"
+        },
+        {
+          "sr": "2",
+          "description": "Nursing Charges",
+          "qty": "7",
+          "rate": "1000.00",
+          "amount": "7000.00"
+        },
+        {
+          "sr": "3",
+          "description": "Patient Diet (Diabetic)",
+          "qty": "14",
+          "rate": "250.00",
+          "amount": "3500.00"
+        },
+        {
+          "sr": "4",
+          "description": "Service Charges",
+          "qty": "7",
+          "rate": "500.00",
+          "amount": "3500.00"
+        }
+      ],
+      "subtotal": "56000.00"
+    },
+    {
+      "section": "B",
+      "section_name": "CONSULTATION & PROFESSIONAL FEES",
+      "items": [
+        {
+          "sr": "5",
+          "description": "Surgeon's Fee (Dr. Arvind Kumar)",
+          "qty": "1",
+          "rate": "60000.00",
+          "amount": "60000.00"
+        },
+        {
+          "sr": "6",
+          "description": "Anesthetist's Fee",
+          "qty": "1",
+          "rate": "15000.00",
+          "amount": "15000.00"
+        },
+        {
+          "sr": "7",
+          "description": "Pre-Anesthetic Consultation",
+          "qty": "1",
+          "rate": "2000.00",
+          "amount": "2000.00"
+        },
+        {
+          "sr": "8",
+          "description": "Post-op Consultation Charges",
+          "qty": "6",
+          "rate": "1000.00",
+          "amount": "6000.00"
+        },
+        {
+          "sr": "9",
+          "description": "Physician Consultation (Diabetes Management)",
+          "qty": "3",
+          "rate": "1500.00",
+          "amount": "4500.00"
+        },
+        {
+          "sr": "10",
+          "description": "Physiotherapy Sessions (In-patient)",
+          "qty": "6",
+          "rate": "800.00",
+          "amount": "4800.00"
+        }
+      ],
+      "subtotal": "92300.00"
+    },
+    {
+      "section": "C",
+      "section_name": "OPERATION THEATRE CHARGES",
+      "items": [
+        {
+          "sr": "11",
+          "description": "OT Charges (Major Joint Replacement)",
+          "qty": "1",
+          "rate": "55000.00",
+          "amount": "55000.00"
+        },
+        {
+          "sr": "12",
+          "description": "Computer Navigation System Usage",
+          "qty": "1",
+          "rate": "15000.00",
+          "amount": "15000.00"
+        },
+        {
+          "sr": "13",
+          "description": "OT Consumables & Supplies",
+          "qty": "1",
+          "rate": "5000.00",
+          "amount": "5000.00"
+        },
+        {
+          "sr": "14",
+          "description": "Surgical Instruments Usage",
+          "qty": "1",
+          "rate": "2000.00",
+          "amount": "2000.00"
+        },
+        {
+          "sr": "15",
+          "description": "Tourniquet & Specialized Equipment",
+          "qty": "1",
+          "rate": "3000.00",
+          "amount": "3000.00"
+        }
+      ],
+      "subtotal": "80000.00"
+    },
+    {
+      "section": "D",
+      "section_name": "PHARMACY & CONSUMABLES",
+      "items": [
+        {
+          "sr": "16",
+          "description": "Inj. Ceftriaxone 1g (IV)",
+          "qty": "14",
+          "rate": "180.00",
+          "amount": "2520.00"
+        },
+        {
+          "sr": "17",
+          "description": "Inj. Tranexamic Acid 500mg (IV)",
+          "qty": "6",
+          "rate": "250.00",
+          "amount": "1500.00"
+        },
+        {
+          "sr": "18",
+          "description": "Inj. Pantoprazole 40mg (IV)",
+          "qty": "14",
+          "rate": "80.00",
+          "amount": "1120.00"
+        },
+        {
+          "sr": "19",
+          "description": "Inj. Analgesics (IV)",
+          "qty": "18",
+          "rate": "200.00",
+          "amount": "3600.00"
+        },
+        {
+          "sr": "20",
+          "description": "IV Fluids (RL, DNS, NS)",
+          "qty": "20",
+          "rate": "120.00",
+          "amount": "2400.00"
+        },
+        {
+          "sr": "21",
+          "description": "Inj. Enoxaparin 40mg (DVT Prophylaxis)",
+          "qty": "10",
+          "rate": "450.00",
+          "amount": "4500.00"
+        },
+        {
+          "sr": "22",
+          "description": "Inj. Insulin (Blood Sugar Management)",
+          "qty": "1",
+          "rate": "2800.00",
+          "amount": "2800.00"
+        },
+        {
+          "sr": "23",
+          "description": "Blood Transfusion (2 Units PRBC)",
+          "qty": "2",
+          "rate": "2500.00",
+          "amount": "5000.00"
+        },
+        {
+          "sr": "24",
+          "description": "Blood Processing & Cross-matching",
+          "qty": "1",
+          "rate": "1800.00",
+          "amount": "1800.00"
+        },
+        {
+          "sr": "25",
+          "description": "Oral Medications (Discharge)",
+          "qty": "1",
+          "rate": "3500.00",
+          "amount": "3500.00"
+        },
+        {
+          "sr": "26",
+          "description": "Surgical Consumables (drapes, gloves, sutures)",
+          "qty": "1",
+          "rate": "4500.00",
+          "amount": "4500.00"
+        },
+        {
+          "sr": "27",
+          "description": "Syringes, Cannula, IV Sets",
+          "qty": "1",
+          "rate": "2000.00",
+          "amount": "2000.00"
+        },
+        {
+          "sr": "28",
+          "description": "Surgical Drain & Dressing Material",
+          "qty": "1",
+          "rate": "2500.00",
+          "amount": "2500.00"
+        },
+        {
+          "sr": "29",
+          "description": "Wound Care Supplies",
+          "qty": "1",
+          "rate": "1500.00",
+          "amount": "1500.00"
+        },
+        {
+          "sr": "30",
+          "description": "Compression Stockings (TED)",
+          "qty": "1",
+          "rate": "1200.00",
+          "amount": "1200.00"
+        }
+      ],
+      "subtotal": "40440.00"
+    },
+    {
+      "section": "E",
+      "section_name": "IMPLANTS",
+      "items": [
+        {
+          "sr": "31",
+          "description": "Knee Prosthesis - Posterior Stabilized (Cemented) - Femoral, Tibial, Patellar Components - Batch No: TKR2025-8901",
+          "qty": "1",
+          "rate": "42000.00",
+          "amount": "42000.00"
+        },
+        {
+          "sr": "32",
+          "description": "Bone Cement (2 packs)",
+          "qty": "2",
+          "rate": "2500.00",
+          "amount": "5000.00"
+        }
+      ],
+      "subtotal": "47000.00"
+    },
+    {
+      "section": "F",
+      "section_name": "INVESTIGATIONS & DIAGNOSTICS",
+      "items": [
+        {
+          "sr": "33",
+          "description": "Complete Blood Count (CBC)",
+          "qty": "5",
+          "rate": "400.00",
+          "amount": "2000.00"
+        },
+        {
+          "sr": "34",
+          "description": "Blood Sugar Monitoring (Multiple)",
+          "qty": "12",
+          "rate": "150.00",
+          "amount": "1800.00"
+        },
+        {
+          "sr": "35",
+          "description": "HbA1c",
+          "qty": "1",
+          "rate": "600.00",
+          "amount": "600.00"
+        },
+        {
+          "sr": "36",
+          "description": "Renal Function Tests",
+          "qty": "2",
+          "rate": "700.00",
+          "amount": "1400.00"
+        },
+        {
+          "sr": "37",
+          "description": "Serum Electrolytes",
+          "qty": "2",
+          "rate": "600.00",
+          "amount": "1200.00"
+        },
+        {
+          "sr": "38",
+          "description": "Liver Function Tests",
+          "qty": "1",
+          "rate": "800.00",
+          "amount": "800.00"
+        },
+        {
+          "sr": "39",
+          "description": "Coagulation Profile (PT/INR, APTT)",
+          "qty": "2",
+          "rate": "700.00",
+          "amount": "1400.00"
+        },
+        {
+          "sr": "40",
+          "description": "X-ray Left Knee (Post-op AP & Lateral)",
+          "qty": "3",
+          "rate": "600.00",
+          "amount": "1800.00"
+        },
+        {
+          "sr": "41",
+          "description": "X-ray Chest PA View",
+          "qty": "1",
+          "rate": "500.00",
+          "amount": "500.00"
+        },
+        {
+          "sr": "42",
+          "description": "ECG",
+          "qty": "2",
+          "rate": "300.00",
+          "amount": "600.00"
+        },
+        {
+          "sr": "43",
+          "description": "2D Echocardiography",
+          "qty": "1",
+          "rate": "2500.00",
+          "amount": "2500.00"
+        },
+        {
+          "sr": "44",
+          "description": "Blood Grouping & Typing",
+          "qty": "1",
+          "rate": "400.00",
+          "amount": "400.00"
+        },
+        {
+          "sr": "45",
+          "description": "Other Lab Tests",
+          "qty": "1",
+          "rate": "2000.00",
+          "amount": "2000.00"
+        }
+      ],
+      "subtotal": "17000.00"
+    },
+    {
+      "section": "G",
+      "section_name": "OTHER CHARGES",
+      "items": [
+        {
+          "sr": "46",
+          "description": "Hospital Registration Charges",
+          "qty": "1",
+          "rate": "500.00",
+          "amount": "500.00"
+        },
+        {
+          "sr": "47",
+          "description": "Medical Records Fee",
+          "qty": "1",
+          "rate": "300.00",
+          "amount": "300.00"
+        },
+        {
+          "sr": "48",
+          "description": "Bio-medical Waste Disposal",
+          "qty": "1",
+          "rate": "600.00",
+          "amount": "600.00"
+        },
+        {
+          "sr": "49",
+          "description": "Administrative Charges",
+          "qty": "1",
+          "rate": "2500.00",
+          "amount": "2500.00"
+        },
+        {
+          "sr": "50",
+          "description": "Walker/Crutches Rental (7 days)",
+          "qty": "1",
+          "rate": "1400.00",
+          "amount": "1400.00"
+        },
+        {
+          "sr": "51",
+          "description": "DVT Pump Rental",
+          "qty": "7",
+          "rate": "300.00",
+          "amount": "2100.00"
+        },
+        {
+          "sr": "52",
+          "description": "Continuous Passive Motion (CPM) Machine",
+          "qty": "5",
+          "rate": "500.00",
+          "amount": "2500.00"
+        },
+        {
+          "sr": "53",
+          "description": "Medical Photography & Documentation",
+          "qty": "1",
+          "rate": "360.00",
+          "amount": "360.00"
+        }
+      ],
+      "subtotal": "10260.00"
+    }
+  ],
+  "billing_summary": {
+    "total_bill_amount": "343000.00",
+    "discount": "3000.00",
+    "gross_bill_amount": "340000.00",
+    "gst_5_percent": "0.00",
+    "net_payable_amount": "340000.00"
+  },
+  "payment_details": {
+    "mode": "Insurance + Patient",
+    "amount_paid_by_patient": "65000.00",
+    "amount_claimed_from_tpa": "275000.00",
+    "balance_due": "0.00",
+    "receipt_no": "RC/90123/2025"
+  },
+  "payment_breakdown": {
+    "total_net_bill": "340000.00",
+    "tpa_authorized": "275000.00",
+    "patient_responsibility": "65000.00",
+    "reasons": [
+      "Extended hospital stay (2 additional days for anemia management and blood sugar control): Rs.18,200",
+      "Computer navigation system usage (not in original estimate): Rs.15,000",
+      "Blood transfusion (2 units PRBC) and processing due to post-op anemia (Hb dropped to 7.8 g/dL): Rs.6,800",
+      "Physician consultations for diabetes management (perioperative blood sugar fluctuations): Rs.4,500",
+      "Additional blood sugar monitoring (12 tests) and investigations: Rs.3,600",
+      "DVT prophylaxis extended course (Enoxaparin 10 doses instead of 5): Rs.2,250",
+      "Insulin therapy for perioperative blood sugar control: Rs.2,800",
+      "Additional physiotherapy sessions (6 instead of 4): Rs.1,600",
+      "CPM machine rental, DVT pump, walker rental for extended stay: Rs.4,000",
+      "Additional medications and wound care supplies: Rs.6,250"
+    ]
+  },
+  "notes": [
+    "This is a computer-generated bill and requires hospital seal and signature for insurance claims.",
+    "Original bill must be submitted to TPA/Insurance company.",
+    "All amounts are in Indian Rupees (Rs).",
+    "For billing queries, contact within 7 days of discharge.",
+    "Extended stay and additional costs were medically necessary due to post-operative anemia requiring transfusion and perioperative diabetes management - documented in discharge summary."
+  ]
+}
